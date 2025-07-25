@@ -1,0 +1,94 @@
+#===============================================================================
+# CORE
+#===============================================================================
+
+--extra-index-url "https://download.pytorch.org/whl/cu128"
+torch==2.7.1+cu128
+torchvision==0.22.1+cu128
+torchaudio==2.7.1+cu128
+xformers
+
+# https://github.com/comfyanonymous/ComfyUI/blob/master/requirements.txt
+-r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.45/requirements.txt"
+
+#===============================================================================
+# CUSTOM NODES
+#===============================================================================
+
+# comfyui-advanced-controlnet
+# https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet
+#-r ""
+
+# comfyui-controlnet-aux
+# https://github.com/Fannovel16/comfyui_controlnet_aux
+-r "https://raw.githubusercontent.com/Fannovel16/comfyui_controlnet_aux/refs/heads/main/requirements.txt"
+
+# comfyui-custom-scripts
+# https://github.com/pythongosssss/ComfyUI-Custom-Scripts
+#-r ""
+
+# comfyui-essentials
+# https://github.com/cubiq/ComfyUI_essentials
+-r "https://raw.githubusercontent.com/cubiq/ComfyUI_essentials/refs/heads/main/requirements.txt"
+
+# comfyui-fizznodes
+# https://github.com/FizzleDorf/ComfyUI_FizzNodes
+-r "https://raw.githubusercontent.com/FizzleDorf/ComfyUI_FizzNodes/refs/heads/main/requirements.txt"
+
+# comfyui-florence2
+# https://github.com/kijai/ComfyUI-Florence2
+-r "https://raw.githubusercontent.com/kijai/ComfyUI-Florence2/refs/heads/main/requirements.txt"
+
+# comfyui-impact-pack
+# https://github.com/ltdrdata/ComfyUI-Impact-Pack
+-r "https://raw.githubusercontent.com/ltdrdata/ComfyUI-Impact-Pack/refs/heads/Main/requirements.txt"
+
+# comfyui-impact-subpack
+# https://github.com/ltdrdata/ComfyUI-Impact-Subpack
+-r "https://raw.githubusercontent.com/ltdrdata/ComfyUI-Impact-Subpack/refs/heads/main/requirements.txt"
+
+# comfyui-inpaint-nodes
+# https://github.com/Acly/comfyui-inpaint-nodes
+#-r ""
+
+# comfyui-ipadapter-plus
+# https://github.com/cubiq/ComfyUI_IPAdapter_plus
+#-r ""
+insightface
+onnxruntime-gpu
+
+# comfyui-kjnodes
+# https://github.com/kijai/ComfyUI-KJNodes
+-r "https://raw.githubusercontent.com/kijai/ComfyUI-KJNodes/refs/heads/main/requirements.txt"
+
+# comfyui-ltxvideo
+# https://github.com/Lightricks/ComfyUI-LTXVideo
+-r "https://raw.githubusercontent.com/Lightricks/ComfyUI-LTXVideo/refs/heads/master/requirements.txt"
+
+# comfyui-ollama
+# https://github.com/stavsap/comfyui-ollama
+-r "https://raw.githubusercontent.com/stavsap/comfyui-ollama/refs/heads/main/requirements.txt"
+
+# comfyui-rgthree
+# https://github.com/rgthree/rgthree-comfy
+-r "https://raw.githubusercontent.com/rgthree/rgthree-comfy/refs/heads/main/requirements.txt"
+
+# comfyui-segment-anything
+# https://github.com/storyicon/comfyui_segment_anything
+-r "https://raw.githubusercontent.com/storyicon/comfyui_segment_anything/refs/heads/main/requirements.txt"
+
+# comfyui-teacache
+# https://github.com/welltop-cn/ComfyUI-TeaCache
+-r "https://raw.githubusercontent.com/welltop-cn/ComfyUI-TeaCache/refs/heads/main/requirements.txt"
+
+# comfyui-tooling-nodes
+# https://github.com/Acly/comfyui-tooling-nodes
+-r "https://raw.githubusercontent.com/Acly/comfyui-tooling-nodes/refs/heads/main/requirements.txt"
+
+# comfyui-ultimatesdupscale
+# https://github.com/ssitu/ComfyUI_UltimateSDUpscale
+#-r ""
+
+# comfyui-videohelpersuite
+# https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
+-r "https://raw.githubusercontent.com/Kosinkadink/ComfyUI-VideoHelperSuite/refs/heads/main/requirements.txt"
