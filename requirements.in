@@ -69,6 +69,10 @@ onnxruntime-gpu
 # https://github.com/stavsap/comfyui-ollama
 -r "https://raw.githubusercontent.com/stavsap/comfyui-ollama/refs/heads/main/requirements.txt"
 
+# comfyui-promptstylers
+# https://github.com/wolfden/ComfyUi_PromptStylers
+#-r ""
+
 # comfyui-rgthree
 # https://github.com/rgthree/rgthree-comfy
 -r "https://raw.githubusercontent.com/rgthree/rgthree-comfy/refs/heads/main/requirements.txt"
