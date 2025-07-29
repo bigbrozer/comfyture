@@ -9,7 +9,7 @@ torchaudio==2.7.1+cu128
 xformers
 
 # https://github.com/comfyanonymous/ComfyUI/blob/master/requirements.txt
--r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.45/requirements.txt"
+-r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.46/requirements.txt"
 
 #===============================================================================
 # CUSTOM NODES

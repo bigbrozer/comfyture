@@ -25,20 +25,14 @@ RUN set -ex \
     && useradd -l -m -u 2000 -g 2000 -d ${COMFYUI_HOME} comfyui
 
 # https://github.com/astral-sh/uv/releases
-ENV UV_VERSION="0.8.2"
-RUN set -ex \
-    && _temp_dir="$(mktemp -d --suffix=uv)" \
-    && curl -SL -o "${_temp_dir}/uv-x86_64-linux.gz" https://github.com/astral-sh/uv/releases/download/${UV_VERSION}/uv-x86_64-unknown-linux-gnu.tar.gz \
-    && tar zxvf "${_temp_dir}/uv-x86_64-linux.gz" -C "/usr/local/bin" --strip-components=1 \
-    && chown -v root:root "/usr/local/bin/uv" "/usr/local/bin/uvx" \
-    && rm -rf "${_temp_dir}"
+COPY --from=ghcr.io/astral-sh/uv:0.8.3 /uv /uvx /usr/local/bin/
 
 WORKDIR ${COMFYUI_HOME}
 
 COPY ./pylock.toml ./.python-version ./
 
 # https://github.com/comfyanonymous/ComfyUI/releases
-ENV COMFYUI_VERSION="v0.3.45"
+ENV COMFYUI_VERSION="v0.3.46"
 
 # hadolint ignore=DL3003
 RUN set -ex \
