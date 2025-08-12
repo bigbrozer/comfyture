@@ -364,9 +364,9 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/13/ff/85ba4146aa393f3
 
 [[packages]]
 name = "comfyui-workflow-templates"
-version = "0.1.41"
-sdist = { url = "https://files.pythonhosted.org/packages/97/97/d2ac2aae0eba8d630a1f2e68e74aa53d0ab7d89fb8b3bc8c87f951964944/comfyui_workflow_templates-0.1.41.tar.gz", upload-time = 2025-07-28T11:27:07Z, size = 72306665, hashes = { sha256 = "af81d2dd12f832762c8a256610a3d2402ef009c16bbfe149f0a8d44eda16c15d" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/9a/5b/517e460fd976017cf1bff34bd9affdf1e77f2845d5a7871dd4dd9b56180b/comfyui_workflow_templates-0.1.41-py3-none-any.whl", upload-time = 2025-07-28T11:27:02Z, size = 72323527, hashes = { sha256 = "8bda215feea27bac9ed004c8f53eb83769e92811cbf88b4bcafa6833f13bae42" } }]
+version = "0.1.51"
+sdist = { url = "https://files.pythonhosted.org/packages/87/fe/01de10087bce4f7dfee37ffe8e29580d46658c6fc232fc3ee10e23c10060/comfyui_workflow_templates-0.1.51.tar.gz", upload-time = 2025-08-05T11:21:58Z, size = 65854455, hashes = { sha256 = "c6fe26f279fed65bf0104505ae0f63afd568f70a716713c08266ae9afa5fb23a" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/d6/79/51c5ac99e9a46de1ebf551b277a3f470578d12170c8459b557347eb66b98/comfyui_workflow_templates-0.1.51-py3-none-any.whl", upload-time = 2025-08-05T11:21:53Z, size = 65867323, hashes = { sha256 = "ee991fbaee32e9fb754eabf6c29c6e397cdfa1fc4845478902d06e564308b868" } }]
 
 [[packages]]
 name = "contourpy"
@@ -1849,7 +1849,11 @@ wheels = [{ url = "https://download.pytorch.org/whl/cu128/nvidia_cusparse_cu12-1
 name = "nvidia-cusparselt-cu12"
 version = "0.6.3"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
-wheels = [{ url = "https://download.pytorch.org/whl/cu128/nvidia_cusparselt_cu12-0.6.3-py3-none-manylinux2014_x86_64.whl", hashes = {} }]
+wheels = [
+    { url = "https://download.pytorch.org/whl/nvidia_cusparselt_cu12-0.6.3-py3-none-manylinux2014_aarch64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/cu128/nvidia_cusparselt_cu12-0.6.3-py3-none-manylinux2014_x86_64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cusparselt_cu12-0.6.3-py3-none-manylinux2014_x86_64.whl", hashes = {} },
+]
 
 [[packages]]
 name = "nvidia-nccl-cu12"
@@ -1874,9 +1878,9 @@ wheels = [{ url = "https://download.pytorch.org/whl/cu128/nvidia_nvtx_cu12-12.8.
 
 [[packages]]
 name = "ollama"
-version = "0.4.8"
-sdist = { url = "https://files.pythonhosted.org/packages/e2/64/709dc99030f8f46ec552f0a7da73bbdcc2da58666abfec4742ccdb2e800e/ollama-0.4.8.tar.gz", upload-time = 2025-04-16T21:55:14Z, size = 12972, hashes = { sha256 = "1121439d49b96fa8339842965d0616eba5deb9f8c790786cdf4c0b3df4833802" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/33/3f/164de150e983b3a16e8bf3d4355625e51a357e7b3b1deebe9cc1f7cb9af8/ollama-0.4.8-py3-none-any.whl", upload-time = 2025-04-16T21:55:12Z, size = 13325, hashes = { sha256 = "04312af2c5e72449aaebac4a2776f52ef010877c554103419d3f36066fe8af4c" } }]
+version = "0.5.1"
+sdist = { url = "https://files.pythonhosted.org/packages/8d/96/c7fe0d2d1b3053be614822a7b722c7465161b3672ce90df71515137580a0/ollama-0.5.1.tar.gz", upload-time = 2025-05-30T21:32:48Z, size = 41112, hashes = { sha256 = "5a799e4dc4e7af638b11e3ae588ab17623ee019e496caaf4323efbaa8feeff93" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/d6/76/3f96c8cdbf3955d7a73ee94ce3e0db0755d6de1e0098a70275940d1aff2f/ollama-0.5.1-py3-none-any.whl", upload-time = 2025-05-30T21:32:47Z, size = 13369, hashes = { sha256 = "4c8839f35bc173c7057b1eb2cbe7f498c1a7e134eafc9192824c8aecb3617506" } }]
 
 [[packages]]
 name = "omegaconf"
