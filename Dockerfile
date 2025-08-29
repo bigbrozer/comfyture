@@ -32,7 +32,7 @@ WORKDIR ${COMFYUI_HOME}
 COPY ./pylock.toml ./.python-version ./
 
 # https://github.com/comfyanonymous/ComfyUI/releases
-ENV COMFYUI_VERSION="v0.3.53"
+ENV COMFYUI_VERSION="v0.3.55"
 
 # hadolint ignore=DL3003
 RUN set -ex \
