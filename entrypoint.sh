@@ -85,6 +85,7 @@ install_extension comfyui-tooling-nodes https://github.com/Acly/comfyui-tooling-
 install_extension comfyui-ultimatesdupscale https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
 install_extension comfyui-vibevoice https://github.com/Enemyx-net/VibeVoice-ComfyUI.git
 install_extension comfyui-videohelpersuite https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
+install_extension comfyui-wanblockswap https://github.com/orssorbit/ComfyUI-wanBlockswap.git
 
 remove_extension comfyui-loadimagewithsubfolder
 remove_extension comfyui-teacache

@@ -112,3 +112,7 @@ onnxruntime-gpu
 # comfyui-videohelpersuite
 # https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
 -r "https://raw.githubusercontent.com/Kosinkadink/ComfyUI-VideoHelperSuite/refs/heads/main/requirements.txt"
+
+# comfyui-wanblockswap
+# https://github.com/orssorbit/ComfyUI-wanBlockswap
+#-r ""
