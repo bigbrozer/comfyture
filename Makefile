@@ -9,3 +9,8 @@ build:
 .PHONY: tests
 tests: build
 	docker run -it --rm -p 8000:8188 --runtime=nvidia --gpus=all local/comfyui:latest
+
+.PHONY: clean
+clean:
+	@docker builder prune -a -f
+	@docker image prune -a -f

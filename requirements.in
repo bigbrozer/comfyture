@@ -17,7 +17,7 @@ xformers
 flash_attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
 
 # https://github.com/comfyanonymous/ComfyUI/blob/master/requirements.txt
--r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.53/requirements.txt"
+-r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.55/requirements.txt"
 
 #===============================================================================
 # CUSTOM NODES
@@ -46,6 +46,10 @@ flash_attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.8
 # comfyui-florence2
 # https://github.com/kijai/ComfyUI-Florence2
 -r "https://raw.githubusercontent.com/kijai/ComfyUI-Florence2/refs/heads/main/requirements.txt"
+
+# comfyui-gguf
+# https://github.com/city96/ComfyUI-GGUF
+-r "https://raw.githubusercontent.com/city96/ComfyUI-GGUF/refs/heads/main/requirements.txt"
 
 # comfyui-impact-pack
 # https://github.com/ltdrdata/ComfyUI-Impact-Pack
@@ -100,6 +104,10 @@ onnxruntime-gpu
 # comfyui-ultimatesdupscale
 # https://github.com/ssitu/ComfyUI_UltimateSDUpscale
 #-r ""
+
+# comfyui-vibevoice
+# https://github.com/Enemyx-net/VibeVoice-ComfyUI
+-r "https://raw.githubusercontent.com/Enemyx-net/VibeVoice-ComfyUI/refs/heads/main/requirements.txt"
 
 # comfyui-videohelpersuite
 # https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
