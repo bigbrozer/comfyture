@@ -14,6 +14,7 @@ xformers
 
 # Flash Attention
 # https://github.com/mjun0812/flash-attention-prebuild-wheels
+# WARNING: comfyui-wanvideowrapper requires version >=2.7.1,<=2.8.2
 flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.3.14/flash_attn-2.8.2+cu129torch2.8-cp312-cp312-linux_x86_64.whl
 
 # Sage Attention
@@ -21,7 +22,7 @@ flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/release
 sageattention @ https://huggingface.co/Kijai/PrecompiledWheels/resolve/main/sageattention-2.2.0-cp312-cp312-linux_x86_64.whl
 
 # https://github.com/comfyanonymous/ComfyUI/blob/master/requirements.txt
--r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.62/requirements.txt"
+-r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.64/requirements.txt"
 
 #===============================================================================
 # CUSTOM NODES

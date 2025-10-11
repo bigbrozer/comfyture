@@ -251,11 +251,11 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/50/cd/30110dc0ffcf3b1
 
 [[packages]]
 name = "bitsandbytes"
-version = "0.47.0"
+version = "0.48.1"
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/aa/eb/477d6b5602f469c7305fd43eec71d890c39909f615c1d7138f6e7d226eff/bitsandbytes-0.47.0-py3-none-manylinux_2_24_aarch64.whl", upload-time = 2025-08-11T18:51:20Z, size = 30004641, hashes = { sha256 = "2f805b76891a596025e9e13318b675d08481b9ee650d65e5d2f9d844084c6521" } },
-    { url = "https://files.pythonhosted.org/packages/9c/40/91f1a5a694f434bc13cba160045fdc4e867032e627b001bf411048fefd9c/bitsandbytes-0.47.0-py3-none-manylinux_2_24_x86_64.whl", upload-time = 2025-08-11T18:51:23Z, size = 61284639, hashes = { sha256 = "68f3fffd494a47ed1fd7593bfc5dd2ac69b68260599b71b4c4b3a32f90f3b184" } },
-    { url = "https://files.pythonhosted.org/packages/18/a9/e07a227f1cd6562844cea2f05ee576b0991a9a91f45965c06034178ba0f6/bitsandbytes-0.47.0-py3-none-win_amd64.whl", upload-time = 2025-08-11T18:51:27Z, size = 60725121, hashes = { sha256 = "4880a6d42ca9628b5a571c8cc3093dc3f5f52511e5a9e47d52d569807975531a" } },
+    { url = "https://files.pythonhosted.org/packages/f8/a1/c66a0d02091a9ef6704a153e09f541e70fc48db02df94fbbf1632b321aca/bitsandbytes-0.48.1-py3-none-manylinux_2_24_aarch64.whl", upload-time = 2025-10-02T17:40:25Z, size = 34033906, hashes = { sha256 = "b7f440aee5ec8cb1d028b0d3b2d71e97c302766dc605232293f4a0f7e48b5c75" } },
+    { url = "https://files.pythonhosted.org/packages/a1/63/00b3f2af0b88edf5855792681641a71cf0605d6d88c62e98d75cff86d105/bitsandbytes-0.48.1-py3-none-manylinux_2_24_x86_64.whl", upload-time = 2025-10-02T17:40:28Z, size = 60088899, hashes = { sha256 = "3e72cf07ba6d2169e69a61282a6f072fc675efee86049e56a33de099a0363ef2" } },
+    { url = "https://files.pythonhosted.org/packages/05/46/339ab9a33fa0964b07a7a0e8b13ec02687f03c8e9b03164edfb8688ce08f/bitsandbytes-0.48.1-py3-none-win_amd64.whl", upload-time = 2025-10-02T17:40:32Z, size = 59524237, hashes = { sha256 = "d7d3f9b00b132bb25f09320ee07ccbfae8c1e0ea11cae48fbf7e1eff9943c7b4" } },
 ]
 
 [[packages]]
@@ -385,15 +385,15 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/fb/a5/3f3ca58f0a61272
 
 [[packages]]
 name = "comfyui-frontend-package"
-version = "1.26.13"
-sdist = { url = "https://files.pythonhosted.org/packages/d3/04/38ae1df6631c4b1ac1fb3196d6b0e455e5362806e7b0b5316220e69eae86/comfyui_frontend_package-1.26.13.tar.gz", upload-time = 2025-09-19T03:11:41Z, size = 9289310, hashes = { sha256 = "f857ab3b222ece6753009b53984fa8adda7a49c8dc8e3efec5ed7505d8ebe754" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/e8/46/84596955ab6f7ecf262fd561213d62515d1c3cebcb6a8375bd9cd9780a79/comfyui_frontend_package-1.26.13-py3-none-any.whl", upload-time = 2025-09-19T03:11:39Z, size = 9800616, hashes = { sha256 = "31bfc395826ec82c69994b689713068ef4b707524bd47a6a7a02d09f1f10f4fb" } }]
+version = "1.27.10"
+sdist = { url = "https://files.pythonhosted.org/packages/8d/8b/8e757dff0f72851405414b35350d065a075755e49783f042065fe757735b/comfyui_frontend_package-1.27.10.tar.gz", upload-time = 2025-10-08T00:39:46Z, size = 10739977, hashes = { sha256 = "2947cabfcd95fa498794d7eefd9d1c4cc4de7c320e22aa2916b25fbcb9b80c7e" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/af/e6/abf9427a110dbc1a4c206ce0c8530aaa0cd6c4be5bb4f9f9a25575da250b/comfyui_frontend_package-1.27.10-py3-none-any.whl", upload-time = 2025-10-08T00:39:44Z, size = 11278568, hashes = { sha256 = "822b2ef715771ec83ad19605d02e25b069991d366b81ccc550ab280ae9c831b8" } }]
 
 [[packages]]
 name = "comfyui-workflow-templates"
-version = "0.1.91"
-sdist = { url = "https://files.pythonhosted.org/packages/62/92/758913484cb32343acf8fc90b84f50060f468db62a99dbe4f0d6ac3496ff/comfyui_workflow_templates-0.1.91.tar.gz", upload-time = 2025-09-29T15:37:42Z, size = 81079123, hashes = { sha256 = "6e1c5a6d0ed40bed7d4a0ab0768a7bd47c85ca8c3ff2de2af82c13e266438f04" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/fb/7a/721bc82492c2b915f36d80b074af015cf266c87ab40053941ece29898744/comfyui_workflow_templates-0.1.91-py3-none-any.whl", upload-time = 2025-09-29T15:37:38Z, size = 81091015, hashes = { sha256 = "a0cb42817c7c6fbcfcea062f50c6df00c3877b169b8d302eafb096b33886e6c4" } }]
+version = "0.1.94"
+sdist = { url = "https://files.pythonhosted.org/packages/c9/66/9837e1a40b4ba2e0e036fbadd170323355a8de383b66e659b5e267b02181/comfyui_workflow_templates-0.1.94.tar.gz", upload-time = 2025-10-08T02:27:21Z, size = 84442133, hashes = { sha256 = "c643a6fc815157dc2cc63b619454f8686558922febb9d0c547108536ba1b4172" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/4f/37/0d7cb72bc4e4086bf11ea06cec999d470b3e1528daa9f7ebe06504885a32/comfyui_workflow_templates-0.1.94-py3-none-any.whl", upload-time = 2025-10-08T02:27:17Z, size = 84449958, hashes = { sha256 = "56693248bd2b0785313cf30eafb0225061fface47ce53fdc823662c53d733411" } }]
 
 [[packages]]
 name = "contourpy"
@@ -1992,9 +1992,9 @@ name = "nvidia-cublas-cu12"
 version = "12.9.1.4"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cublas_cu12-12.9.1.4-py3-none-manylinux_2_27_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cublas_cu12-12.9.1.4-py3-none-manylinux_2_27_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cublas_cu12-12.9.1.4-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cublas_cu12-12.9.1.4-py3-none-manylinux_2_27_aarch64.whl", hashes = { sha256 = "7a950dae01add3b415a5a5cdc4ec818fb5858263e9cca59004bb99fdbbd3a5d6" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cublas_cu12-12.9.1.4-py3-none-manylinux_2_27_x86_64.whl", hashes = { sha256 = "453611eb21a7c1f2c2156ed9f3a45b691deda0440ec550860290dc901af5b4c2" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cublas_cu12-12.9.1.4-py3-none-win_amd64.whl", hashes = { sha256 = "1e5fee10662e6e52bd71dec533fbbd4971bb70a5f24f3bc3793e5c2e9dc640bf" } },
 ]
 
 [[packages]]
@@ -2002,9 +2002,9 @@ name = "nvidia-cuda-cupti-cu12"
 version = "12.9.79"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cuda_cupti_cu12-12.9.79-py3-none-manylinux_2_25_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cuda_cupti_cu12-12.9.79-py3-none-manylinux_2_25_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cuda_cupti_cu12-12.9.79-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cuda_cupti_cu12-12.9.79-py3-none-manylinux_2_25_aarch64.whl", hashes = { sha256 = "791853b030602c6a11d08b5578edfb957cadea06e9d3b26adbf8d036135a4afe" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cuda_cupti_cu12-12.9.79-py3-none-manylinux_2_25_x86_64.whl", hashes = { sha256 = "096bcf334f13e1984ba36685ad4c1d6347db214de03dbb6eebb237b41d9d934f" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cuda_cupti_cu12-12.9.79-py3-none-win_amd64.whl", hashes = { sha256 = "1848a9380067560d5bee10ed240eecc22991713e672c0515f9c3d9396adf93c8" } },
 ]
 
 [[packages]]
@@ -2012,9 +2012,9 @@ name = "nvidia-cuda-nvrtc-cu12"
 version = "12.9.86"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cuda_nvrtc_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cuda_nvrtc_cu12-12.9.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cuda_nvrtc_cu12-12.9.86-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cuda_nvrtc_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hashes = { sha256 = "210cf05005a447e29214e9ce50851e83fc5f4358df8b453155d5e1918094dcb4" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cuda_nvrtc_cu12-12.9.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = { sha256 = "096d4de6bda726415dfaf3198d4f5c522b8e70139c97feef5cd2ca6d4cd9cead" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cuda_nvrtc_cu12-12.9.86-py3-none-win_amd64.whl", hashes = { sha256 = "72972ebdcf504d69462d3bcd67e7b81edd25d0fb85a2c46d3ea3517666636349" } },
 ]
 
 [[packages]]
@@ -2022,9 +2022,9 @@ name = "nvidia-cuda-runtime-cu12"
 version = "12.9.79"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cuda_runtime_cu12-12.9.79-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cuda_runtime_cu12-12.9.79-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cuda_runtime_cu12-12.9.79-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cuda_runtime_cu12-12.9.79-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = { sha256 = "83469a846206f2a733db0c42e223589ab62fd2fabac4432d2f8802de4bded0a4" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cuda_runtime_cu12-12.9.79-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = { sha256 = "25bba2dfb01d48a9b59ca474a1ac43c6ebf7011f1b0b8cc44f54eb6ac48a96c3" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cuda_runtime_cu12-12.9.79-py3-none-win_amd64.whl", hashes = { sha256 = "8e018af8fa02363876860388bd10ccb89eb9ab8fb0aa749aaf58430a9f7c4891" } },
 ]
 
 [[packages]]
@@ -2032,9 +2032,9 @@ name = "nvidia-cudnn-cu12"
 version = "9.10.2.21"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cudnn_cu12-9.10.2.21-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_aarch64.whl", hashes = { sha256 = "c9132cc3f8958447b4910a1720036d9eff5928cc3179b0a51fb6d167c6cc87d8" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl", hashes = { sha256 = "949452be657fa16687d0930933f032835951ef0892b37d2d53824d1a84dc97a8" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cudnn_cu12-9.10.2.21-py3-none-win_amd64.whl", hashes = { sha256 = "c6288de7d63e6cf62988f0923f96dc339cea362decb1bf5b3141883392a7d65e" } },
 ]
 
 [[packages]]
@@ -2042,9 +2042,9 @@ name = "nvidia-cufft-cu12"
 version = "11.4.1.4"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cufft_cu12-11.4.1.4-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cufft_cu12-11.4.1.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cufft_cu12-11.4.1.4-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cufft_cu12-11.4.1.4-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = { sha256 = "1a28c9b12260a1aa7a8fd12f5ebd82d027963d635ba82ff39a1acfa7c4c0fbcf" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cufft_cu12-11.4.1.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = { sha256 = "c67884f2a7d276b4b80eb56a79322a95df592ae5e765cf1243693365ccab4e28" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cufft_cu12-11.4.1.4-py3-none-win_amd64.whl", hashes = { sha256 = "8e5bfaac795e93f80611f807d42844e8e27e340e0cde270dcb6c65386d795b80" } },
 ]
 
 [[packages]]
@@ -2052,8 +2052,8 @@ name = "nvidia-cufile-cu12"
 version = "1.14.1.1"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cufile_cu12-1.14.1.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cufile_cu12-1.14.1.1-py3-none-manylinux_2_27_aarch64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cufile_cu12-1.14.1.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = { sha256 = "9552e2231792e94b1ff17bc99e958cc0e6bbbaa4a9d91fa2dbeed97716628fe6" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cufile_cu12-1.14.1.1-py3-none-manylinux_2_27_aarch64.whl", hashes = { sha256 = "8dea77590761e02cb6dd955a57cb6414c58aa3cb1b7adbf9919869a11509cf65" } },
 ]
 
 [[packages]]
@@ -2061,9 +2061,9 @@ name = "nvidia-curand-cu12"
 version = "10.3.10.19"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_curand_cu12-10.3.10.19-py3-none-manylinux_2_27_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_curand_cu12-10.3.10.19-py3-none-manylinux_2_27_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_curand_cu12-10.3.10.19-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_curand_cu12-10.3.10.19-py3-none-manylinux_2_27_aarch64.whl", hashes = { sha256 = "de663377feb1697e1d30ed587b07d5721fdd6d2015c738d7528a6002a6134d37" } },
+    { url = "https://download.pytorch.org/whl/nvidia_curand_cu12-10.3.10.19-py3-none-manylinux_2_27_x86_64.whl", hashes = { sha256 = "49b274db4780d421bd2ccd362e1415c13887c53c214f0d4b761752b8f9f6aa1e" } },
+    { url = "https://download.pytorch.org/whl/nvidia_curand_cu12-10.3.10.19-py3-none-win_amd64.whl", hashes = { sha256 = "e8129e6ac40dc123bd948e33d3e11b4aa617d87a583fa2f21b3210e90c743cde" } },
 ]
 
 [[packages]]
@@ -2071,9 +2071,9 @@ name = "nvidia-cusolver-cu12"
 version = "11.7.5.82"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cusolver_cu12-11.7.5.82-py3-none-manylinux_2_27_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cusolver_cu12-11.7.5.82-py3-none-manylinux_2_27_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cusolver_cu12-11.7.5.82-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cusolver_cu12-11.7.5.82-py3-none-manylinux_2_27_aarch64.whl", hashes = { sha256 = "62efa83e4ace59a4c734d052bb72158e888aa7b770e1a5f601682f16fe5b4fd2" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cusolver_cu12-11.7.5.82-py3-none-manylinux_2_27_x86_64.whl", hashes = { sha256 = "15da72d1340d29b5b3cf3fd100e3cd53421dde36002eda6ed93811af63c40d88" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cusolver_cu12-11.7.5.82-py3-none-win_amd64.whl", hashes = { sha256 = "77666337237716783c6269a658dea310195cddbd80a5b2919b1ba8735cec8efd" } },
 ]
 
 [[packages]]
@@ -2081,9 +2081,9 @@ name = "nvidia-cusparse-cu12"
 version = "12.5.10.65"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cusparse_cu12-12.5.10.65-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cusparse_cu12-12.5.10.65-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cusparse_cu12-12.5.10.65-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cusparse_cu12-12.5.10.65-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = { sha256 = "221c73e7482dd93eda44e65ce567c031c07e2f93f6fa0ecd3ba876a195023e83" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cusparse_cu12-12.5.10.65-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = { sha256 = "73060ce019ac064a057267c585bf1fd5a353734151f87472ff02b2c5c9984e78" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cusparse_cu12-12.5.10.65-py3-none-win_amd64.whl", hashes = { sha256 = "9e487468a22a1eaf1fbd1d2035936a905feb79c4ce5c2f67626764ee4f90227c" } },
 ]
 
 [[packages]]
@@ -2091,9 +2091,9 @@ name = "nvidia-cusparselt-cu12"
 version = "0.7.1"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_cusparselt_cu12-0.7.1-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_aarch64.whl", hashes = { sha256 = "8878dce784d0fac90131b6817b607e803c36e629ba34dc5b433471382196b6a5" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl", hashes = { sha256 = "f1bb701d6b930d5a7cea44c19ceb973311500847f81b634d802b7b539dc55623" } },
+    { url = "https://download.pytorch.org/whl/nvidia_cusparselt_cu12-0.7.1-py3-none-win_amd64.whl", hashes = { sha256 = "f67fbb5831940ec829c9117b7f33807db9f9678dc2a617fbe781cac17b4e1075" } },
 ]
 
 [[packages]]
@@ -2101,8 +2101,8 @@ name = "nvidia-nccl-cu12"
 version = "2.27.3"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = { sha256 = "9ddf1a245abc36c550870f26d537a9b6087fb2e2e3d6e0ef03374c6fd19d984f" } },
+    { url = "https://download.pytorch.org/whl/nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = { sha256 = "adf27ccf4238253e0b826bce3ff5fa532d65fc42322c8bfdfaf28024c0fbe039" } },
 ]
 
 [[packages]]
@@ -2110,9 +2110,9 @@ name = "nvidia-nvjitlink-cu12"
 version = "12.9.86"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_nvjitlink_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_nvjitlink_cu12-12.9.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_nvjitlink_cu12-12.9.86-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_nvjitlink_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hashes = { sha256 = "e3f1171dbdc83c5932a45f0f4c99180a70de9bd2718c1ab77d14104f6d7147f9" } },
+    { url = "https://download.pytorch.org/whl/nvidia_nvjitlink_cu12-12.9.86-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = { sha256 = "994a05ef08ef4b0b299829cde613a424382aff7efb08a7172c1fa616cc3af2ca" } },
+    { url = "https://download.pytorch.org/whl/nvidia_nvjitlink_cu12-12.9.86-py3-none-win_amd64.whl", hashes = { sha256 = "cc6fcec260ca843c10e34c936921a1c426b351753587fdd638e8cff7b16bb9db" } },
 ]
 
 [[packages]]
@@ -2120,9 +2120,9 @@ name = "nvidia-nvtx-cu12"
 version = "12.9.79"
 marker = "platform_machine == 'x86_64' and sys_platform == 'linux'"
 wheels = [
-    { url = "https://download.pytorch.org/whl/nvidia_nvtx_cu12-12.9.79-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_nvtx_cu12-12.9.79-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/nvidia_nvtx_cu12-12.9.79-py3-none-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/nvidia_nvtx_cu12-12.9.79-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl", hashes = { sha256 = "fec150986817f2b4e7eed72ed059f2dcb9ba3856b9a96134e448eac946a6952f" } },
+    { url = "https://download.pytorch.org/whl/nvidia_nvtx_cu12-12.9.79-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hashes = { sha256 = "d1f258e752294acdb4f61c3d31fee87bd0f60e459f1e2f624376369b524cd15d" } },
+    { url = "https://download.pytorch.org/whl/nvidia_nvtx_cu12-12.9.79-py3-none-win_amd64.whl", hashes = { sha256 = "1f504e573b3a955e55aae6c747e2ae561b63fdcafcd591e43d18dae9875504f8" } },
 ]
 
 [[packages]]
@@ -3806,24 +3806,24 @@ wheels = [
 name = "torch"
 version = "2.8.0+cu129"
 wheels = [
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp310-cp310-manylinux_2_28_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp310-cp310-manylinux_2_28_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp310-cp310-win_amd64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp311-cp311-manylinux_2_28_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp311-cp311-manylinux_2_28_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp311-cp311-win_amd64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp312-cp312-manylinux_2_28_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp312-cp312-manylinux_2_28_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp312-cp312-win_amd64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313-manylinux_2_28_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313-manylinux_2_28_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313-win_amd64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313t-manylinux_2_28_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313t-manylinux_2_28_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313t-win_amd64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp39-cp39-manylinux_2_28_aarch64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp39-cp39-manylinux_2_28_x86_64.whl", hashes = {} },
-    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp39-cp39-win_amd64.whl", hashes = {} },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp310-cp310-manylinux_2_28_aarch64.whl", hashes = { sha256 = "72156354c39c08f3451acb50a6ecd4178d745670ad8651b5c796eaace558ff0f" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp310-cp310-manylinux_2_28_x86_64.whl", hashes = { sha256 = "54d240b5d3b1f9075d4ee6179675a22c1974f7bef1885d134c582678d5180cd3" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp310-cp310-win_amd64.whl", hashes = { sha256 = "e4adcc3d44089d4a696e6a2ca4233d1ddad7614adc1d48ec8a8cfb95ba235ea1" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp311-cp311-manylinux_2_28_aarch64.whl", hashes = { sha256 = "d5a210e351ab0c3acbac18c7397bc66ffd897d5000351e8ce9a21badf7f56b85" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp311-cp311-manylinux_2_28_x86_64.whl", hashes = { sha256 = "da19696fd75c4a2d5bc945242619143dfc4cbc3e3deead407f2946d1395c3608" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp311-cp311-win_amd64.whl", hashes = { sha256 = "8a92b6ac49be932a8e4f70282d0d396a95a0fc877a9fbe0bd36be5f765707c84" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp312-cp312-manylinux_2_28_aarch64.whl", hashes = { sha256 = "692fe6e513b667f789a543fa9b1baba58e77a46d5c8629764ca0c00a56823e1f" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp312-cp312-manylinux_2_28_x86_64.whl", hashes = { sha256 = "02c7258e917f3043c978b53acf6f02b818db0d0d85db0e58ae578af333b9b4e2" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp312-cp312-win_amd64.whl", hashes = { sha256 = "2bc729898e422b9f3da54349eed98f2f0b5dd415434508ee2ab2a13fb021815d" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313-manylinux_2_28_aarch64.whl", hashes = { sha256 = "ad2d64316635e7ab06f6c973a252526d59a92a2045825c102f876914a72304d0" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313-manylinux_2_28_x86_64.whl", hashes = { sha256 = "563740167be2189b71530b503f0c8a8d7a8267dd49d4de6f9c5f1d23fbe237df" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313-win_amd64.whl", hashes = { sha256 = "2cef066f9759ff4d7868a8c3695aa60d9a878598acb3685bb1ef2fdac29dcd68" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313t-manylinux_2_28_aarch64.whl", hashes = { sha256 = "2982bf34249cbb38f1090e71ad7097a214a21023ccdc0413961986ab7d0396e6" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313t-manylinux_2_28_x86_64.whl", hashes = { sha256 = "6344260959ebcfa6dae458e1c4365195bcfdf00f4f1f1ad438cbaf50756829ed" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp313-cp313t-win_amd64.whl", hashes = { sha256 = "9c0cd89e54ce44ce3208c5cf4163773b9cda0067e4b48cfcac56a4e04af52040" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp39-cp39-manylinux_2_28_aarch64.whl", hashes = { sha256 = "c0253539dc076fa23ab6042e5c4ecd8384c4675ace8d5e13095ce11c5dac1daf" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp39-cp39-manylinux_2_28_x86_64.whl", hashes = { sha256 = "217dc008bc7b4e771edb8253f635fb8d076dfd5059c78175734a01db12ce0058" } },
+    { url = "https://download.pytorch.org/whl/cu129/torch-2.8.0%2Bcu129-cp39-cp39-win_amd64.whl", hashes = { sha256 = "d852178da46723dab0e2d9f7be570a073bb21c355b3e6b2d3f89e14062198e05" } },
 ]
 
 [[packages]]
