@@ -25,14 +25,14 @@ RUN set -ex \
     && useradd -l -m -u 2000 -g 2000 -d ${COMFYUI_HOME} comfyui
 
 # https://github.com/astral-sh/uv/releases
-COPY --from=ghcr.io/astral-sh/uv:0.8.22 /uv /uvx /usr/local/bin/
+COPY --from=ghcr.io/astral-sh/uv:0.9.5 /uv /uvx /usr/local/bin/
 
 WORKDIR ${COMFYUI_HOME}
 
 COPY ./pylock.toml ./.python-version ./
 
 # https://github.com/comfyanonymous/ComfyUI/releases
-ENV COMFYUI_VERSION="v0.3.64"
+ENV COMFYUI_VERSION="v0.3.66"
 
 # hadolint ignore=DL3003
 RUN set -ex \

@@ -22,7 +22,7 @@ flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/release
 sageattention @ https://huggingface.co/Kijai/PrecompiledWheels/resolve/main/sageattention-2.2.0-cp312-cp312-linux_x86_64.whl
 
 # https://github.com/comfyanonymous/ComfyUI/blob/master/requirements.txt
--r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.64/requirements.txt"
+-r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v0.3.66/requirements.txt"
 
 #===============================================================================
 # CUSTOM NODES
