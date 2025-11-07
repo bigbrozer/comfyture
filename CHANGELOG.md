@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.3.0 - 2025-11-07
+
+### <!-- 0 -->🚀 Features
+
+#### Ci
+
+- Push docker image to docker hub in bigbrozer/comfyui-stack
+- Push image tasks
+
 ## 0.2.0 - 2025-11-07
 
 Introduce a CI.
