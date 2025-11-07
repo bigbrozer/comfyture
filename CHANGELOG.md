@@ -2,7 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## 0.2.0 - 2025-11-07
+
+Introduce a CI.
+
+### <!-- 0 -->🚀 Features
+
+#### Ci
+
+- Add a ci to build and push docker image
 
 ### <!-- 7 -->⚙️ Miscellaneous Tasks
 
