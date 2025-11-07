@@ -24,7 +24,7 @@ tasks:
   build:
     desc: "Build the docker image"
     cmds:
-      - docker buildx bake {{.TARGET|  default "test"}}
+      - docker buildx bake --load {{.TARGET | default "test"}}
 
   push:
     desc: "Push the docker image"
