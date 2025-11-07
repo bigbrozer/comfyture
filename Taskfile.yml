@@ -48,7 +48,13 @@ tasks:
       - docker builder prune -a -f
       - docker image prune -a -f
 
+  tag:
+    desc: "Tag a new release"
+    interactive: true
+    cmds:
+      - scripts/tag.sh
+
   changelog:
     desc: "Generate the changelog"
     cmds:
-      - git cliff -o CHANGELOG.md
+      - scripts/changelog.sh
