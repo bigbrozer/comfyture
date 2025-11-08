@@ -1,12 +1,16 @@
-name: Release
+name: CI
 
 on:
+  pull_request:
+    branches:
+      - "main"
   push:
     tags:
       - "v*"
 
 jobs:
-  tests:
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -34,13 +38,32 @@ jobs:
           images: |
             ${{ env.COMFYUI_STACK_IMAGE }}
           tags: |
+            type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
 
       - name: Build
         uses: docker/bake-action@v6
         with:
+          push: true
           files: |
             ./docker-bake.hcl
             cwd://${{ steps.meta.outputs.bake-file }}
           targets: build
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs: [build]
+    if: startsWith(github.ref, 'refs/tags/v')
+    steps:
+      - name: Load environment
+        run: |
+          grep -v '^#' metadata.env >> $GITHUB_ENV
+
+      - name: Update Docker Hub README
+        uses: peter-evans/dockerhub-description@v5
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          repository: ${{ env.COMFYUI_STACK_IMAGE }}

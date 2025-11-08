@@ -26,6 +26,7 @@ variable "UV_VERSION" {
 target "docker-metadata-action" {}
 
 target "build" {
+  inherits = ["docker-metadata-action"]
   context = "."
   dockerfile = "Dockerfile"
   args = {
@@ -34,8 +35,4 @@ target "build" {
     # https://github.com/astral-sh/uv/releases
     "UV_VERSION" = UV_VERSION,
   }
-  tags = [
-    "${COMFYUI_STACK_IMAGE}:latest",
-    "${COMFYUI_STACK_IMAGE}:${COMFYUI_STACK_VERSION}",
-  ]
 }
