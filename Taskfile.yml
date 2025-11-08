@@ -24,12 +24,7 @@ tasks:
   build:
     desc: "Build the docker image"
     cmds:
-      - docker buildx bake --load {{.TARGET | default "test"}}
-
-  push:
-    desc: "Push the docker image"
-    cmds:
-      - docker image push --all-tags ${COMFYUI_STACK_IMAGE}
+      - docker buildx bake
 
   tests:
     cmds:

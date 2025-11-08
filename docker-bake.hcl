@@ -23,7 +23,7 @@ variable "UV_VERSION" {
     default = "0.9.5"
 }
 
-target "release" {
+target "default" {
   context = "."
   dockerfile = "Dockerfile"
   args = {
@@ -35,12 +35,5 @@ target "release" {
   tags = [
     "${COMFYUI_STACK_IMAGE}:latest",
     "${COMFYUI_STACK_IMAGE}:${COMFYUI_STACK_VERSION}",
-  ]
-}
-
-target "test" {
-  inherits = ["release"]
-  tags = [
-    "local/comfyui:latest",
   ]
 }
