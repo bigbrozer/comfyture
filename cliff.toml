@@ -7,10 +7,10 @@
 # See https://keats.github.io/tera/docs/#introduction
 header = """
 # Changelog\n
-All notable changes to this project will be documented in this file.\n
+All notable changes to this project will be documented in this file.
 """
 body = """
-{% if version %}\
+{% if version %}
     ## {{ version | trim_start_matches(pat="v") }} - {{ timestamp | date(format="%Y-%m-%d") }}
 {% else %}\
     ## Unreleased

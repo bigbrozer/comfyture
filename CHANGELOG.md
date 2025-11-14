@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file.
 #### Ci
 
 * Simplify docker build process
+
 ## 0.3.0 - 2025-11-07
 
 We know have a [docker image](https://hub.docker.com/r/bigbrozer/comfyui-stack) 🚀
@@ -32,6 +33,7 @@ We know have a [docker image](https://hub.docker.com/r/bigbrozer/comfyui-stack) 
 
 * Push docker image to docker hub in bigbrozer/comfyui-stack
 * Push image tasks
+
 ## 0.2.0 - 2025-11-07
 
 Introduce a CI.
@@ -41,6 +43,7 @@ Introduce a CI.
 #### Ci
 
 * Add a ci to build and push docker image
+
 ## 0.1.0 - 2025-11-06
 
 This is the first public release for my [ComfyUI](https://www.comfy.org/) image with pre-installed nodes.
