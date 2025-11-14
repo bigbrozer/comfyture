@@ -2,18 +2,18 @@ name: CI
 
 on:
   pull_request:
+  push:
     branches:
       - "main"
-  push:
-    tags:
-      - "v*"
+      - "develop"
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout
+        uses: actions/checkout@v5
 
       - name: Install asdf & tools
         uses: asdf-vm/actions/install@v4
@@ -39,10 +39,9 @@ jobs:
             ${{ env.COMFYUI_STACK_IMAGE }}
           tags: |
             type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
+            type=ref,event=branch
 
-      - name: Build
+      - name: Build and push
         uses: docker/bake-action@v6
         with:
           push: true
@@ -50,22 +49,3 @@ jobs:
             ./docker-bake.hcl
             cwd://${{ steps.meta.outputs.bake-file }}
           targets: build
-
-  release:
-    name: Release
-    runs-on: ubuntu-latest
-    needs: [build]
-    if: startsWith(github.ref, 'refs/tags/v')
-    steps:
-      - uses: actions/checkout@v5
-
-      - name: Load environment
-        run: |
-          grep -v '^#' metadata.env >> $GITHUB_ENV
-
-      - name: Update Docker Hub README
-        uses: peter-evans/dockerhub-description@v5
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: ${{ env.COMFYUI_STACK_IMAGE }}

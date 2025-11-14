@@ -1,10 +1,3 @@
-variable "COMFYUI_STACK_IMAGE" {
-  validation {
-    condition = COMFYUI_STACK_IMAGE != ""
-    error_message = "You are missing the name of the image !"
-  }
-}
-
 variable "COMFYUI_VERSION" {
   validation {
     condition = COMFYUI_VERSION != ""
@@ -12,15 +5,11 @@ variable "COMFYUI_VERSION" {
   }
 }
 
-variable "COMFYUI_STACK_VERSION" {
-  validation {
-    condition = COMFYUI_STACK_VERSION != ""
-    error_message = "You are missing the version for this image !"
-  }
-}
-
 variable "UV_VERSION" {
-    default = "0.9.5"
+    validation {
+    condition = UV_VERSION != ""
+    error_message = "You are missing the version of Uv that should be packaged into the image !"
+  }
 }
 
 target "docker-metadata-action" {}

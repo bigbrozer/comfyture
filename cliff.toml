@@ -20,15 +20,14 @@ body = """
 {% endif %}\
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | upper_first }}
-    {% for group, commits in commits | group_by(attribute="scope") %}
-        #### {{ group | upper_first }}
+    {% for group, commits in commits | group_by(attribute="scope") %}\
         {% for commit in commits %}
-            * {{ commit.message | upper_first }}\
+            * **{{ group }}**: {{ commit.message | upper_first }}\
             {% if commit.body %}
             {{ commit.body | indent(prefix="  ", first=true) }}\
-            {% endif -%}\
-        {% endfor %}
-    {% endfor %}\
+            {% endif %}\
+        {% endfor %}\
+    {% endfor %}
 {% endfor %}
 """
 # Remove leading and trailing whitespaces from the changelog's body.

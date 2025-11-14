@@ -43,24 +43,14 @@ tasks:
       - docker builder prune -a -f
       - docker image prune -a -f
 
-  tag:
-    desc: "Tag a new release"
-    interactive: true
-    cmds:
-      - scripts/tag.sh
-
-  changelog:
-    desc: "Generate the changelog"
-    cmds:
-      - scripts/changelog.sh
-
   preview-changelog:
     desc: "Preview next changelog"
     cmds:
-      - git cliff --bump --unreleased
+      - git cliff -v --bump --unreleased
 
   release:
     desc: "Create a new release and tag"
+    prompt: "You are about to create a new release. Continue ?"
     cmds:
-      - task: changelog
-      - task: tag
+      - scripts/release.sh
+      - echo "Now, push commit with tags (git push origin --tags) to create the release."
