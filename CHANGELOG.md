@@ -2,7 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.4.1 - 2025-11-14
+
+### <!-- 1 -->🐛 Bug Fixes
+
+#### Ci
+
+* Missing checkout step for release job
+
 ## 0.4.0 - 2025-11-14
+
+The CI/CD is ready in this release.
 
 ### <!-- 0 -->🚀 Features
 
