@@ -80,6 +80,7 @@ commit_parsers = [
     { message = "^chore", skip = true },
     { body = ".*security", group = "<!-- 8 -->🛡️ Security" },
     { message = "^revert", group = "<!-- 9 -->◀️ Revert" },
+    { message = "^Merge pull request", skip = true },
 ]
 # Exclude commits that are not matched by any commit parser.
 filter_commits = false
