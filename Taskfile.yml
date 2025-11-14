@@ -57,4 +57,4 @@ tasks:
   preview-changelog:
     desc: "Preview next changelog"
     cmds:
-      - git cliff --bump
+      - git cliff --bump --unreleased
