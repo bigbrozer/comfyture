@@ -16,4 +16,4 @@ sed -r -i "s/COMFYUI_STACK_VERSION=.+/COMFYUI_STACK_VERSION=\"${next_version:1}\
 
 git add "${_metadata}"
 git commit -m "chore(release): update metadata for ${next_version}"
-git tag -a "${next_version}"
+git tag "${next_version}"
