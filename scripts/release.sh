@@ -19,5 +19,5 @@ sed -r -i "s/COMFYUI_STACK_VERSION=.+/COMFYUI_STACK_VERSION=${next_version:1}/" 
 # Prepare new changelog
 git cliff --bump --output CHANGELOG.md
 git add -A
-git tag -a "${next_version}" -m "${tag_body}"
 git commit -m "chore(release): prepare for ${next_version}"
+git tag -a "${next_version}" -m "${tag_body}"
