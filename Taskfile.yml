@@ -45,12 +45,14 @@ tasks:
 
   tag:
     desc: "Tag a new release"
+    internal: true
     interactive: true
     cmds:
       - scripts/tag.sh
 
   changelog:
     desc: "Generate the changelog"
+    internal: true
     cmds:
       - scripts/changelog.sh
 
@@ -58,3 +60,9 @@ tasks:
     desc: "Preview next changelog"
     cmds:
       - git cliff --bump --unreleased
+
+  release:
+    desc: "Create a new release and tag"
+    cmds:
+      - task: changelog
+      - task: tag
