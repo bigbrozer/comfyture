@@ -40,8 +40,7 @@ ARG COMFYUI_VERSION
 RUN set -ex \
     && git clone --depth 1 --branch "v${COMFYUI_VERSION}" https://github.com/comfyanonymous/ComfyUI.git app/ \
     && install -d \
-        "python/cache" \
-        "python/venv" \
+        "python" \
         "app/custom_nodes" \
         "app/input" \
         "app/models" \
@@ -49,9 +48,9 @@ RUN set -ex \
         "app/user" \
     && chown -R comfyui:comfyui .
 
-COPY --chmod=0755 ./entrypoint.sh .
-COPY --chmod=0644 ./extensions.sh .
+COPY --chown=comfyui --chmod=0755 ./entrypoint.sh .
+COPY --chown=comfyui --chmod=0644 ./extensions.sh .
 
 EXPOSE 8188
 ENTRYPOINT ["/opt/comfyui/entrypoint.sh"]
-CMD [ "--verbose", "--listen", "0.0.0.0" ]
+CMD ["--verbose"]
