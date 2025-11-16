@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.6.0 - 2025-11-16
+
+### <!-- 0 -->🚀 Features
+
+* **core**: Allow to run as different user
+* **docker**: Prepare a compose file
+* **docs**: Add a nice readme :-)
+* **tasks**: Bump versions and changelog in pull requests
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **changelog**: Do not show tag message
+* **ci**: Do not show changelog header in github release body
+
 ## 0.5.0 - 2025-11-14
 
 ### <!-- 0 -->🚀 Features
@@ -27,8 +41,6 @@ All notable changes to this project will be documented in this file.
 
 ## 0.4.0 - 2025-11-14
 
-The CI/CD is ready in this release.
-
 ### <!-- 0 -->🚀 Features
 
 * **ci**: Make a unique workflow for pr validation with pre-release
@@ -43,8 +55,6 @@ The CI/CD is ready in this release.
 
 ## 0.3.0 - 2025-11-07
 
-We know have a [docker image](https://hub.docker.com/r/bigbrozer/comfyui-stack) 🚀
-
 ### <!-- 0 -->🚀 Features
 
 * **ci**: Push docker image to docker hub in bigbrozer/comfyui-stack
@@ -52,15 +62,11 @@ We know have a [docker image](https://hub.docker.com/r/bigbrozer/comfyui-stack) 
 
 ## 0.2.0 - 2025-11-07
 
-Introduce a CI.
-
 ### <!-- 0 -->🚀 Features
 
 * **ci**: Add a ci to build and push docker image
 
 ## 0.1.0 - 2025-11-06
-
-This is the first public release for my [ComfyUI](https://www.comfy.org/) image with pre-installed nodes.
 
 ### <!-- 0 -->🚀 Features
 
