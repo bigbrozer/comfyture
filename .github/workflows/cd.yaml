@@ -23,7 +23,7 @@ jobs:
         id: git-cliff
         with:
           config: cliff.toml
-          args: -vv --latest --no-exec --strip header
+          args: -v --latest --no-exec --strip header
 
   build:
     name: Build
