@@ -38,7 +38,7 @@ Run:
 docker compose up -d
 ```
 
-Open you browser on [http://localhost:8188](http://localhost:8188)
+Open you browser on [http://localhost:8188](http://localhost:8188).
 
 Enjoy !
 
