@@ -63,6 +63,7 @@ function setup_dirs() {
       gligen
       hypernetworks
       inpaint
+      insightface
       ipadapter
       LLM
       loras
