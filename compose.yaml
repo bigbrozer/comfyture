@@ -1,7 +1,7 @@
 services:
   comfyui:
     hostname: comfyui
-    image: "bigbrozer/comfyui-stack:latest"
+    image: "bigbrozer/comfyture:latest"
     restart: "unless-stopped"
     runtime: "nvidia"
     gpus:

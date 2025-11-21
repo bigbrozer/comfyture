@@ -1,6 +1,23 @@
+<!-- markdownlint-disable MD024 -->
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
+
+## 0.7.0 - 2025-11-21
+
+### <!-- 0 -->🚀 Features
+
+* **comfyui**: Bump to v0.3.69
+* **core**: The project has a name: comfyture
+* **docs**: Add a contributing guide
+* **docs**: Screenshot, extensions table, storage mappings explained
+* **models**: Ensure `insightface` model directory exists
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **cd**: Reduce verbosity for cliff
+* **changelog**: Disable rule MD024 (duplicate headings)
 
 ## 0.6.0 - 2025-11-16
 
@@ -15,6 +32,7 @@ All notable changes to this project will be documented in this file.
 
 * **changelog**: Do not show tag message
 * **ci**: Do not show changelog header in github release body
+* **release**: Tag message was not formatted correctly
 
 ## 0.5.0 - 2025-11-14
 

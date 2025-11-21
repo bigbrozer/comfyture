@@ -23,7 +23,7 @@ jobs:
         id: git-cliff
         with:
           config: cliff.toml
-          args: -vv --latest --no-exec --strip header
+          args: -v --latest --no-exec --strip header
 
   build:
     name: Build
@@ -53,7 +53,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ env.COMFYUI_STACK_IMAGE }}
+            ${{ env.COMFYTURE_IMAGE }}
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
@@ -72,7 +72,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: ${{ env.COMFYUI_STACK_IMAGE }}
+          repository: ${{ env.COMFYTURE_IMAGE }}
 
   release:
     name: Release

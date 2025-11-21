@@ -36,7 +36,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ env.COMFYUI_STACK_IMAGE }}
+            ${{ env.COMFYTURE_IMAGE }}
           tags: |
             type=ref,event=pr
             type=ref,event=branch

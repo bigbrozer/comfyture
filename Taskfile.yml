@@ -24,7 +24,7 @@ tasks:
   build:
     desc: "Build the docker image"
     cmds:
-      - docker buildx bake build --set "*.tags=${COMFYUI_STACK_IMAGE}:latest"
+      - docker buildx bake build --set "*.tags=${COMFYTURE_IMAGE}:latest"
 
   tests:
     cmds:

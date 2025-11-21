@@ -5,7 +5,7 @@ services:
         - "COMFYUI_VERSION=0.3.68"
       context: "."
       dockerfile: "Dockerfile"
-    image: "bigbrozer/comfyui-stack:dev"
+    image: "bigbrozer/comfyture:dev"
     restart: "no"
     environment:
       PUID: "1000"

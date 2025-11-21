@@ -13,7 +13,7 @@ then
 fi
 
 # Bump all versions
-sed -r -i "s/COMFYUI_STACK_VERSION=.+/COMFYUI_STACK_VERSION=${next_version:1}/" "${_metadata}"
+sed -r -i "s/COMFYTURE_VERSION=.+/COMFYTURE_VERSION=${next_version:1}/" "${_metadata}"
 
 # Prepare new changelog
 git cliff --bump --output CHANGELOG.md
