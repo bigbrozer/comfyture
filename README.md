@@ -5,7 +5,7 @@ Comfyture is a ready to use Docker image and compose stack designed to simplify 
 > [!IMPORTANT]
 > While functional, this project is still under active development and may have bugs during use.
 
-![Screenshot](.readme/comfyture-screenshot-001_reduced-fs8.png)
+![Screenshot](https://github.com/bigbrozer/comfyture/raw/main/.readme/comfyture-screenshot-001_reduced-fs8.png)
 
 ## Features
 
