@@ -27,11 +27,16 @@ tasks:
       - docker buildx bake build --set "*.tags=${COMFYTURE_IMAGE}:latest"
 
   tests:
+    desc: Test to run comfyture locally
+    deps:
+      - build
     cmds:
       - docker compose -f compose.yaml -f compose.dev.yaml build
       - docker compose -f compose.yaml -f compose.dev.yaml up
 
   clean:
+    desc: Cleanup docker builder and image
+    prompt: "Beware, this command will prune all docker builder and image cache !"
     cmds:
       - docker builder prune -a -f
       - docker image prune -a -f
