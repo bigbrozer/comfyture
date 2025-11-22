@@ -4,6 +4,7 @@
 install_extension comfyui-advanced-controlnet https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet.git
 install_extension comfyui-controlnet-aux https://github.com/Fannovel16/comfyui_controlnet_aux.git
 install_extension comfyui-custom-scripts https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git
+install_extension comfyui-depthanythingv3 https://github.com/PozzettiAndrea/ComfyUI-DepthAnythingV3.git
 install_extension comfyui-essentials https://github.com/cubiq/ComfyUI_essentials.git
 install_extension comfyui-fizznodes https://github.com/FizzleDorf/ComfyUI_FizzNodes.git
 install_extension comfyui-florence2  https://github.com/kijai/ComfyUI-Florence2.git

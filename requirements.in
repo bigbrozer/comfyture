@@ -40,6 +40,10 @@ sageattention @ https://huggingface.co/Kijai/PrecompiledWheels/resolve/main/sage
 # https://github.com/pythongosssss/ComfyUI-Custom-Scripts
 #-r ""
 
+# comfyui-depthanythingv3
+# https://github.com/PozzettiAndrea/ComfyUI-DepthAnythingV3
+#-r "https://raw.githubusercontent.com/PozzettiAndrea/ComfyUI-DepthAnythingV3/refs/heads/main/requirements.txt"
+
 # comfyui-essentials
 # https://github.com/cubiq/ComfyUI_essentials
 -r "https://raw.githubusercontent.com/cubiq/ComfyUI_essentials/refs/heads/main/requirements.txt"

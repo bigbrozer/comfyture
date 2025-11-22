@@ -57,6 +57,7 @@ function setup_dirs() {
       clip_vision
       configs
       controlnet
+      depthanything3
       diffusers
       diffusion_models
       embeddings
