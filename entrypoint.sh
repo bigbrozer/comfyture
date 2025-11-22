@@ -68,7 +68,9 @@ function setup_dirs() {
       LLM
       loras
       model_patches
+      onnx
       photomaker
+      sams
       style_models
       text_encoders
       ultralytics
@@ -76,6 +78,7 @@ function setup_dirs() {
       upscale_models
       vae
       vae_approx
+      vibevoice
     )
 
     for model_dir in "${model_dirs[@]}"
