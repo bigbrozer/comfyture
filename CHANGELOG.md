@@ -4,6 +4,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.8.0 - 2025-11-30
+
+### <!-- 0 -->🚀 Features
+
+* **comfyui**: Bump to v0.3.75
+* **deps**: Add support for video thumbnails in `ComfyUI_Local_Media_Manager` node
+* **nodes**: New node for `DepthAnythingV3` support
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **entrypoint**: Old name in header
+* **readme**: Absolute url for screenshot
+* **storage**: Ensure model folders `onnx`, `sams` and `vibevoice` are presents
+
 ## 0.7.0 - 2025-11-21
 
 ### <!-- 0 -->🚀 Features
