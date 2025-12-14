@@ -122,6 +122,21 @@ function _main() {
   # We are now running as comfyui user...
   ###
 
+  # Set working dir
+  cd "${COMFYUI_HOME}"
+
+  # Install Python and dependencies
+  log "Prepare Python environment..."
+  uv venv --allow-existing "${VIRTUAL_ENV}"
+  uv pip sync --compile-bytecode --preview pylock.toml
+
+  # Extensions
+  log "Install / update extensions..."
+  source "${COMFYUI_HOME}/extensions.sh"
+
+  # We are now ready to start ComfyUI. Enjoy !
+  log "Ready to start..."
+
   cat <<'EOF'
 
  ██████╗ ██████╗ ███╗   ███╗███████╗██╗   ██╗████████╗██╗   ██╗██████╗ ███████╗
@@ -141,21 +156,6 @@ User UID:    $(id -u comfyui)
 User GID:    $(id -g comfyui)
 
 EOF
-
-  # Set working dir
-  cd "${COMFYUI_HOME}"
-
-  # Install Python and dependencies
-  log "Prepare Python environment..."
-  uv venv --allow-existing "${VIRTUAL_ENV}"
-  uv pip sync --compile-bytecode --preview pylock.toml
-
-  # Extensions
-  log "Install / update extensions..."
-  source "${COMFYUI_HOME}/extensions.sh"
-
-  # We are now ready to start ComfyUI. Enjoy !
-  log "Ready to start..."
 
   if [[ "${COMFYUI_NO_DEFAULTS:-false}" == "true" ]]
   then

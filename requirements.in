@@ -2,20 +2,19 @@
 # CORE
 #===============================================================================
 
---extra-index-url "https://download.pytorch.org/whl/cu129"
+--extra-index-url "https://download.pytorch.org/whl/cu130"
 
-# https://download.pytorch.org/whl/cu129/torch/
-torch==2.8.0+cu129
-# https://download.pytorch.org/whl/cu129/torchvision/
-torchvision==0.23.0+cu129
-# https://download.pytorch.org/whl/cu129/torchaudio/
-torchaudio==2.8.0+cu129
+# https://download.pytorch.org/whl/cu130/torch/
+torch==2.9.1+cu130
+# https://download.pytorch.org/whl/cu130/torchvision/
+torchvision==0.24.1+cu130
+# https://download.pytorch.org/whl/cu130/torchaudio/
+torchaudio==2.9.1+cu130
 xformers
 
 # Flash Attention
 # https://github.com/mjun0812/flash-attention-prebuild-wheels
-# WARNING: comfyui-wanvideowrapper requires version >=2.7.1,<=2.8.2
-flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.3.14/flash_attn-2.8.2+cu129torch2.8-cp312-cp312-linux_x86_64.whl
+flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.5.4/flash_attn-2.8.3%2Bcu130torch2.9-cp312-cp312-linux_x86_64.whl
 
 # Sage Attention
 # https://huggingface.co/Kijai/PrecompiledWheels/tree/main

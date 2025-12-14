@@ -92,6 +92,7 @@ Enjoy !
 | [Kosinkadink/ComfyUI-Advanced-ControlNet](https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet) | Advanced ControlNet nodes for ComfyUI.                        |
 | [Fannovel16/comfyui_controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux)             | Auxiliary ControlNet nodes for ComfyUI.                       |
 | [pythongosssss/ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)       | A collection of custom scripts for ComfyUI.                   |
+| [PozzettiAndrea/ComfyUI-DepthAnythingV3](https://github.com/PozzettiAndrea/ComfyUI-DepthAnythingV3)   | Nodes to support DepthAnything V3 model in ComfyUI.           |
 | [cubiq/ComfyUI_essentials](https://github.com/cubiq/ComfyUI_essentials)                               | Essential nodes and utilities for ComfyUI.                    |
 | [FizzleDorf/ComfyUI_FizzNodes](https://github.com/FizzleDorf/ComfyUI_FizzNodes)                       | A set of useful and specialized nodes for ComfyUI.            |
 | [kijai/ComfyUI-Florence2](https://github.com/kijai/ComfyUI-Florence2)                                 | ComfyUI integration for the Florence2 model.                  |
@@ -132,11 +133,11 @@ A default set of arguments are passed to ComfyUI by default:
 You can add [extra arguments](https://docs.comfy.org/interface/settings/server-config) to ComfyUI. Creates `extra.yaml`:
 
 ```yaml
-# Example to enable sage attention
+# Example to enable flash attention
 services:
   comfyui:
     command:
-      - "--enable-sage-attention"
+      - "--enable-flash-attention"
 ```
 
 Then run the stack with:

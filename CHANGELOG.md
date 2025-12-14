@@ -4,6 +4,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.9.0 - 2025-12-14
+
+### <!-- 0 -->🚀 Features
+
+* **comfyui**: Bump to 0.4.0
+* **cuda**: Bump cuda to 13.0.2
+* **flash-attention**: Bump flash-attention to 2.8.3
+* **tests**: Do not use local volumes when testing
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **python**: Bump python to 3.12.12
+
 ## 0.8.0 - 2025-11-30
 
 ### <!-- 0 -->🚀 Features

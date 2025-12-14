@@ -1,12 +1,34 @@
 services:
   comfyui:
-    build:
-      args:
-        - "COMFYUI_VERSION=0.3.68"
-      context: "."
-      dockerfile: "Dockerfile"
-    image: "bigbrozer/comfyture:dev"
+    image: "bigbrozer/comfyture:latest"
+    pull_policy: "never"
     restart: "no"
     environment:
       PUID: "1000"
       PGID: "1000"
+    volumes:
+      # Persist Python venv & cache for fast startup
+      - "python:/opt/comfyui/python"
+
+      # Persist custom nodes installations
+      - "custom_nodes:/opt/comfyui/app/custom_nodes"
+
+      # Persist models
+      - "models:/opt/comfyui/app/models"
+
+      # Persist input images
+      - "input:/opt/comfyui/app/input"
+
+      # Persist output images
+      - "output:/opt/comfyui/app/output"
+
+      # Persist user profiles
+      - "profiles:/opt/comfyui/app/user"
+
+volumes:
+  python:
+  custom_nodes:
+  models:
+  input:
+  output:
+  profiles:

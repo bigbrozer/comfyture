@@ -3,7 +3,7 @@ ARG UV_VERSION="latest"
 FROM ghcr.io/astral-sh/uv:${UV_VERSION} AS uv
 
 # https://gitlab.com/nvidia/container-images/cuda/blob/master/doc/supported-tags.md
-FROM nvidia/cuda:12.9.1-cudnn-runtime-ubuntu24.04
+FROM nvidia/cuda:13.0.2-cudnn-runtime-ubuntu24.04
 
 ENV COMFYUI_HOME="/opt/comfyui"
 

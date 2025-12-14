@@ -8,48 +8,50 @@ vars:
     sh: "cat .python-version"
 
 tasks:
-  lock:
-    desc: "Lock requirements"
+  bump:
+    desc: "Bump versions and update the changelog"
     cmds:
-      - echo "Compiling requirements..."
-      - |
-        uv pip compile \
-        --python {{.PYTHON_VERSION}} \
-        --index-strategy "unsafe-best-match" \
-        --format "pylock.toml" \
-        --output-file "pylock.toml" requirements.in
-      - echo
-      - echo "👉 Compiled requirements for ComfyUI v${COMFYUI_VERSION} using Python {{.PYTHON_VERSION}}."
+      - scripts/bump.sh
+
+  clean:
+    desc: "Clean everything"
+    deps: ["clean:tests", "clean:docker"]
+
+  clean:docker:
+    desc: "Cleanup docker builder and image"
+    cmds:
+      - docker builder prune -a -f
+      - docker image prune -a -f
+
+  clean:tests:
+    desc: "Cleanup test artifacts"
+    cmds:
+      - docker compose -f compose.yaml -f compose.dev.yaml down -v
 
   build:
     desc: "Build the docker image"
     cmds:
       - docker buildx bake build --set "*.tags=${COMFYTURE_IMAGE}:latest"
 
-  tests:
-    desc: Test to run comfyture locally
-    deps:
-      - build
+  lock:
+    desc: "Lock requirements"
     cmds:
-      - docker compose -f compose.yaml -f compose.dev.yaml build
-      - docker compose -f compose.yaml -f compose.dev.yaml up
-
-  clean:
-    desc: Cleanup docker builder and image
-    prompt: "Beware, this command will prune all docker builder and image cache !"
-    cmds:
-      - docker builder prune -a -f
-      - docker image prune -a -f
+      - echo "Installing python..."
+      - uv python install {{.PYTHON_VERSION}}
+      - echo "Compiling requirements..."
+      - |
+        uv pip compile \
+          --python {{.PYTHON_VERSION}} \
+          --index-strategy "unsafe-best-match" \
+          --format "pylock.toml" \
+          --output-file "pylock.toml" requirements.in
+      - echo
+      - echo "👉 Compiled requirements for ComfyUI v${COMFYUI_VERSION} using Python {{.PYTHON_VERSION}}."
 
   preview-changelog:
     desc: "Preview next changelog"
     cmds:
       - git cliff -v --bump --unreleased
-
-  bump:
-    desc: "Bump versions and update the changelog"
-    cmds:
-      - scripts/bump.sh
 
   tag:
     desc: "Create a new tag for this release"
@@ -57,3 +59,10 @@ tasks:
     cmds:
       - scripts/tag.sh
       - echo "Now, push commit with tags (git push origin --tags) to create the release."
+
+  tests:
+    desc: "Test to run comfyture locally"
+    deps:
+      - build
+    cmds:
+      - docker compose -f compose.yaml -f compose.dev.yaml up
