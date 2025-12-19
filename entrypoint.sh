@@ -168,7 +168,7 @@ EOF
       "--multi-user"
       "--disable-smart-memory"
       "--cache-none"
-      "--preview-method=none"
+      "--preview-method=latent2rgb"
     )
   fi
 
