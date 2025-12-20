@@ -135,6 +135,13 @@ A default set of arguments are passed to ComfyUI by default:
 You can add [extra arguments](https://docs.comfy.org/interface/settings/server-config) to ComfyUI. Creates `extra.yaml`:
 
 ```yaml
+# Example to enable sage attention
+services:
+  comfyui:
+    command:
+      - "--enable-sage-attention"
+
+# Or...
 # Example to enable flash attention
 services:
   comfyui:
