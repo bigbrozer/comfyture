@@ -17,8 +17,8 @@ xformers
 flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.5.4/flash_attn-2.8.3%2Bcu130torch2.9-cp312-cp312-linux_x86_64.whl
 
 # Sage Attention
-# https://huggingface.co/Kijai/PrecompiledWheels/tree/main
-sageattention @ https://huggingface.co/Kijai/PrecompiledWheels/resolve/main/sageattention-2.2.0-cp312-cp312-linux_x86_64.whl
+# https://github.com/bigbrozer/vinz-wheels
+sageattention @ https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0-cp312-cp312-linux_x86_64.whl
 
 # ComfyUI + Manager
 # https://github.com/comfyanonymous/ComfyUI
