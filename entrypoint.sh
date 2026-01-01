@@ -95,12 +95,14 @@ function setup_dirs() {
 }
 
 function fix_perms() {
+  local test_dir_uid
+
   if [ "$(id -u)" = '0' ]
   then
     # Fix perms with root, then restart as unpriviledged user
-    echo "${PGID}" "${PUID}" "$(stat -c %u "${COMFYUI_HOME}")"
+    test_dir_uid="$(stat -c %u "${COMFYUI_HOME}")"
 
-    if [[ "$(stat -c %u "${COMFYUI_HOME}")" != "${PUID}" ]]
+    if [[ "${test_dir_uid}" != "${PUID}" ]]
     then
       log "Change in ownership detected, please be patient while we chown existing files..."
       groupmod -o -g "${PGID}" comfyui
@@ -128,7 +130,7 @@ function _main() {
   # Install Python and dependencies
   log "Prepare Python environment..."
   uv venv --allow-existing "${VIRTUAL_ENV}"
-  uv pip sync --compile-bytecode --preview pylock.toml
+  uv pip sync --compile-bytecode pylock.toml
 
   # Extensions
   log "Install / update extensions..."
