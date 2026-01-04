@@ -7,7 +7,6 @@ install_extension comfyui-custom-scripts https://github.com/pythongosssss/ComfyU
 install_extension comfyui-depthanythingv3 https://github.com/PozzettiAndrea/ComfyUI-DepthAnythingV3.git
 install_extension comfyui-essentials https://github.com/cubiq/ComfyUI_essentials.git
 install_extension comfyui-fizznodes https://github.com/FizzleDorf/ComfyUI_FizzNodes.git
-install_extension comfyui-florence2  https://github.com/kijai/ComfyUI-Florence2.git
 install_extension comfyui-gguf https://github.com/city96/ComfyUI-GGUF.git
 install_extension comfyui-impact-pack https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
 install_extension comfyui-impact-subpack https://github.com/ltdrdata/ComfyUI-Impact-Subpack.git
@@ -26,3 +25,10 @@ install_extension comfyui-ultimatesdupscale https://github.com/ssitu/ComfyUI_Ult
 install_extension comfyui-vibevoice https://github.com/Enemyx-net/VibeVoice-ComfyUI.git
 install_extension comfyui-videohelpersuite https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
 install_extension comfyui-wanvideowrapper https://github.com/kijai/ComfyUI-WanVideoWrapper.git
+
+# Remove previous unwanted extensions
+#
+# Superseeded by comfyui-qwenvl
+remove_extension comfyui-florence2
+# All those nodes are a bit clunky
+remove_extension comfyui-promptstylers

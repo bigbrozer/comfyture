@@ -54,10 +54,6 @@ matrix-nio # Needed for sharing features
 # https://github.com/FizzleDorf/ComfyUI_FizzNodes
 -r "https://raw.githubusercontent.com/FizzleDorf/ComfyUI_FizzNodes/refs/heads/main/requirements.txt"
 
-# comfyui-florence2
-# https://github.com/kijai/ComfyUI-Florence2
--r "https://raw.githubusercontent.com/kijai/ComfyUI-Florence2/refs/heads/main/requirements.txt"
-
 # comfyui-gguf
 # https://github.com/city96/ComfyUI-GGUF
 -r "https://raw.githubusercontent.com/city96/ComfyUI-GGUF/refs/heads/main/requirements.txt"

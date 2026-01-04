@@ -292,6 +292,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/43/fa/6d96a0978d19e17b6
 wheels = [{ url = "https://files.pythonhosted.org/packages/4e/8c/f3147f5c4b73e7550fe5f9352eaa956ae838d5c51eb58e7a25b9f3e2643b/decorator-5.2.1-py3-none-any.whl", upload-time = 2025-02-24T04:41:32Z, size = 9190, hashes = { sha256 = "d316bb415a2d9e2d2b3abcc4084c6502fc09240e292cd76a76afc106a1c8e04a" } }]
 
 [[packages]]
+name = "decord"
+version = "0.6.0"
+wheels = [{ url = "https://files.pythonhosted.org/packages/11/79/936af42edf90a7bd4e41a6cac89c913d4b47fa48a26b042d5129a9242ee3/decord-0.6.0-py3-none-manylinux2010_x86_64.whl", upload-time = 2021-06-14T21:30:55Z, size = 13602299, hashes = { sha256 = "51997f20be8958e23b7c4061ba45d0efcd86bffd5fe81c695d0befee0d442976" } }]
+
+[[packages]]
 name = "diffusers"
 version = "0.33.1"
 sdist = { url = "https://files.pythonhosted.org/packages/82/cc/1ef6bdc99d3864f6d1ee11bdbe3708b9d33ce35e7671557f641897480956/diffusers-0.33.1.tar.gz", upload-time = 2025-04-10T05:20:29Z, size = 2896103, hashes = { sha256 = "fc7f140295d2ec82b1e7474b77bb7057fc0686c14eadc54ca0e52a66527e18a2" } }
@@ -437,6 +442,11 @@ wheels = [
 ]
 
 [[packages]]
+name = "groundingdino-py"
+version = "0.4.0"
+sdist = { url = "https://files.pythonhosted.org/packages/da/26/af35089119098ecd9d2e174b9cfbeb0c1246d65449c718b4e57328a08c1c/groundingdino-py-0.4.0.tar.gz", upload-time = 2023-05-23T16:03:15Z, size = 82337, hashes = { sha256 = "23de56af498b7cdcc024eb1062fc3179e3cc4dacd92adbfb625097065377700f" } }
+
+[[packages]]
 name = "h11"
 version = "0.16.0"
 sdist = { url = "https://files.pythonhosted.org/packages/01/ee/02a2c011bdab74c6fb3c75474d40b3052059d95df7e73351460c8588d963/h11-0.16.0.tar.gz", upload-time = 2025-04-24T03:35:25Z, size = 101250, hashes = { sha256 = "4e35b956cf45792e4caa5885e69fba00bdbc6ffafbfa020300e549b208ee5ff1" } }
@@ -451,7 +461,6 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/69/b2/119f6e6dcbd96f9
 [[packages]]
 name = "hf-xet"
 version = "1.1.9"
-marker = "platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'arm64' or platform_machine == 'x86_64'"
 sdist = { url = "https://files.pythonhosted.org/packages/23/0f/5b60fc28ee7f8cc17a5114a584fd6b86e11c3e0a6e142a7f97a161e9640a/hf_xet-1.1.9.tar.gz", upload-time = 2025-08-27T23:05:19Z, size = 484242, hashes = { sha256 = "c99073ce404462e909f1d5839b2d14a3827b8fe75ed8aed551ba6609c026c803" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/81/42/7e6955cf0621e87491a1fb8cad755d5c2517803cea174229b0ec00ff0166/hf_xet-1.1.9-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", upload-time = 2025-08-27T23:05:12Z, size = 3186789, hashes = { sha256 = "a4c5a840c2c4e6ec875ed13703a60e3523bc7f48031dfd750923b2a4d1a5fc3c" } }]
 
@@ -847,6 +856,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/3d/60/e56e8ec44ed34006e
 wheels = [{ url = "https://files.pythonhosted.org/packages/11/23/25ec2ba723ac62b99e8fed6d7b59094dadb15e38d4c007331cc9ae3dfa5f/onnx-1.18.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", upload-time = 2025-05-12T22:02:32Z, size = 17584084, hashes = { sha256 = "99afac90b4cdb1471432203c3c1f74e16549c526df27056d39f41a9a47cfb4af" } }]
 
 [[packages]]
+name = "onnxruntime"
+version = "1.23.2"
+wheels = [{ url = "https://files.pythonhosted.org/packages/ef/88/9cc25d2bafe6bc0d4d3c1db3ade98196d5b355c0b273e6a5dc09c5d5d0d5/onnxruntime-1.23.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2025-10-22T03:47:02Z, size = 17382649, hashes = { sha256 = "0f9b4ae77f8e3c9bee50c27bc1beede83f786fe1d52e99ac85aa8d65a01e9b77" } }]
+
+[[packages]]
 name = "onnxruntime-gpu"
 version = "1.22.0"
 wheels = [{ url = "https://files.pythonhosted.org/packages/b5/5c/3f9700ba277d52c121dd2cebc8a672fb60b53e888972fc6682b6692a766c/onnxruntime_gpu-1.22.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2025-05-09T19:39:54Z, size = 283199528, hashes = { sha256 = "86b064c8f6cbe6da03f51f46351237d985f8fd5eb907d3f9997ea91881131a13" } }]
@@ -970,6 +984,12 @@ name = "py-cpuinfo"
 version = "9.0.0"
 sdist = { url = "https://files.pythonhosted.org/packages/37/a8/d832f7293ebb21690860d2e01d8115e5ff6f2ae8bbdc953f0eb0fa4bd2c7/py-cpuinfo-9.0.0.tar.gz", upload-time = 2022-10-25T20:38:06Z, size = 104716, hashes = { sha256 = "3cdbbf3fac90dc6f118bfd64384f309edeadd902d7c8fb17f02ffa1fc3f49690" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/e0/a9/023730ba63db1e494a271cb018dcd361bd2c917ba7004c3e49d5daf795a2/py_cpuinfo-9.0.0-py3-none-any.whl", upload-time = 2022-10-25T20:38:27Z, size = 22335, hashes = { sha256 = "859625bc251f64e21f077d099d4162689c762b5d6a4c3c97553d56241c9674d5" } }]
+
+[[packages]]
+name = "pycocotools"
+version = "2.0.11"
+sdist = { url = "https://files.pythonhosted.org/packages/a2/df/32354b5dda963ffdfc8f75c9acf8828ef7890723a4ed57bb3ff2dc1d6f7e/pycocotools-2.0.11.tar.gz", upload-time = 2025-12-15T22:31:46Z, size = 25381, hashes = { sha256 = "34254d76da85576fcaf5c1f3aa9aae16b8cb15418334ba4283b800796bd1993d" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/23/59/dc81895beff4e1207a829d40d442ea87cefaac9f6499151965f05c479619/pycocotools-2.0.11-cp312-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2025-12-15T22:31:13Z, size = 411685, hashes = { sha256 = "a82d1c9ed83f75da0b3f244f2a3cf559351a283307bd9b79a4ee2b93ab3231dd" } }]
 
 [[packages]]
 name = "pycollada"
@@ -1299,6 +1319,12 @@ name = "stringzilla"
 version = "3.12.5"
 sdist = { url = "https://files.pythonhosted.org/packages/91/77/6e458f53f3ae04df00fd499a124561ad626253bf1c4ee6e2f027e2ddb547/stringzilla-3.12.5.tar.gz", upload-time = 2025-04-18T21:35:49Z, size = 186796, hashes = { sha256 = "57958a420c8e5bfd958740a76a35d357f64c18713a48dbf5983ae0a4e50c010d" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/6d/69/b6078679cab6b4ea92a2895d8643875bb27398f4e5aacde5a7648e641708/stringzilla-3.12.5-cp312-cp312-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2025-04-18T21:33:03Z, size = 308367, hashes = { sha256 = "48efbe3ea3f9dc69b4262f4858b68b0a2abf546f9be1927ef208026e2838393b" } }]
+
+[[packages]]
+name = "supervision"
+version = "0.6.0"
+sdist = { url = "https://files.pythonhosted.org/packages/4f/95/2e94efc178f17275a6e2cbffee079681695edf72d125b78d4755f49128aa/supervision-0.6.0.tar.gz", upload-time = 2023-04-19T21:03:48Z, size = 26504, hashes = { sha256 = "e1e3e54034c672414aca57b3f6c5e915967a15e1ffd1510956c61f12563a3c56" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/42/7a/4fe657cae29eedeca34756a80a053ac3b1b3c80462cdb6768f428625f9ca/supervision-0.6.0-py3-none-any.whl", upload-time = 2023-04-19T21:03:46Z, size = 31619, hashes = { sha256 = "e0366fa4d32db84f94f4472a260414fc6fb01b69bdb0155c692c0dc62bdb9ea7" } }]
 
 [[packages]]
 name = "svg-path"
