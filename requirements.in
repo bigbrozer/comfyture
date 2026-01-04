@@ -101,6 +101,10 @@ moviepy
 # https://github.com/rgthree/rgthree-comfy
 -r "https://raw.githubusercontent.com/rgthree/rgthree-comfy/refs/heads/main/requirements.txt"
 
+# comfyui-rmbg
+# https://github.com/1038lab/ComfyUI-RMBG
+-r "https://raw.githubusercontent.com/1038lab/ComfyUI-RMBG/refs/heads/main/requirements.txt"
+
 # comfyui-segment-anything
 # https://github.com/storyicon/comfyui_segment_anything
 -r "https://raw.githubusercontent.com/storyicon/comfyui_segment_anything/refs/heads/main/requirements.txt"

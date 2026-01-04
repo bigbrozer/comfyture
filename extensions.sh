@@ -18,6 +18,7 @@ install_extension comfyui-local-image-gallery https://github.com/Firetheft/Comfy
 install_extension comfyui-ollama https://github.com/stavsap/comfyui-ollama.git
 install_extension comfyui-qwenvl https://github.com/1038lab/ComfyUI-QwenVL.git
 install_extension comfyui-rgthree https://github.com/rgthree/rgthree-comfy.git
+install_extension comfyui-rmbg https://github.com/1038lab/ComfyUI-RMBG.git
 install_extension comfyui-segment-anything https://github.com/storyicon/comfyui_segment_anything.git
 install_extension comfyui-segment-anything-2 https://github.com/kijai/ComfyUI-segment-anything-2.git
 install_extension comfyui-tooling-nodes https://github.com/Acly/comfyui-tooling-nodes.git
