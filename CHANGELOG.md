@@ -4,6 +4,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.11.0 - 2026-01-04
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.7.0
+  * <https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.7.0>
+* **nodes**: Pre-install comfyui-rmbg
+  * A custom node engineered for advanced image background removal and precise segmentation of objects, faces, clothing, and fashion elements.
+  * See [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) for details
+* **nodes**: Pre-install comfyui-qwenvl
+  * This custom node integrates the powerful Qwen-VL series of vision-language models including the latest Qwen3-VL and Qwen2.5-VL.
+  * This is the version without GGUF support.
+  * See [1038lab/ComfyUI-QwenVL](https://github.com/1038lab/ComfyUI-QwenVL) for details
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **perms**: Changed permission test logic
+
 ## 0.10.0 - 2025-12-20
 
 ### <!-- 0 -->🚀 Features
