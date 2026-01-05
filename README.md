@@ -88,32 +88,32 @@ Enjoy !
 
 ## Pre-installed extensions
 
-| Extension                                                                                             | Description                                                   |
-|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Kosinkadink/ComfyUI-Advanced-ControlNet](https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet) | Advanced ControlNet nodes for ComfyUI.                        |
-| [Fannovel16/comfyui_controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux)             | Auxiliary ControlNet nodes for ComfyUI.                       |
-| [pythongosssss/ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)       | A collection of custom scripts for ComfyUI.                   |
-| [PozzettiAndrea/ComfyUI-DepthAnythingV3](https://github.com/PozzettiAndrea/ComfyUI-DepthAnythingV3)   | Nodes to support DepthAnything V3 model in ComfyUI.           |
-| [cubiq/ComfyUI_essentials](https://github.com/cubiq/ComfyUI_essentials)                               | Essential nodes and utilities for ComfyUI.                    |
-| [FizzleDorf/ComfyUI_FizzNodes](https://github.com/FizzleDorf/ComfyUI_FizzNodes)                       | A set of useful and specialized nodes for ComfyUI.            |
-| [kijai/ComfyUI-Florence2](https://github.com/kijai/ComfyUI-Florence2)                                 | ComfyUI integration for the Florence2 model.                  |
-| [city96/ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF)                                         | Nodes for working with GGUF models in ComfyUI.                |
-| [ltdrdata/ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)                       | A comprehensive pack of nodes for ComfyUI.                    |
-| [ltdrdata/ComfyUI-Impact-Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)                 | A smaller subset of nodes from the Impact pack for ComfyUI.   |
-| [Acly/comfyui-inpaint-nodes](https://github.com/Acly/comfyui-inpaint-nodes)                           | Inpainting nodes for ComfyUI.                                 |
-| [cubiq/ComfyUI_IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)                       | IPAdapter Plus nodes for ComfyUI.                             |
-| [kijai/ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)                                     | A collection of useful nodes created by kijai.                |
-| [Firetheft/ComfyUI_Local_Image_Gallery](https://github.com/Firetheft/ComfyUI_Local_Image_Gallery)     | A local image gallery node for ComfyUI.                       |
-| [stavsap/comfyui-ollama](https://github.com/stavsap/comfyui-ollama)                                   | Ollama integration for ComfyUI.                               |
-| [wolfden/ComfyUi_PromptStylers](https://github.com/wolfden/ComfyUi_PromptStylers)                     | Nodes for styling prompts in ComfyUI.                         |
-| [rgthree/rgthree-comfy](https://github.com/rgthree/rgthree-comfy)                                     | Nodes and tools from the rgthree ecosystem for ComfyUI.       |
-| [storyicon/comfyui_segment_anything](https://github.com/storyicon/comfyui_segment_anything)           | Segment Anything model integration for ComfyUI.               |
-| [kijai/ComfyUI-segment-anything-2](https://github.com/kijai/ComfyUI-segment-anything-2)               | Another implementation of Segment Anything nodes for ComfyUI. |
-| [Acly/comfyui-tooling-nodes](https://github.com/Acly/comfyui-tooling-nodes)                           | Utility and tooling nodes for ComfyUI.                        |
-| [ssitu/ComfyUI_UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)                 | Advanced upscaling nodes for Stable Diffusion in ComfyUI.     |
-| [Enemyx-net/VibeVoice-ComfyUI](https://github.com/Enemyx-net/VibeVoice-ComfyUI)                       | Integration for using VibeVoice audio generation in ComfyUI.  |
-| [Kosinkadink/ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)       | A suite of nodes for video processing in ComfyUI.             |
-| [kijai/ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)                     | Nodes for wrapping and processing video in ComfyUI.           |
+| Extension                                                                                             | Description                                                                                                   |
+|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| [1038lab/ComfyUI-QwenVL](https://github.com/1038lab/ComfyUI-QwenVL)                                   | Integrates the powerful Qwen-VL models.                                                                       |
+| [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG)                                       | Advanced image background removal and precise segmentation of objects, faces, clothing, and fashion elements. |
+| [Acly/comfyui-inpaint-nodes](https://github.com/Acly/comfyui-inpaint-nodes)                           | Inpainting nodes for ComfyUI.                                                                                 |
+| [Acly/comfyui-tooling-nodes](https://github.com/Acly/comfyui-tooling-nodes)                           | Utility and tooling nodes for ComfyUI.                                                                        |
+| [city96/ComfyUI-GGUF](https://github.com/city96/ComfyUI-GGUF)                                         | Nodes for working with GGUF models in ComfyUI.                                                                |
+| [cubiq/ComfyUI_essentials](https://github.com/cubiq/ComfyUI_essentials)                               | Essential nodes and utilities for ComfyUI.                                                                    |
+| [cubiq/ComfyUI_IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)                       | IPAdapter Plus nodes for ComfyUI.                                                                             |
+| [Enemyx-net/VibeVoice-ComfyUI](https://github.com/Enemyx-net/VibeVoice-ComfyUI)                       | Integration for using VibeVoice audio generation in ComfyUI.                                                  |
+| [Fannovel16/comfyui_controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux)             | Auxiliary ControlNet nodes for ComfyUI.                                                                       |
+| [Firetheft/ComfyUI_Local_Image_Gallery](https://github.com/Firetheft/ComfyUI_Local_Image_Gallery)     | A local image gallery node for ComfyUI.                                                                       |
+| [FizzleDorf/ComfyUI_FizzNodes](https://github.com/FizzleDorf/ComfyUI_FizzNodes)                       | A set of useful and specialized nodes for ComfyUI.                                                            |
+| [kijai/ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)                                     | A collection of useful nodes created by kijai.                                                                |
+| [kijai/ComfyUI-segment-anything-2](https://github.com/kijai/ComfyUI-segment-anything-2)               | Another implementation of Segment Anything nodes for ComfyUI.                                                 |
+| [kijai/ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)                     | Nodes for wrapping and processing video in ComfyUI.                                                           |
+| [Kosinkadink/ComfyUI-Advanced-ControlNet](https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet) | Advanced ControlNet nodes for ComfyUI.                                                                        |
+| [Kosinkadink/ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)       | A suite of nodes for video processing in ComfyUI.                                                             |
+| [ltdrdata/ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)                       | A comprehensive pack of nodes for ComfyUI.                                                                    |
+| [ltdrdata/ComfyUI-Impact-Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)                 | A smaller subset of nodes from the Impact pack for ComfyUI.                                                   |
+| [PozzettiAndrea/ComfyUI-DepthAnythingV3](https://github.com/PozzettiAndrea/ComfyUI-DepthAnythingV3)   | Nodes to support DepthAnything V3 model in ComfyUI.                                                           |
+| [pythongosssss/ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)       | A collection of custom scripts for ComfyUI.                                                                   |
+| [rgthree/rgthree-comfy](https://github.com/rgthree/rgthree-comfy)                                     | Nodes and tools from the rgthree ecosystem for ComfyUI.                                                       |
+| [ssitu/ComfyUI_UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)                 | Advanced upscaling nodes for Stable Diffusion in ComfyUI.                                                     |
+| [stavsap/comfyui-ollama](https://github.com/stavsap/comfyui-ollama)                                   | Ollama integration for ComfyUI.                                                                               |
+| [storyicon/comfyui_segment_anything](https://github.com/storyicon/comfyui_segment_anything)           | Segment Anything model integration for ComfyUI.                                                               |
 
 ## Configuration
 
