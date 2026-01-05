@@ -92,6 +92,7 @@ moviepy
 # comfyui-qwenvl
 # https://github.com/1038lab/ComfyUI-QwenVL
 -r "https://raw.githubusercontent.com/1038lab/ComfyUI-QwenVL/refs/heads/main/requirements.txt"
+transformers>=4.57.0
 
 # comfyui-rgthree
 # https://github.com/rgthree/rgthree-comfy

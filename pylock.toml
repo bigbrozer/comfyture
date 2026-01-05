@@ -1370,9 +1370,9 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/77/f7/144d69d921fba82
 
 [[packages]]
 name = "tokenizers"
-version = "0.21.1"
-sdist = { url = "https://files.pythonhosted.org/packages/92/76/5ac0c97f1117b91b7eb7323dcd61af80d72f790b4df71249a7850c195f30/tokenizers-0.21.1.tar.gz", upload-time = 2025-03-13T10:51:18Z, size = 343256, hashes = { sha256 = "a1bb04dc5b448985f86ecd4b05407f5a8d97cb2c0532199b2a302a604a0165ab" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/8a/63/38be071b0c8e06840bc6046991636bcb30c27f6bb1e670f4f4bc87cf49cc/tokenizers-0.21.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", upload-time = 2025-03-13T10:51:06Z, size = 3038874, hashes = { sha256 = "2dd9a0061e403546f7377df940e866c3e678d7d4e9643d0461ea442b4f89e61a" } }]
+version = "0.22.1"
+sdist = { url = "https://files.pythonhosted.org/packages/1c/46/fb6854cec3278fbfa4a75b50232c77622bc517ac886156e6afbfa4d8fc6e/tokenizers-0.22.1.tar.gz", upload-time = 2025-09-19T09:49:23Z, size = 363123, hashes = { sha256 = "61de6522785310a309b3407bac22d99c4db5dba349935e99e4d15ea2226af2d9" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/d0/c6/dc3a0db5a6766416c32c034286d7c2d406da1f498e4de04ab1b8959edd00/tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", upload-time = 2025-09-19T09:49:07Z, size = 3250221, hashes = { sha256 = "e2ef6063d7a84994129732b47e7915e8710f27f99f3a3260b8a38fc7ccd083f4" } }]
 
 [[packages]]
 name = "toml"
@@ -1413,9 +1413,9 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/73/54/d2805324fb746d8
 
 [[packages]]
 name = "transformers"
-version = "4.51.3"
-sdist = { url = "https://files.pythonhosted.org/packages/f1/11/7414d5bc07690002ce4d7553602107bf969af85144bbd02830f9fb471236/transformers-4.51.3.tar.gz", upload-time = 2025-04-14T08:15:00Z, size = 8941266, hashes = { sha256 = "e292fcab3990c6defe6328f0f7d2004283ca81a7a07b2de9a46d67fd81ea1409" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/a9/b6/5257d04ae327b44db31f15cce39e6020cc986333c715660b1315a9724d82/transformers-4.51.3-py3-none-any.whl", upload-time = 2025-04-14T08:13:43Z, size = 10383940, hashes = { sha256 = "fd3279633ceb2b777013234bbf0b4f5c2d23c4626b05497691f00cfda55e8a83" } }]
+version = "4.57.3"
+sdist = { url = "https://files.pythonhosted.org/packages/dd/70/d42a739e8dfde3d92bb2fff5819cbf331fe9657323221e79415cd5eb65ee/transformers-4.57.3.tar.gz", upload-time = 2025-11-25T15:51:30Z, size = 10139680, hashes = { sha256 = "df4945029aaddd7c09eec5cad851f30662f8bd1746721b34cc031d70c65afebc" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/6a/6b/2f416568b3c4c91c96e5a365d164f8a4a4a88030aa8ab4644181fdadce97/transformers-4.57.3-py3-none-any.whl", upload-time = 2025-11-25T15:51:26Z, size = 11993463, hashes = { sha256 = "c77d353a4851b1880191603d36acb313411d3577f6e2897814f333841f7003f4" } }]
 
 [[packages]]
 name = "transparent-background"
