@@ -9,6 +9,7 @@ PUID=${PUID:-2000}
 PGID=${PGID:-2000}
 
 export UV_CACHE_DIR="${COMFYUI_HOME}/python/cache"
+export UV_HTTP_TIMEOUT="60"
 export VIRTUAL_ENV="${COMFYUI_HOME}/python/venv"
 
 _is_sourced() {
