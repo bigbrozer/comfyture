@@ -14,16 +14,20 @@ xformers
 
 # Flash Attention
 # https://github.com/mjun0812/flash-attention-prebuild-wheels
-flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.5.4/flash_attn-2.8.3%2Bcu130torch2.9-cp312-cp312-linux_x86_64.whl
+flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.6.8/flash_attn-2.8.3+cu130torch2.9-cp313-cp313-linux_x86_64.whl
 
 # Sage Attention
 # https://github.com/bigbrozer/vinz-wheels
-sageattention @ https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0-cp312-cp312-linux_x86_64.whl
+sageattention @ https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0-cp313-cp313-linux_x86_64.whl
+
+# Fixing packages version to have pre-built wheels for Python 3.13
+sentencepiece>=0.2.1
+av>=15.0.0,<16
 
 # ComfyUI + Manager
-# https://github.com/comfyanonymous/ComfyUI
--r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v${COMFYUI_VERSION}/requirements.txt"
--r "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/refs/tags/v${COMFYUI_VERSION}/manager_requirements.txt"
+# https://github.com/Comfy-Org/ComfyUI
+-r "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/refs/tags/v${COMFYUI_VERSION}/requirements.txt"
+-r "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/refs/tags/v${COMFYUI_VERSION}/manager_requirements.txt"
 matrix-nio # Needed for sharing features
 
 #===============================================================================
@@ -44,7 +48,11 @@ matrix-nio # Needed for sharing features
 
 # comfyui-depthanythingv3
 # https://github.com/PozzettiAndrea/ComfyUI-DepthAnythingV3
-#-r "https://raw.githubusercontent.com/PozzettiAndrea/ComfyUI-DepthAnythingV3/refs/heads/main/requirements.txt"
+-r "https://raw.githubusercontent.com/PozzettiAndrea/ComfyUI-DepthAnythingV3/refs/heads/main/requirements.txt"
+
+# comfyui-detail-daemon
+# https://github.com/Jonseed/ComfyUI-Detail-Daemon
+-r "https://raw.githubusercontent.com/Jonseed/ComfyUI-Detail-Daemon/refs/heads/main/requirements.txt"
 
 # comfyui-essentials
 # https://github.com/cubiq/ComfyUI_essentials
@@ -53,10 +61,6 @@ matrix-nio # Needed for sharing features
 # comfyui-fizznodes
 # https://github.com/FizzleDorf/ComfyUI_FizzNodes
 -r "https://raw.githubusercontent.com/FizzleDorf/ComfyUI_FizzNodes/refs/heads/main/requirements.txt"
-
-# comfyui-florence2
-# https://github.com/kijai/ComfyUI-Florence2
--r "https://raw.githubusercontent.com/kijai/ComfyUI-Florence2/refs/heads/main/requirements.txt"
 
 # comfyui-gguf
 # https://github.com/city96/ComfyUI-GGUF
@@ -93,13 +97,18 @@ moviepy
 # https://github.com/stavsap/comfyui-ollama
 -r "https://raw.githubusercontent.com/stavsap/comfyui-ollama/refs/heads/main/requirements.txt"
 
-# comfyui-promptstylers
-# https://github.com/wolfden/ComfyUi_PromptStylers
-#-r ""
+# comfyui-qwenvl
+# https://github.com/1038lab/ComfyUI-QwenVL
+-r "https://raw.githubusercontent.com/1038lab/ComfyUI-QwenVL/refs/heads/main/requirements.txt"
+transformers>=4.57.0
 
 # comfyui-rgthree
 # https://github.com/rgthree/rgthree-comfy
 -r "https://raw.githubusercontent.com/rgthree/rgthree-comfy/refs/heads/main/requirements.txt"
+
+# comfyui-rmbg
+# https://github.com/1038lab/ComfyUI-RMBG
+-r "https://raw.githubusercontent.com/1038lab/ComfyUI-RMBG/refs/heads/main/requirements.txt"
 
 # comfyui-segment-anything
 # https://github.com/storyicon/comfyui_segment_anything

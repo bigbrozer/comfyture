@@ -38,7 +38,7 @@ ARG COMFYUI_VERSION
 
 # hadolint ignore=DL3003
 RUN set -ex \
-    && git clone --depth 1 --branch "v${COMFYUI_VERSION}" https://github.com/comfyanonymous/ComfyUI.git app/ \
+    && git clone --depth 1 --branch "v${COMFYUI_VERSION}" https://github.com/Comfy-Org/ComfyUI.git app/ \
     && install -d \
         "python" \
         "app/custom_nodes" \

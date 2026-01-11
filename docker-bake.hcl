@@ -19,7 +19,7 @@ target "build" {
   context = "."
   dockerfile = "Dockerfile"
   args = {
-    # https://github.com/comfyanonymous/ComfyUI/releases
+    # https://github.com/Comfy-Org/ComfyUI/releases
     "COMFYUI_VERSION" = COMFYUI_VERSION,
     # https://github.com/astral-sh/uv/releases
     "UV_VERSION" = UV_VERSION,
