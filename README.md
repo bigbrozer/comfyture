@@ -1,6 +1,6 @@
 # 🍓 Comfyture
 
-Comfyture is a ready to use Docker image and compose stack designed to simplify running [ComfyUI](https://github.com/comfyanonymous/ComfyUI) with NVIDIA GPU acceleration. Unlike traditional setups, this stack eliminates complex configuration steps while pre-installing 20+ extensions (custom nodes).
+Comfyture is a ready to use Docker image and compose stack designed to simplify running [ComfyUI](https://github.com/Comfy-Org/ComfyUI) with NVIDIA GPU acceleration. Unlike traditional setups, this stack eliminates complex configuration steps while pre-installing 20+ extensions (custom nodes).
 
 > [!IMPORTANT]
 > While functional, this project is still under active development and may have bugs during use.

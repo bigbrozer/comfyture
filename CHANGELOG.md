@@ -9,7 +9,7 @@ All notable changes to this project will be documented in this file.
 ### <!-- 0 -->🚀 Features
 
 * **comfy**: Bump to v0.7.0
-  * <https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.7.0>
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.7.0>
 * **nodes**: Pre-install comfyui-rmbg
   * A custom node engineered for advanced image background removal and precise segmentation of objects, faces, clothing, and fashion elements.
   * See [1038lab/ComfyUI-RMBG](https://github.com/1038lab/ComfyUI-RMBG) for details
@@ -27,8 +27,8 @@ All notable changes to this project will be documented in this file.
 ### <!-- 0 -->🚀 Features
 
 * **comfy**: Bump to v0.5.1
-  * Announcement for [v0.5.0](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.5.0)
-  * Patch release [v0.5.1](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.5.1)
+  * Announcement for [v0.5.0](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.5.0)
+  * Patch release [v0.5.1](https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.5.1)
 * **sage-attention**: Use pre-compiled wheels with cuda 13 support
 * **sharing**: Add `matrix-nio` dependency for sharing support
 * **startup**: Enable the new manager
