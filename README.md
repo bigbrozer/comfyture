@@ -101,6 +101,7 @@ Enjoy !
 | [Fannovel16/comfyui_controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux)             | Auxiliary ControlNet nodes for ComfyUI.                                                                       |
 | [Firetheft/ComfyUI_Local_Image_Gallery](https://github.com/Firetheft/ComfyUI_Local_Image_Gallery)     | A local image gallery node for ComfyUI.                                                                       |
 | [FizzleDorf/ComfyUI_FizzNodes](https://github.com/FizzleDorf/ComfyUI_FizzNodes)                       | A set of useful and specialized nodes for ComfyUI.                                                            |
+| [Jonseed/ComfyUI-Detail-Daemon](https://github.com/Jonseed/ComfyUI-Detail-Daemon)                     | Adjust sigmas that generally enhance details.                                                                 |
 | [kijai/ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes)                                     | A collection of useful nodes created by kijai.                                                                |
 | [kijai/ComfyUI-segment-anything-2](https://github.com/kijai/ComfyUI-segment-anything-2)               | Another implementation of Segment Anything nodes for ComfyUI.                                                 |
 | [kijai/ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)                     | Nodes for wrapping and processing video in ComfyUI.                                                           |
