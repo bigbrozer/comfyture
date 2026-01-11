@@ -133,6 +133,10 @@ function _main() {
   uv venv --allow-existing "${VIRTUAL_ENV}"
   uv pip sync --compile-bytecode pylock.toml
 
+  log "Uv cache size: $(uv cache size --human)"
+  uv cache prune
+  log "Uv cache size after pruning: $(uv cache size --human)"
+
   # Extensions
   log "Install / update extensions..."
   source "${COMFYUI_HOME}/extensions.sh"
