@@ -23,6 +23,7 @@ sageattention @ https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/whe
 # Fixing packages version to have pre-built wheels for Python 3.13
 sentencepiece>=0.2.1
 av>=15.0.0,<16
+numba>=0.63.1,<1
 
 # ComfyUI + Manager
 # https://github.com/Comfy-Org/ComfyUI
