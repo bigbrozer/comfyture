@@ -67,6 +67,7 @@ function setup_dirs() {
       inpaint
       insightface
       ipadapter
+      latent_upscale_models
       LLM
       loras
       model_patches
