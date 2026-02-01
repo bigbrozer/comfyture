@@ -178,6 +178,7 @@ EOF
       "--cache-none"
       "--preview-method=latent2rgb"
       "--enable-manager"
+      "--disable-manager-ui"
     )
   fi
 
