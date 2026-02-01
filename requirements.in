@@ -94,6 +94,10 @@ onnxruntime-gpu
 -r "https://raw.githubusercontent.com/Firetheft/ComfyUI_Local_Media_Manager/refs/heads/main/requirements.txt"
 moviepy
 
+# comfyui-ltxvideo
+# https://github.com/Lightricks/ComfyUI-LTXVideo
+-r "https://raw.githubusercontent.com/Lightricks/ComfyUI-LTXVideo/refs/heads/master/requirements.txt"
+
 # comfyui-ollama
 # https://github.com/stavsap/comfyui-ollama
 -r "https://raw.githubusercontent.com/stavsap/comfyui-ollama/refs/heads/main/requirements.txt"
