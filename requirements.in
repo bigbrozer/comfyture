@@ -89,6 +89,10 @@ onnxruntime-gpu
 # https://github.com/kijai/ComfyUI-KJNodes
 -r "https://raw.githubusercontent.com/kijai/ComfyUI-KJNodes/refs/heads/main/requirements.txt"
 
+# comfyui-lanpaint
+# https://github.com/scraed/LanPaint
+#-r ""
+
 # comfyui-local-image-gallery
 # https://github.com/Firetheft/ComfyUI_Local_Media_Manager
 -r "https://raw.githubusercontent.com/Firetheft/ComfyUI_Local_Media_Manager/refs/heads/main/requirements.txt"

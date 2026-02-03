@@ -113,6 +113,7 @@ Enjoy !
 | [PozzettiAndrea/ComfyUI-DepthAnythingV3](https://github.com/PozzettiAndrea/ComfyUI-DepthAnythingV3)   | Nodes to support DepthAnything V3 model in ComfyUI.                                                            |
 | [pythongosssss/ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)       | A collection of custom scripts for ComfyUI.                                                                    |
 | [rgthree/rgthree-comfy](https://github.com/rgthree/rgthree-comfy)                                     | Nodes and tools from the rgthree ecosystem for ComfyUI.                                                        |
+| [scraed/LanPaint](https://github.com/scraed/LanPaint)                                                 | Universally applicable inpainting ability for every model.                                                     |
 | [ssitu/ComfyUI_UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)                 | Advanced upscaling nodes for Stable Diffusion in ComfyUI.                                                      |
 | [stavsap/comfyui-ollama](https://github.com/stavsap/comfyui-ollama)                                   | Ollama integration for ComfyUI.                                                                                |
 | [storyicon/comfyui_segment_anything](https://github.com/storyicon/comfyui_segment_anything)           | Segment Anything model integration for ComfyUI.                                                                |
