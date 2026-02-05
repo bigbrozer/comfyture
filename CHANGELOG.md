@@ -4,6 +4,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.15.0 - 2026-02-05
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.12.3
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.12.3>
+* **nodes**: Add `comfyui-lanpaint` nodes
+  * [comfyui-lanpaint](https://github.com/scraed/LanPaint)
+  * Universally applicable inpainting ability for every model.
+* **nodes**: Add `comfyui-ltxvideo` nodes
+  * [comfyui-ltxvideo](https://github.com/Lightricks/ComfyUI-LTXVideo)
+  * A collection of powerful custom nodes that extend ComfyUI's capabilities for the LTX-2 video generation model.
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **manager**: Disable manager UI
+  * The system to lock dependencies enter in conflict with the manager.
+  * I'm disabling it temporarily because at container start, the python venv is sync with what has been locked in `pylock.toml`. This will remove any dependencies installed via the manager.
+* **models**: Ensure folder `latent_upscale_models` is created
+
 ## 0.14.0 - 2026-01-22
 
 ### <!-- 0 -->🚀 Features
