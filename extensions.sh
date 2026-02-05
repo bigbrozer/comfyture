@@ -14,7 +14,9 @@ install_extension comfyui-impact-subpack https://github.com/ltdrdata/ComfyUI-Imp
 install_extension comfyui-inpaint-nodes https://github.com/Acly/comfyui-inpaint-nodes.git
 install_extension comfyui-ipadapter-plus https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
 install_extension comfyui-kjnodes https://github.com/kijai/ComfyUI-KJNodes.git
+install_extension comfyui-lanpaint https://github.com/scraed/LanPaint.git
 install_extension comfyui-local-image-gallery https://github.com/Firetheft/ComfyUI_Local_Image_Gallery.git
+install_extension comfyui-ltxvideo https://github.com/Lightricks/ComfyUI-LTXVideo.git
 install_extension comfyui-ollama https://github.com/stavsap/comfyui-ollama.git
 install_extension comfyui-qwenvl https://github.com/1038lab/ComfyUI-QwenVL.git
 install_extension comfyui-rgthree https://github.com/rgthree/rgthree-comfy.git

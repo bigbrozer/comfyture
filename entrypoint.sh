@@ -67,6 +67,7 @@ function setup_dirs() {
       inpaint
       insightface
       ipadapter
+      latent_upscale_models
       LLM
       loras
       model_patches
@@ -177,6 +178,7 @@ EOF
       "--cache-none"
       "--preview-method=latent2rgb"
       "--enable-manager"
+      "--disable-manager-ui"
     )
   fi
 
