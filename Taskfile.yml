@@ -60,6 +60,28 @@ tasks:
       - scripts/tag.sh
       - echo "Now, push commit with tags (git push origin --tags) to create the release."
 
+  update:
+    desc: "Update ComfyUI to latest stable release"
+    vars:
+      LATEST_TAG:
+        sh: "curl -s https://api.github.com/repos/Comfy-Org/ComfyUI/releases/latest | jq -r '.tag_name' | sed 's/^v//'"
+    preconditions:
+      - sh: "[ '{{.LATEST_TAG}}' != '${COMFYUI_VERSION}' ]"
+        msg: "Already up-to-date (v${COMFYUI_VERSION})."
+      - sh: "! git show-ref --verify --quiet refs/heads/features/comfyui-v{{.LATEST_TAG}}"
+        msg: "Branch features/comfyui-v{{.LATEST_TAG}} already exists."
+    cmds:
+      - echo "Updating ComfyUI from v${COMFYUI_VERSION} to v{{.LATEST_TAG}}..."
+      - git checkout -b "features/comfyui-v{{.LATEST_TAG}}"
+      - sed -i 's/^COMFYUI_VERSION=.*/COMFYUI_VERSION={{.LATEST_TAG}}/' metadata.env
+      - task lock
+      - git add metadata.env pylock.toml
+      - |
+        git commit -m "feat(comfy): bump to v{{.LATEST_TAG}}
+
+        * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v{{.LATEST_TAG}}>"
+      - echo "Done! ComfyUI updated to v{{.LATEST_TAG}}."
+
   tests:
     desc: "Test to run comfyture locally"
     deps:
