@@ -74,7 +74,7 @@ tasks:
       - echo "Updating ComfyUI from v${COMFYUI_VERSION} to v{{.LATEST_TAG}}..."
       - git checkout -b "features/comfyui-v{{.LATEST_TAG}}"
       - sed -i 's/^COMFYUI_VERSION=.*/COMFYUI_VERSION={{.LATEST_TAG}}/' metadata.env
-      - task lock
+      - task: lock
       - git add metadata.env pylock.toml
       - |
         git commit -m "feat(comfy): bump to v{{.LATEST_TAG}}
