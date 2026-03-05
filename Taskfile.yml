@@ -68,11 +68,8 @@ tasks:
     preconditions:
       - sh: "[ '{{.LATEST_TAG}}' != '${COMFYUI_VERSION}' ]"
         msg: "Already up-to-date (v${COMFYUI_VERSION})."
-      - sh: "! git show-ref --verify --quiet refs/heads/features/comfyui-v{{.LATEST_TAG}}"
-        msg: "Branch features/comfyui-v{{.LATEST_TAG}} already exists."
     cmds:
       - echo "Updating ComfyUI from v${COMFYUI_VERSION} to v{{.LATEST_TAG}}..."
-      - git checkout -b "features/comfyui-v{{.LATEST_TAG}}"
       - sed -i 's/^COMFYUI_VERSION=.*/COMFYUI_VERSION={{.LATEST_TAG}}/' metadata.env
       - task: lock
       - git add metadata.env pylock.toml
