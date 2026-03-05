@@ -4,6 +4,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.19.0 - 2026-03-08
+
+### <!-- 0 -->🚀 Features
+
+* **agents**: Add guidelines for adding new ComfyUI extensions
+* **comfy**: Bump to v0.16.4
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.16.4>
+* **nodes**: Add SeedVR2 video upscaler extension
+  * Pre-install [numz/ComfyUI-SeedVR2_VideoUpscaler](https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler) -- Official SeedVR2 Video Upscaler for ComfyUI
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **tasks**: Refactor update logics
+
 ## 0.18.0 - 2026-02-28
 
 ### <!-- 0 -->🚀 Features
