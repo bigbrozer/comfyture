@@ -45,8 +45,6 @@ tasks:
           --index-strategy "unsafe-best-match" \
           --format "pylock.toml" \
           --output-file "pylock.toml" requirements.in
-      - echo
-      - echo "👉 Compiled requirements for ComfyUI v${COMFYUI_VERSION} using Python {{.PYTHON_VERSION}}."
 
   preview-changelog:
     desc: "Preview next changelog"
@@ -68,19 +66,9 @@ tasks:
     preconditions:
       - sh: "[ '{{.LATEST_TAG}}' != '${COMFYUI_VERSION}' ]"
         msg: "Already up-to-date (v${COMFYUI_VERSION})."
-      - sh: "! git show-ref --verify --quiet refs/heads/features/comfyui-v{{.LATEST_TAG}}"
-        msg: "Branch features/comfyui-v{{.LATEST_TAG}} already exists."
     cmds:
       - echo "Updating ComfyUI from v${COMFYUI_VERSION} to v{{.LATEST_TAG}}..."
-      - git checkout -b "features/comfyui-v{{.LATEST_TAG}}"
       - sed -i 's/^COMFYUI_VERSION=.*/COMFYUI_VERSION={{.LATEST_TAG}}/' metadata.env
-      - task: lock
-      - git add metadata.env pylock.toml
-      - |
-        git commit -m "feat(comfy): bump to v{{.LATEST_TAG}}
-
-        * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v{{.LATEST_TAG}}>"
-      - echo "Done! ComfyUI updated to v{{.LATEST_TAG}}."
 
   tests:
     desc: "Test to run comfyture locally"
