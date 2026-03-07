@@ -74,6 +74,7 @@ function setup_dirs() {
       onnx
       photomaker
       sams
+      SEEDVR2
       style_models
       text_encoders
       ultralytics

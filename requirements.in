@@ -119,6 +119,10 @@ transformers>=4.57.0
 # https://github.com/1038lab/ComfyUI-RMBG
 -r "https://raw.githubusercontent.com/1038lab/ComfyUI-RMBG/refs/heads/main/requirements.txt"
 
+# comfyui-seedvr2-videoupscaler
+# https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler
+-r "https://raw.githubusercontent.com/numz/ComfyUI-SeedVR2_VideoUpscaler/refs/heads/main/requirements.txt"
+
 # comfyui-segment-anything
 # https://github.com/storyicon/comfyui_segment_anything
 -r "https://raw.githubusercontent.com/storyicon/comfyui_segment_anything/refs/heads/main/requirements.txt"

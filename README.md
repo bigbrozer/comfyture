@@ -110,6 +110,7 @@ Enjoy !
 | [Lightricks/ComfyUI-LTXVideo](https://github.com/Lightricks/ComfyUI-LTXVideo)                         | A collection of powerful custom nodes that extend ComfyUI's capabilities for the LTX-2 video generation model. |
 | [ltdrdata/ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)                       | A comprehensive pack of nodes for ComfyUI.                                                                     |
 | [ltdrdata/ComfyUI-Impact-Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)                 | A smaller subset of nodes from the Impact pack for ComfyUI.                                                    |
+| [numz/ComfyUI-SeedVR2_VideoUpscaler](https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler)           | Official SeedVR2 diffusion-based video and image upscaler for ComfyUI.                                         |
 | [PozzettiAndrea/ComfyUI-DepthAnythingV3](https://github.com/PozzettiAndrea/ComfyUI-DepthAnythingV3)   | Nodes to support DepthAnything V3 model in ComfyUI.                                                            |
 | [pythongosssss/ComfyUI-Custom-Scripts](https://github.com/pythongosssss/ComfyUI-Custom-Scripts)       | A collection of custom scripts for ComfyUI.                                                                    |
 | [rgthree/rgthree-comfy](https://github.com/rgthree/rgthree-comfy)                                     | Nodes and tools from the rgthree ecosystem for ComfyUI.                                                        |
