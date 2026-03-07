@@ -1259,6 +1259,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/fb/d2/8920e102050a0de7b
 wheels = [{ url = "https://files.pythonhosted.org/packages/25/7a/b0178788f8dc6cafce37a212c99565fa1fe7872c70c6c9c1e1a372d9d88f/rich-14.2.0-py3-none-any.whl", upload-time = 2025-10-09T14:16:51Z, size = 243393, hashes = { sha256 = "76bc51fe2e57d2b1be1f96c524b890b816e334ab4c1e45888799bfaab0021edd" } }]
 
 [[packages]]
+name = "rotary-embedding-torch"
+version = "0.8.9"
+sdist = { url = "https://files.pythonhosted.org/packages/71/38/74783585b1f0282fddd3faf1abd6dd20977255c27e31737eced2d7ec05f1/rotary_embedding_torch-0.8.9.tar.gz", upload-time = 2025-07-27T01:26:14Z, size = 7497, hashes = { sha256 = "b213f153cad1d108064d930544fb3af678d56515893d3f869a7a146f87997e3f" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/94/21/05e319ebef4a8194f9c4cc09f9c3213ab846da200fa6e88699cdb7e9679a/rotary_embedding_torch-0.8.9-py3-none-any.whl", upload-time = 2025-07-27T01:26:13Z, size = 5872, hashes = { sha256 = "700e8de9dfbefba5f9117a66652a2520648dcc60136895f0068b6a85347cab02" } }]
+
+[[packages]]
 name = "rpds-py"
 version = "0.30.0"
 sdist = { url = "https://files.pythonhosted.org/packages/20/af/3f2f423103f1113b36230496629986e0ef7e199d2aa8392452b484b38ced/rpds_py-0.30.0.tar.gz", upload-time = 2025-11-30T20:24:38Z, size = 69469, hashes = { sha256 = "dd8ff7cf90014af0c0f787eea34794ebf6415242ee1d6fa91eaba725cc441e84" } }
