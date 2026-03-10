@@ -4,7 +4,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## 0.19.0 - 2026-03-08
+## 0.20.0 - 2026-03-10
+
+### <!-- 0 -->🚀 Features
+
+* **dependencies**: Bump pytorch/cuda to 2.10+cu130
+
+## 0.19.0 - 2026-03-09
 
 ### <!-- 0 -->🚀 Features
 
