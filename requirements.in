@@ -5,20 +5,21 @@
 --extra-index-url "https://download.pytorch.org/whl/cu130"
 
 # https://download.pytorch.org/whl/cu130/torch/
-torch==2.9.1+cu130
+torch==2.10.0+cu130
 # https://download.pytorch.org/whl/cu130/torchvision/
-torchvision==0.24.1+cu130
+torchvision==0.25.0+cu130
 # https://download.pytorch.org/whl/cu130/torchaudio/
-torchaudio==2.9.1+cu130
+torchaudio==2.10.0+cu130
 xformers
 
 # Flash Attention
 # https://github.com/mjun0812/flash-attention-prebuild-wheels
-flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.6.8/flash_attn-2.8.3+cu130torch2.9-cp313-cp313-linux_x86_64.whl
+flash_attn @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.16/flash_attn-2.8.3+cu130torch2.10-cp313-cp313-linux_x86_64.whl
+flash_attn_3 @ https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.8.2/flash_attn_3-3.0.0+cu130torch2.10gite2743ab-cp39-abi3-linux_x86_64.whl
 
 # Sage Attention
 # https://github.com/bigbrozer/vinz-wheels
-sageattention @ https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0-cp313-cp313-linux_x86_64.whl
+sageattention @ https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0+cu130torch210-cp313-cp313-linux_x86_64.whl
 
 # Fixing packages version to have pre-built wheels for Python 3.13
 sentencepiece>=0.2.1
