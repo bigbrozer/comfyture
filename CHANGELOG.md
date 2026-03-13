@@ -4,7 +4,18 @@
 
 All notable changes to this project will be documented in this file.
 
-## 0.20.0 - 2026-03-10
+## 0.21.0 - 2026-03-13
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.17.0
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.17.0>
+* **entrypoint**: Enable smart memory management since dynamic vram introduction
+  * [Dynamic Vram](https://github.com/Comfy-Org/ComfyUI/discussions/12699): the massive memory optimization is now enabled by default.
+* **extensions**: Add new ComfyUI Frame Interpolation extension
+  * Added [ComfyUI-Frame-Interpolation](https://github.com/Fannovel16/ComfyUI-Frame-Interpolation) nodes.
+
+## 0.20.0 - 2026-03-12
 
 ### <!-- 0 -->🚀 Features
 
