@@ -175,8 +175,6 @@ EOF
       "--listen=0.0.0.0"
       "--disable-auto-launch"
       "--multi-user"
-      "--disable-smart-memory"
-      "--cache-none"
       "--preview-method=latent2rgb"
       "--enable-manager"
       "--disable-manager-ui"
