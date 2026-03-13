@@ -142,6 +142,12 @@ version = "0.49.1"
 wheels = [{ url = "https://files.pythonhosted.org/packages/1d/4f/02d3cb62a1b0b5a1ca7ff03dce3606be1bf3ead4744f47eb762dbf471069/bitsandbytes-0.49.1-py3-none-manylinux_2_24_x86_64.whl", upload-time = 2026-01-08T14:31:31Z, size = 59054193, hashes = { sha256 = "e7940bf32457dc2e553685285b2a86e82f5ec10b2ae39776c408714f9ae6983c" } }]
 
 [[packages]]
+name = "blake3"
+version = "1.0.8"
+sdist = { url = "https://files.pythonhosted.org/packages/75/aa/abcd75e9600987a0bc6cfe9b6b2ff3f0e2cb08c170addc6e76035b5c4cb3/blake3-1.0.8.tar.gz", upload-time = 2025-10-14T06:47:48Z, size = 117308, hashes = { sha256 = "513cc7f0f5a7c035812604c2c852a0c1468311345573de647e310aca4ab165ba" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/21/ae/6e55c19c8460fada86cd1306a390a09b0c5a2e2e424f9317d2edacea439f/blake3-1.0.8-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", upload-time = 2025-10-14T06:46:16Z, size = 386928, hashes = { sha256 = "e4072196547484c95a5a09adbb952e9bb501949f03f9e2a85e7249ef85faaba8" } }]
+
+[[packages]]
 name = "blis"
 version = "1.3.3"
 sdist = { url = "https://files.pythonhosted.org/packages/d0/d0/d8cc8c9a4488a787e7fa430f6055e5bd1ddb22c340a751d9e901b82e2efe/blis-1.3.3.tar.gz", upload-time = 2025-11-17T12:28:30Z, size = 2644873, hashes = { sha256 = "034d4560ff3cc43e8aa37e188451b0440e3261d989bb8a42ceee865607715ecd" } }
@@ -218,18 +224,18 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/6d/9e/ce54e33f383d7e1
 
 [[packages]]
 name = "comfy-aimdo"
-version = "0.2.8"
+version = "0.2.11"
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b9/ec/94e0a2f56b57f38c5f4cef8e02c836deff53c4e46d4a46ad42ad2d1bc9f1/comfy_aimdo-0.2.8-cp39-abi3-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl", upload-time = 2026-03-05T17:26:38Z, size = 80687, hashes = { sha256 = "691765f508a84f0361266c214ecaeb6fa4a18759ddfc17e0cb65f3e826a76ad0" } },
-    { url = "https://files.pythonhosted.org/packages/79/27/14de4f9270fb1e2415fdcdd3b276b690a51151778e374e646f85440c5587/comfy_aimdo-0.2.8-py3-none-any.whl", upload-time = 2026-03-05T17:26:41Z, size = 18595, hashes = { sha256 = "dede4b84b5a1dbe2c129c17c18877418e6744ffd128a69d42c5bc2ebd391e0d5" } },
+    { url = "https://files.pythonhosted.org/packages/78/74/93faa836880c84e679deda6751d066b7fd1eeb21ad29df5592dc155b0c9d/comfy_aimdo-0.2.11-cp39-abi3-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl", upload-time = 2026-03-13T17:19:22Z, size = 92760, hashes = { sha256 = "4d43772a2da2c540d3566f3586010d69e4dda5bdc7fde89fff241ce5aa9a0b4f" } },
+    { url = "https://files.pythonhosted.org/packages/0d/b2/e4d4b1847ffbbd7c332697d854e0b3a770222879d167f62de60710f03600/comfy_aimdo-0.2.11-py3-none-any.whl", upload-time = 2026-03-13T17:19:25Z, size = 19854, hashes = { sha256 = "7b6a793fd5c487dd3b83e283e8cf79b58dd2feef82d5db21f209d5fc9c2fab01" } },
 ]
 
 [[packages]]
 name = "comfy-kitchen"
-version = "0.2.7"
+version = "0.2.8"
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/44/e1/9b6e7764f8dcd5cb9b9ae369e55660bf24b7f48825584521246e3bddf43e/comfy_kitchen-0.2.7-cp312-abi3-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2026-01-17T03:48:13Z, size = 680629, hashes = { sha256 = "4a168eb1fcdbb31707bb0e1226c6d44e1bd1b0a5ac1ac0a4d9c6eb7296b903ae" } },
-    { url = "https://files.pythonhosted.org/packages/f8/65/d483613734d0b9753bd9bfa297ff334cb2c7766e82306099db6b259b4e2c/comfy_kitchen-0.2.7-py3-none-any.whl", upload-time = 2026-01-17T03:48:16Z, size = 58034, hashes = { sha256 = "f8faa579b69d331d2f1eac09e96a95586c2a6b958a54bc19e7f1c1a77852dd36" } },
+    { url = "https://files.pythonhosted.org/packages/9a/af/e87ebae2b1bba35291663b0d6eea6748b340d7c21802224cfb37f3a48dda/comfy_kitchen-0.2.8-cp312-abi3-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2026-03-12T04:07:48Z, size = 794595, hashes = { sha256 = "570b2eb74c77ce9356b0140ec190253dcbedeb1e92bec5092444abef9cd24ebf" } },
+    { url = "https://files.pythonhosted.org/packages/46/b0/64c3e0656db822cb4f7dbc928d6a13cf2cad861cc178e6386114634e355b/comfy_kitchen-0.2.8-py3-none-any.whl", upload-time = 2026-03-12T04:07:51Z, size = 64854, hashes = { sha256 = "0b322992cf1681ebe3d413ac7950f39e5cc425505c13cef8d08527ce82fe5e32" } },
 ]
 
 [[packages]]
@@ -240,51 +246,51 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/e9/3d/f77a91b500e7005
 
 [[packages]]
 name = "comfyui-frontend-package"
-version = "1.39.19"
-sdist = { url = "https://files.pythonhosted.org/packages/4f/53/02df19c046fbee7b63d0339baf0e36b24e6a0a5eb667eb0dd5f7c13b0fb8/comfyui_frontend_package-1.39.19.tar.gz", upload-time = 2026-02-26T02:01:39Z, size = 20795037, hashes = { sha256 = "04ba5d0100f0265665678f799503af443b3e2ec57e5bafee8fdc05cd88462e45" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/a4/26/de6a7662abbbf8a77bab23f3077530a1bebf55473ff68e67c4086466602f/comfyui_frontend_package-1.39.19-py3-none-any.whl", upload-time = 2026-02-26T02:01:36Z, size = 21205242, hashes = { sha256 = "58343dd79eca371badbe354c12b9bc47c7dc58f7f92243be537e178dfbaf2036" } }]
+version = "1.41.18"
+sdist = { url = "https://files.pythonhosted.org/packages/fb/3d/f301f080a33bc40b9ac5855ff292cb731570e65271240b3fdd12cf8f3b18/comfyui_frontend_package-1.41.18.tar.gz", upload-time = 2026-03-12T21:48:50Z, size = 21255529, hashes = { sha256 = "3006a7575f49ef6d9ad2a6c14050339cebdab50997ee8a381cc894269fa8c2a1" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/6d/cc/71be8f81887290dec1faf8d8663ba63bbc73944e96f6b4f54cb17ad0ddf1/comfyui_frontend_package-1.41.18-py3-none-any.whl", upload-time = 2026-03-12T21:48:48Z, size = 21669980, hashes = { sha256 = "035af6673b128a8ad93d095e1ae9e7923fb9ff71cef81b21e5ec732b07900998" } }]
 
 [[packages]]
 name = "comfyui-manager"
-version = "4.1b1"
-sdist = { url = "https://files.pythonhosted.org/packages/f6/90/a5a18c447aa02f77bfa4117a05254ae4d0691623c697613b90ffb9683b10/comfyui_manager-4.1b1.tar.gz", upload-time = 2026-01-27T10:43:16Z, size = 983378, hashes = { sha256 = "fe5413daaf02f722d7287794ab9134f115ecbdb05d049fa984aba84f5f09a2d1" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/8d/67/dd214cc0af188da8817b57dae27e69012d03ede7072248d4db21f86fbd55/comfyui_manager-4.1b1-py3-none-any.whl", upload-time = 2026-01-27T10:43:14Z, size = 1013212, hashes = { sha256 = "d0a803690259fddbd13e6e8cd192309ccb06ce414c1dd8739a0cbf7257c37552" } }]
+version = "4.1b2"
+sdist = { url = "https://files.pythonhosted.org/packages/4e/be/18f8104861c9c4e2be548af75c4dd1ec8b9c3c78130a8ab0b039f050a2a8/comfyui_manager-4.1b2.tar.gz", upload-time = 2026-03-06T21:52:36Z, size = 998581, hashes = { sha256 = "db636627c583aa630161b8564e23dfd60d4f0c517a622677b60678a9f775dd54" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/55/72/94ae1dca446db396d6eadc0549a59e51c3477dc7cda5fbfd4d4ead55e83a/comfyui_manager-4.1b2-py3-none-any.whl", upload-time = 2026-03-06T21:52:35Z, size = 1021826, hashes = { sha256 = "25e385a67899f2074a04e6285bedb4035335d68bbcdf7b05222ad5c0a2d2dd4b" } }]
 
 [[packages]]
 name = "comfyui-workflow-templates"
-version = "0.9.11"
-sdist = { url = "https://files.pythonhosted.org/packages/41/73/4289dc62371f7acc0bcf5ee5957c0b4ef7c1029690766dbc19f1ff9b0520/comfyui_workflow_templates-0.9.11.tar.gz", upload-time = 2026-03-07T07:34:31Z, size = 16249, hashes = { sha256 = "6e73b6d476ddfd09f1b4e61772e1f71891018afaddfe6d57de6ececf55f27027" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/eb/8c/45932048be4573d780e055288ae734798f36c3d76e6991f2dd38f4e3aa01/comfyui_workflow_templates-0.9.11-py3-none-any.whl", upload-time = 2026-03-07T07:34:30Z, size = 9818, hashes = { sha256 = "0bb0b0b4604090d4da4a2d92e52db044868a4fd92d0c24819a78397ab33e7197" } }]
+version = "0.9.21"
+sdist = { url = "https://files.pythonhosted.org/packages/d3/d3/64bc9de2fcfed66582beb4ab210c430a90370357c9da4f101e2233be7e46/comfyui_workflow_templates-0.9.21.tar.gz", upload-time = 2026-03-12T17:31:24Z, size = 16243, hashes = { sha256 = "01f88d9adec14caca7f303053d4c0cbd13356e44b9c3bbdcedfb618604b6b4e6" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/3f/26/080d3fb30bea9f91b361d640324ef94cc4ed378616f0427704323b707ac5/comfyui_workflow_templates-0.9.21-py3-none-any.whl", upload-time = 2026-03-12T17:31:23Z, size = 9820, hashes = { sha256 = "a82d7440cf48646e9799e75d7b8cac601465f3d335a7e78b9c033222a666c9ad" } }]
 
 [[packages]]
 name = "comfyui-workflow-templates-core"
-version = "0.3.159"
-sdist = { url = "https://files.pythonhosted.org/packages/e4/89/a8553668590760ca3b986adb90e4bcbde61098b8009f34c7ec8f5aa5517d/comfyui_workflow_templates_core-0.3.159.tar.gz", upload-time = 2026-03-07T07:33:23Z, size = 54026, hashes = { sha256 = "18cb1b5d4b0268c3192f9be81c2c1acb5b796dfe2889339410e3e85f489e9996" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/36/43/cee9a36447b51f8d62f3cbd9fbf8db37c0bdf31a1f6f8e270633717520b8/comfyui_workflow_templates_core-0.3.159-py3-none-any.whl", upload-time = 2026-03-07T07:33:22Z, size = 51928, hashes = { sha256 = "77623ff5adbdff8585a1c27017ef0d345dbd3e20a7b5f6e6a0bd6d7b9a6209d1" } }]
+version = "0.3.168"
+sdist = { url = "https://files.pythonhosted.org/packages/49/b9/052db73c424b2227fa4431833554b2cffbf7a448ab90463461cdce5f3a44/comfyui_workflow_templates_core-0.3.168.tar.gz", upload-time = 2026-03-12T17:30:09Z, size = 57739, hashes = { sha256 = "b69012f97b6bacda8d67a124be4108153d499cd1f2bd2ee317106ec253028546" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/8d/05/c8f8419d31d683263bfdf51295ab79e50dfc5434d6ebf7a4c8fbcb9fbe69/comfyui_workflow_templates_core-0.3.168-py3-none-any.whl", upload-time = 2026-03-12T17:30:08Z, size = 55651, hashes = { sha256 = "be263496c0885c6218d3278ba8fc9c1a6a66b1e3f0c007e075063c8295ba03ec" } }]
 
 [[packages]]
 name = "comfyui-workflow-templates-media-api"
-version = "0.3.59"
-sdist = { url = "https://files.pythonhosted.org/packages/9c/06/caa7f8f572f89f3bb1b1cebe9761713b55821d9a6ef0a470fafa390cd601/comfyui_workflow_templates_media_api-0.3.59.tar.gz", upload-time = 2026-03-07T07:33:38Z, size = 80790939, hashes = { sha256 = "d02ca4002846dbb1a4663e49446a85856eedc153721bffe63d755c56fc68decc" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/a2/a0/8de362bdc99cdb8c40329910609f4042a74670e35c29e13c199563ecf8ef/comfyui_workflow_templates_media_api-0.3.59-py3-none-any.whl", upload-time = 2026-03-07T07:33:34Z, size = 80812108, hashes = { sha256 = "8f62006ff301caff648a29ed9660e5a64a58347b807de0efc0677697918335cb" } }]
+version = "0.3.64"
+sdist = { url = "https://files.pythonhosted.org/packages/b1/d1/c60d5b75f57504865f69b1a0663a28dc6db6b8a4eac023690fb96d828ec9/comfyui_workflow_templates_media_api-0.3.64.tar.gz", upload-time = 2026-03-12T17:30:25Z, size = 80790226, hashes = { sha256 = "1f62029450be6fe38d74f645d43bd68f06cbc8c1792a03658425d5bd994723fd" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/d5/f6/47c7e4413bb5e30e3a2788b742ce7f6f6bc162a0ab805b8a7f7962ca8860/comfyui_workflow_templates_media_api-0.3.64-py3-none-any.whl", upload-time = 2026-03-12T17:30:21Z, size = 80810832, hashes = { sha256 = "ea9e0eaf8adbb9cb79077483421a32086a0719832fc80edcce84e23f1a1cf477" } }]
 
 [[packages]]
 name = "comfyui-workflow-templates-media-image"
-version = "0.3.98"
-sdist = { url = "https://files.pythonhosted.org/packages/0d/22/56f3d5d994c308533644f9be12fb7a70c20475c9fccb1b2cb4aeefc379b0/comfyui_workflow_templates_media_image-0.3.98.tar.gz", upload-time = 2026-03-07T07:33:50Z, size = 17411913, hashes = { sha256 = "5118c83e13a331dadca68e2ff581de4d0d0ac82cdb2e0a0e2cc10ee8009eb9e4" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/81/fd/1989fe77a2cc165231dbd7e65427934a63176f7ad5ba8ee708174af31ac1/comfyui_workflow_templates_media_image-0.3.98-py3-none-any.whl", upload-time = 2026-03-07T07:33:47Z, size = 17410102, hashes = { sha256 = "098edbedb57986de2ec4e62de7ca492f93b8a0be0319bb46af658c128d926238" } }]
+version = "0.3.104"
+sdist = { url = "https://files.pythonhosted.org/packages/f8/07/77ec36429d7b90f65aff5e882b42487446f47e787ee7a28ee532c41b6220/comfyui_workflow_templates_media_image-0.3.104.tar.gz", upload-time = 2026-03-12T17:30:38Z, size = 42382748, hashes = { sha256 = "0b70ee39605b3b380172895040c3246c400f794080bac32a8e9b8e85616d49ba" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/e7/da/200a361d7d6880549c76b0e22bdd03dfea9315a0d920b1b99d15da01aa6e/comfyui_workflow_templates_media_image-0.3.104-py3-none-any.whl", upload-time = 2026-03-12T17:30:35Z, size = 42386977, hashes = { sha256 = "18c8d4ff8f18b5971265898ff12f7bf89089860874ea35fe5898246caf2d68bc" } }]
 
 [[packages]]
 name = "comfyui-workflow-templates-media-other"
-version = "0.3.131"
-sdist = { url = "https://files.pythonhosted.org/packages/6b/b2/6da0e40549bf3b965c14a24944bd6436a4d1f0c3ad09e0a505bd00ff329b/comfyui_workflow_templates_media_other-0.3.131.tar.gz", upload-time = 2026-03-07T07:34:06Z, size = 76231019, hashes = { sha256 = "72916d25fe138880336add9780c290c7b3f69a599da7e85cc67c880555078b88" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/bb/25/b923bad1ffcaea2e28e425e1cd556fd6873bd1cfb7f2686f6bb8f6c08ddd/comfyui_workflow_templates_media_other-0.3.131-py3-none-any.whl", upload-time = 2026-03-07T07:34:02Z, size = 76282950, hashes = { sha256 = "cd06e2d0e0bfeaf010989499e7a705a094fee3bf41f6669062218bea0a2ae0aa" } }]
+version = "0.3.141"
+sdist = { url = "https://files.pythonhosted.org/packages/0d/5a/9e247459a1c9540266bea76dbe86db25c51462522fcee5f2b08b20854549/comfyui_workflow_templates_media_other-0.3.141.tar.gz", upload-time = 2026-03-12T17:30:55Z, size = 90115319, hashes = { sha256 = "a0d0ea0ca286be58798439b12ff6642257b2d98ab86e038c9e63b28c3086cca0" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/a5/b3/179745959152231283dcae2c4db455c7a07d83b51e933ff193938b8e44e8/comfyui_workflow_templates_media_other-0.3.141-py3-none-any.whl", upload-time = 2026-03-12T17:30:51Z, size = 90161862, hashes = { sha256 = "95a8114923ed19567722ae9e7106faa601650fd6a6d1b3c62af81a92c6928804" } }]
 
 [[packages]]
 name = "comfyui-workflow-templates-media-video"
-version = "0.3.57"
-sdist = { url = "https://files.pythonhosted.org/packages/1b/db/c433a14d553ec3662e5106c36a5880f20df39c43cd8ca798bfc1dd2e5847/comfyui_workflow_templates_media_video-0.3.57.tar.gz", upload-time = 2026-03-07T07:34:24Z, size = 94684554, hashes = { sha256 = "aacd6d1d457c45e9481cf916b4dd62083944977b60e3b8926252d07de13a563e" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/f6/cc/dab7b5227e206245aa0566e636031f9b3fa8eb4b9986f4a0a83cf3cff5aa/comfyui_workflow_templates_media_video-0.3.57-py3-none-any.whl", upload-time = 2026-03-07T07:34:20Z, size = 94669426, hashes = { sha256 = "037e48c7700a285733a560b5c1c48b2f4e4e2c68f74e2585d2b5149de85c697f" } }]
+version = "0.3.60"
+sdist = { url = "https://files.pythonhosted.org/packages/47/b7/253c40e33eec3da08ef9c50b906ea896a295871318917ec0339a6585ebc2/comfyui_workflow_templates_media_video-0.3.60.tar.gz", upload-time = 2026-03-12T17:31:15Z, size = 95901892, hashes = { sha256 = "98ce7f85c8ec78f15f6966cc3d384032ce145c251728562750d1a36a9f1bff26" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/6d/a0/6e915c086938572c6e1ae7f1dcffc3b3b44f9898e9a19f4aa0c66f6c977b/comfyui_workflow_templates_media_video-0.3.60-py3-none-any.whl", upload-time = 2026-03-12T17:31:10Z, size = 95887796, hashes = { sha256 = "b61a031f56a6b20e727e0e1e66d9715d2a3ba20a2972d33f48f96b68864ff7dd" } }]
 
 [[packages]]
 name = "confection"
@@ -1577,7 +1583,7 @@ wheels = [{ url = "https://download.pytorch.org/whl/cu130/torch-2.10.0%2Bcu130-c
 [[packages]]
 name = "torchaudio"
 version = "2.10.0+cu130"
-wheels = [{ url = "https://download.pytorch.org/whl/cu130/torchaudio-2.10.0%2Bcu130-cp313-cp313-manylinux_2_28_x86_64.whl", hashes = { sha256 = "8b1c31c3cf39750d476752bd6508a6cfb1bfaf1d6f0d885ed7de4a967ed52eeb" } }]
+wheels = [{ url = "https://download-r2.pytorch.org/whl/cu130/torchaudio-2.10.0%2Bcu130-cp313-cp313-manylinux_2_28_x86_64.whl", hashes = { sha256 = "8b1c31c3cf39750d476752bd6508a6cfb1bfaf1d6f0d885ed7de4a967ed52eeb" } }]
 
 [[packages]]
 name = "torchsde"
