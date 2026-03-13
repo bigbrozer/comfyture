@@ -99,6 +99,7 @@ Enjoy !
 | [cubiq/ComfyUI_IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)                       | IPAdapter Plus nodes for ComfyUI.                                                                              |
 | [Enemyx-net/VibeVoice-ComfyUI](https://github.com/Enemyx-net/VibeVoice-ComfyUI)                       | Integration for using VibeVoice audio generation in ComfyUI.                                                   |
 | [Fannovel16/comfyui_controlnet_aux](https://github.com/Fannovel16/comfyui_controlnet_aux)             | Auxiliary ControlNet nodes for ComfyUI.                                                                        |
+| [Fannovel16/ComfyUI-Frame-Interpolation](https://github.com/Fannovel16/ComfyUI-Frame-Interpolation)   | Video frame interpolation nodes for ComfyUI (RIFE, FILM, GMFSS Fortuna, and more).                             |
 | [Firetheft/ComfyUI_Local_Image_Gallery](https://github.com/Firetheft/ComfyUI_Local_Image_Gallery)     | A local image gallery node for ComfyUI.                                                                        |
 | [FizzleDorf/ComfyUI_FizzNodes](https://github.com/FizzleDorf/ComfyUI_FizzNodes)                       | A set of useful and specialized nodes for ComfyUI.                                                             |
 | [Jonseed/ComfyUI-Detail-Daemon](https://github.com/Jonseed/ComfyUI-Detail-Daemon)                     | Adjust sigmas that generally enhance details.                                                                  |
