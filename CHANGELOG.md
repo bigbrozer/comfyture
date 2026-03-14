@@ -4,6 +4,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.22.0 - 2026-03-14
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.17.1
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.17.1>
+
 ## 0.21.0 - 2026-03-13
 
 ### <!-- 0 -->🚀 Features
