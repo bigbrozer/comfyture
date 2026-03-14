@@ -246,9 +246,9 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/e9/3d/f77a91b500e7005
 
 [[packages]]
 name = "comfyui-frontend-package"
-version = "1.41.18"
-sdist = { url = "https://files.pythonhosted.org/packages/fb/3d/f301f080a33bc40b9ac5855ff292cb731570e65271240b3fdd12cf8f3b18/comfyui_frontend_package-1.41.18.tar.gz", upload-time = 2026-03-12T21:48:50Z, size = 21255529, hashes = { sha256 = "3006a7575f49ef6d9ad2a6c14050339cebdab50997ee8a381cc894269fa8c2a1" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/6d/cc/71be8f81887290dec1faf8d8663ba63bbc73944e96f6b4f54cb17ad0ddf1/comfyui_frontend_package-1.41.18-py3-none-any.whl", upload-time = 2026-03-12T21:48:48Z, size = 21669980, hashes = { sha256 = "035af6673b128a8ad93d095e1ae9e7923fb9ff71cef81b21e5ec732b07900998" } }]
+version = "1.41.19"
+sdist = { url = "https://files.pythonhosted.org/packages/66/0d/b1a5f611d2aeb184aad6f852c3a061e18be1e8639013fa12f944811024dc/comfyui_frontend_package-1.41.19.tar.gz", upload-time = 2026-03-13T14:01:07Z, size = 21256326, hashes = { sha256 = "df357be2a973402f0a4d6162713c500c1484f38f1a04be8aaf745a615dbacb6d" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/74/60/9db29ee98322361113fd05ab86c24f960aeebba2abf3ee40fdf38d72f076/comfyui_frontend_package-1.41.19-py3-none-any.whl", upload-time = 2026-03-13T14:01:04Z, size = 21670087, hashes = { sha256 = "cda6514be747376a0617e01b7502485e63d36b871ec8aba44c728a39e834623a" } }]
 
 [[packages]]
 name = "comfyui-manager"

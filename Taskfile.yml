@@ -1,6 +1,5 @@
 version: '3'
 
-dotenv: ["metadata.env"]
 silent: true
 
 vars:
@@ -30,11 +29,13 @@ tasks:
 
   build:
     desc: "Build the docker image"
+    dotenv: ["metadata.env"]
     cmds:
       - docker buildx bake build --set "*.tags=${COMFYTURE_IMAGE}:latest"
 
   lock:
     desc: "Lock requirements"
+    dotenv: ["metadata.env"]
     cmds:
       - echo "Installing python..."
       - uv python install {{.PYTHON_VERSION}}
@@ -59,10 +60,29 @@ tasks:
       - echo "Now, push commit with tags (git push origin --tags) to create the release."
 
   update:
-    desc: "Update ComfyUI to latest stable release"
+    desc: "Update everything to latest versions"
     vars:
       LATEST_TAG:
         sh: "curl -s https://api.github.com/repos/Comfy-Org/ComfyUI/releases/latest | jq -r '.tag_name' | sed 's/^v//'"
+    cmds:
+      - task: update:comfyui
+        vars:
+          LATEST_TAG: "{{.LATEST_TAG}}"
+      - task: lock
+      - echo "Done! ComfyUI updated to v{{.LATEST_TAG}}."
+      - git add metadata.env pylock.toml
+      - |
+        git commit -m "feat(comfy): bump to v{{.LATEST_TAG}}
+
+        * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v{{.LATEST_TAG}}>"
+      - echo "Done! ComfyUI updated to v{{.LATEST_TAG}}."
+
+  update:comfyui:
+    desc: "Update ComfyUI to latest stable release"
+    dotenv: ["metadata.env"]
+    requires:
+      vars:
+        - LATEST_TAG
     preconditions:
       - sh: "[ '{{.LATEST_TAG}}' != '${COMFYUI_VERSION}' ]"
         msg: "Already up-to-date (v${COMFYUI_VERSION})."
