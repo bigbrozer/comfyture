@@ -2,6 +2,10 @@
 
 Comfyture is a ready to use Docker image and compose stack designed to simplify running [ComfyUI](https://github.com/Comfy-Org/ComfyUI) with NVIDIA GPU acceleration. Unlike traditional setups, this stack eliminates complex configuration steps while pre-installing 20+ extensions (custom nodes).
 
+<p style="text-align: center;">
+<iframe src="https://github.com/sponsors/bigbrozer/button" title="Sponsor bigbrozer" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+</p>
+
 > [!IMPORTANT]
 > While functional, this project is still under active development and may have bugs during use.
 
@@ -19,7 +23,6 @@ Contents:
   * [ComfyUI arguments](#comfyui-arguments)
   * [Envionment variables](#envionment-variables)
   * [Data storage](#data-storage)
-* [Roadmap](#roadmap)
 * [License](#license)
 
 ## Features
@@ -184,12 +187,6 @@ By default, the local `./data` directory will contain everything for ComfyUI. Yo
 | `./data/input`        | `/opt/comfyui/app/input`        | Persist input images                         |
 | `./data/output`       | `/opt/comfyui/app/output`       | Persist output images                        |
 | `./data/profiles`     | `/opt/comfyui/app/user`         | Persist user profiles                        |
-
-## Roadmap
-
-* [ ] Add more stack examples:
-  * [ ] Traefik + Authelia + ComfyUI
-* [ ] Do not use a shell script to install extensions but a **configuration file** (YAML, TOML, ...).
 
 ## License
 
