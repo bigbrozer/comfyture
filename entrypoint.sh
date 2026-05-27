@@ -107,10 +107,10 @@ function fix_perms() {
 
     if [[ "${test_dir_uid}" != "${PUID}" ]]
     then
-      log "Change in ownership detected, please be patient while we chown existing files..."
+      log "Change in ownership detected, please be patient while we chown only mismatched files..."
       groupmod -o -g "${PGID}" comfyui
       usermod -o -u "${PUID}" comfyui
-      chown -R "${PUID}":"${PGID}" "${COMFYUI_HOME}"
+      find "${COMFYUI_HOME}" \( ! -uid "${PUID}" -o ! -gid "${PGID}" \) -exec chown "${PUID}":"${PGID}" {} +
     fi
 
     log "Restart as unpriviledged user..."
