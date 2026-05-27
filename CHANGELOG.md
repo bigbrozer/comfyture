@@ -4,6 +4,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.27.0 - 2026-05-27
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.22.0
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.22.0>
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **compose**: `--normalvram` flag has been removed
+* **entrypoint**: Improve perms fix to only affect mismatched files
+
 ## 0.26.0 - 2026-05-18
 
 ### <!-- 0 -->🚀 Features
