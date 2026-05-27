@@ -10,7 +10,7 @@ services:
     command:
       # Customize ComfyUI using arguments
       # https://docs.comfy.org/interface/settings/server-config
-      - "--normalvram"
+      - "--verbose"
     environment:
       PUID: "1000" # Adapt User ID to match yours locally
       PGID: "1000" # Adapt Group ID to match yours locally
