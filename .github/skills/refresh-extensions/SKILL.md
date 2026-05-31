@@ -1,6 +1,6 @@
 ---
 name: refresh-extensions
-description: Refresh the pre-installed extensions table in README
+description: Refresh the pre-installed extensions table in README when `extensions.sh` is updated.
 ---
 
 ## Updating list of pre-installed extensions
