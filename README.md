@@ -31,6 +31,7 @@ Contents:
 * GPU-accelerated (Nvidia CUDA only).
 * Flash Attention support.
 * Sage Attention support.
+* Triton support.
 * [New Manager](https://blog.comfy.org/p/meet-the-new-comfyui-manager) enabled by default.
 * Do not run as root, UID/GID are configurables.
 * A set of [pre-installed extensions](#pre-installed-extensions).
@@ -91,6 +92,13 @@ Enjoy !
 
 ## Pre-installed extensions
 
+By default, Comfyture comes with 20+ pre-installed extensions (custom nodes) to enhance your experience with ComfyUI. These extensions cover a wide range of functionalities, from advanced image processing to video generation and more.
+
+> [!TIP]
+> You will see those extension as installed state from the Manager UI. There is no way to uninstall them right now but you can disable them from the Manager UI.
+
+Here is the list of pre-installed extensions:
+
 | Extension                                                                                             | Description                                                                                                    |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | [1038lab/ComfyUI-QwenVL](https://github.com/1038lab/ComfyUI-QwenVL)                                   | Integrates the powerful Qwen-VL models.                                                                        |
@@ -134,8 +142,6 @@ A default set of arguments are passed to ComfyUI by default:
 --listen=0.0.0.0
 --disable-auto-launch
 --multi-user
---disable-smart-memory
---cache-none
 --preview-method=latent2rgb
 --enable-manager
 ```

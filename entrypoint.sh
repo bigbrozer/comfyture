@@ -33,7 +33,9 @@ function install_extension() {
         git clone "${url}" "${COMFYUI_HOME}/app/custom_nodes/${name}" --recurse-submodules
     else
         log "Updating ${name}..."
-        (cd "${COMFYUI_HOME}/app/custom_nodes/${name}" && git pull --recurse-submodules)
+        (cd "${COMFYUI_HOME}/app/custom_nodes/${name}" \
+          && git fetch --prune --prune-tags --recurse-submodules \
+          && git reset --hard --recurse-submodules "@{upstream}")
     fi
 }
 
@@ -118,6 +120,40 @@ function fix_perms() {
   fi
 }
 
+function init_manager() {
+  # Init the manager config
+  local profile_dir="${COMFYUI_HOME}/app/user"
+  local manager_profile_dir="${profile_dir}/__manager"
+  local manager_config_file="${manager_profile_dir}/config.ini"
+
+  if [ ! -e "${manager_profile_dir}" ]
+  then
+    log "Initializing manager profile directory..."
+    mkdir -p "${manager_profile_dir}"
+  fi
+
+    log "Copying manager config..."
+    cat <<'EOF' > "${manager_config_file}"
+[default]
+git_exe = /usr/bin/git
+use_uv = True
+use_unified_resolver = False
+channel_url = https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main
+share_option = all
+bypass_ssl = False
+file_logging = True
+update_policy = stable-comfyui
+windows_selector_event_loop_policy = False
+model_download_by_agent = False
+downgrade_blacklist =
+security_level = normal
+always_lazy_install = False
+network_mode = personal_cloud
+db_mode = cache
+verbose = False
+EOF
+}
+
 function _main() {
   # Prepare files
   setup_dirs
@@ -133,7 +169,7 @@ function _main() {
   # Install Python and dependencies
   log "Prepare Python environment..."
   uv venv --allow-existing "${VIRTUAL_ENV}"
-  uv pip sync --compile-bytecode pylock.toml
+  uv pip install --compile-bytecode --requirements pylock.toml
 
   log "Uv cache size: $(uv cache size --human)"
   uv cache prune
@@ -166,6 +202,8 @@ User GID:    $(id -g comfyui)
 
 EOF
 
+  init_manager
+
   if [[ "${COMFYUI_NO_DEFAULTS:-false}" == "true" ]]
   then
     COMFYUI_DEFAULTS=()
@@ -177,7 +215,6 @@ EOF
       "--multi-user"
       "--preview-method=latent2rgb"
       "--enable-manager"
-      "--disable-manager-ui"
     )
   fi
 
