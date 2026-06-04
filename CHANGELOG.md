@@ -4,6 +4,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.28.0 - 2026-06-04
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.24.0
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.24.0>
+* **manager**: Added full support from the manager
+  * Comfyture is providing a set of extensions which are now being integrated within the manager UI.
+  * The manager UI is using `uv` as the pip backend to install dependencies.
+  * Dependencies from pre-installed extensions will not reset dependencies from extensions installed from the manager UI.
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **docker**: Default user UID / GID is 1000
+* **extensions**: `comfyui-rgthree` ➔ `rgthree-comfy`
+  * Fix loading assets such as CSS / JS for this extension.
+
 ## 0.27.0 - 2026-05-27
 
 ### <!-- 0 -->🚀 Features
