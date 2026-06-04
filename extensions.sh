@@ -1,5 +1,10 @@
 # shellcheck disable=SC2148
 
+# Remove previous unwanted extensions
+#
+# Rename extension folder
+remove_extension comfyui-rgthree
+
 # Install some cool extensions
 install_extension comfyui-advanced-controlnet https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet.git
 install_extension comfyui-controlnet-aux https://github.com/Fannovel16/comfyui_controlnet_aux.git
@@ -20,7 +25,7 @@ install_extension comfyui-local-image-gallery https://github.com/Firetheft/Comfy
 install_extension comfyui-ltxvideo https://github.com/Lightricks/ComfyUI-LTXVideo.git
 install_extension comfyui-ollama https://github.com/stavsap/comfyui-ollama.git
 install_extension comfyui-qwenvl https://github.com/1038lab/ComfyUI-QwenVL.git
-install_extension comfyui-rgthree https://github.com/rgthree/rgthree-comfy.git
+install_extension rgthree-comfy https://github.com/rgthree/rgthree-comfy.git
 install_extension comfyui-rmbg https://github.com/1038lab/ComfyUI-RMBG.git
 install_extension comfyui-seedvr2-videoupscaler https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler.git
 install_extension comfyui-segment-anything https://github.com/storyicon/comfyui_segment_anything.git
@@ -30,10 +35,3 @@ install_extension comfyui-ultimatesdupscale https://github.com/ssitu/ComfyUI_Ult
 install_extension comfyui-vibevoice https://github.com/Enemyx-net/VibeVoice-ComfyUI.git
 install_extension comfyui-videohelpersuite https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
 install_extension comfyui-wanvideowrapper https://github.com/kijai/ComfyUI-WanVideoWrapper.git
-
-# Remove previous unwanted extensions
-#
-# Superseeded by comfyui-qwenvl
-remove_extension comfyui-florence2
-# All those nodes are a bit clunky
-remove_extension comfyui-promptstylers
