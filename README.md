@@ -2,10 +2,6 @@
 
 Comfyture is a ready to use Docker image and compose stack designed to simplify running [ComfyUI](https://github.com/Comfy-Org/ComfyUI) with NVIDIA GPU acceleration. Unlike traditional setups, this stack eliminates complex configuration steps while pre-installing 20+ extensions (custom nodes).
 
-<p style="text-align: center;">
-<iframe src="https://github.com/sponsors/bigbrozer/button" title="Sponsor bigbrozer" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
-</p>
-
 > [!IMPORTANT]
 > While functional, this project is still under active development and may have bugs during use.
 
@@ -177,8 +173,8 @@ You can use these variables in `compose.yaml`.
 
 | Variable            | Default | Description                                                                                                |
 |---------------------|---------|------------------------------------------------------------------------------------------------------------|
-| PUID                | `2000`  | Set the User ID for files.                                                                                 |
-| PGID                | `2000`  | Set the Group ID for files.                                                                                |
+| PUID                | `1000`  | Set the User ID for files.                                                                                 |
+| PGID                | `1000`  | Set the Group ID for files.                                                                                |
 | COMFYUI_NO_DEFAULTS | `false` | If `true`, disable default arguments, see how to pass [your own arguments to ComfyUI](#comfyui-arguments). |
 
 ### Data storage
