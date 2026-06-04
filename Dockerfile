@@ -25,8 +25,9 @@ RUN --mount=type=cache,target=/var/cache/apt \
   libglib2.0-0
 
 RUN set -ex \
-  && groupadd -g 2000 comfyui \
-  && useradd -l -m -u 2000 -g 2000 -d ${COMFYUI_HOME} comfyui
+  && groupmod -n comfyui ubuntu \
+  && usermod -l comfyui -m -d ${COMFYUI_HOME} ubuntu \
+  && chown -R comfyui:comfyui ${COMFYUI_HOME}
 
 COPY --from=uv /uv /uvx /usr/local/bin/
 
