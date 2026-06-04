@@ -5,8 +5,8 @@
 set -eu
 
 COMFYUI_HOME="${COMFYUI_HOME:-/opt/comfyui}"
-PUID=${PUID:-2000}
-PGID=${PGID:-2000}
+PUID=${PUID:-1000}
+PGID=${PGID:-1000}
 
 export UV_CACHE_DIR="${COMFYUI_HOME}/python/cache"
 export UV_HTTP_TIMEOUT="60"
