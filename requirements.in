@@ -19,7 +19,7 @@ flash_attn_3 @ https://github.com/mjun0812/flash-attention-prebuild-wheels/relea
 
 # Sage Attention
 # https://github.com/bigbrozer/vinz-wheels
-sageattention @ https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0+cu130torch210-cp313-cp313-linux_x86_64.whl
+sageattention @ https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0+cu130torch212-cp313-cp313-linux_x86_64.whl
 
 # Fixing packages version to have pre-built wheels for Python 3.13
 sentencepiece>=0.2.1
