@@ -25,8 +25,8 @@ Contents:
 
 * Easy to run ComfyUI from Docker.
 * GPU-accelerated (Nvidia CUDA only).
-* Flash Attention support.
-* Sage Attention support.
+* Flash Attention support (v2 / v3).
+* Sage Attention support (v2).
 * Triton support.
 * [New Manager](https://blog.comfy.org/p/meet-the-new-comfyui-manager) enabled by default.
 * Do not run as root, UID/GID are configurables.
