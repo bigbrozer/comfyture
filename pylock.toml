@@ -350,6 +350,12 @@ marker = "sys_platform == 'linux'"
 wheels = [{ url = "https://files.pythonhosted.org/packages/92/de/8ca2b613042550dcf9ef50c596c8b1f602afda92cf9032ac28a73f6ee410/cuda_pathfinder-1.4.2-py3-none-any.whl", upload-time = 2026-03-10T21:57:30Z, size = 44779, hashes = { sha256 = "eb354abc20278f8609dc5b666a24648655bef5613c6dfe78a238a6fd95566754" } }]
 
 [[packages]]
+name = "cuda-toolkit"
+version = "13.0.2"
+marker = "sys_platform == 'linux'"
+wheels = [{ url = "https://pypi.nvidia.com/cuda-toolkit/cuda_toolkit-13.0.2-py2.py3-none-any.whl", hashes = { sha256 = "b198824cf2f54003f50d64ada3a0f184b42ca0846c1c94192fa269ecd97a66eb" } }]
+
+[[packages]]
 name = "cycler"
 version = "0.12.1"
 sdist = { url = "https://files.pythonhosted.org/packages/a9/95/a3dbbb5028f35eafb79008e7522a75244477d2838f38cbb722248dabc2a8/cycler-0.12.1.tar.gz", upload-time = 2023-10-07T05:32:18Z, size = 7615, hashes = { sha256 = "88bb128f02ba341da8ef447245a9e138fae777f6a23943da4540077d3601eb1c" } }
@@ -444,13 +450,13 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/b5/36/7fb70f04bf00bc6
 
 [[packages]]
 name = "flash-attn"
-version = "2.8.3+cu130torch2.10"
-archive = { url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.7.16/flash_attn-2.8.3+cu130torch2.10-cp313-cp313-linux_x86_64.whl", hashes = { sha256 = "5d39154d0c44d0d8db8539a88c3cd2d0dcae4eb9f27da7f687022ffa38ffc662" } }
+version = "2.8.3+cu130torch2.12"
+archive = { url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.9.17/flash_attn-2.8.3+cu130torch2.12-cp313-cp313-linux_x86_64.whl", hashes = { sha256 = "65396c44e7e4ad10d7a427eccdd7ddaca6ea3dde148dd5ea5cac15a00bc089ae" } }
 
 [[packages]]
 name = "flash-attn-3"
-version = "3.0.0+cu130torch2.10gite2743ab"
-archive = { url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.8.2/flash_attn_3-3.0.0+cu130torch2.10gite2743ab-cp39-abi3-linux_x86_64.whl", hashes = { sha256 = "975c16e73f7cdbd2e1174d2f57dbf61022249501381269d9eaf142f66f74e01a" } }
+version = "3.0.0+cu130torch2.12gite2743ab"
+archive = { url = "https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.9.18/flash_attn_3-3.0.0+cu130torch2.12gite2743ab-cp39-abi3-linux_x86_64.whl", hashes = { sha256 = "0a2e3bdbf7aac752d3d60321b1aee40573af613fbb9521fd3763dd4c2dd05ca7" } }
 
 [[packages]]
 name = "flatbuffers"
@@ -889,9 +895,9 @@ wheels = [{ url = "https://pypi.nvidia.com/nvidia-cuda-runtime/nvidia_cuda_runti
 
 [[packages]]
 name = "nvidia-cudnn-cu13"
-version = "9.15.1.9"
+version = "9.20.0.48"
 marker = "sys_platform == 'linux'"
-wheels = [{ url = "https://pypi.nvidia.com/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9.15.1.9-py3-none-manylinux_2_27_x86_64.whl", hashes = { sha256 = "ebc9a647918df0d7298d67cfaf41579fd4c78ead9aba246f5ad9414d61b9ec4c" } }]
+wheels = [{ url = "https://pypi.nvidia.com/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9.20.0.48-py3-none-manylinux_2_27_x86_64.whl", hashes = { sha256 = "0c45dd8eeb50b603f07995b1b300c62ffe6a1980482b82b3bcf94a4ca9d49304" } }]
 
 [[packages]]
 name = "nvidia-cufft"
@@ -925,15 +931,15 @@ wheels = [{ url = "https://pypi.nvidia.com/nvidia-cusparse/nvidia_cusparse-12.6.
 
 [[packages]]
 name = "nvidia-cusparselt-cu13"
-version = "0.8.0"
+version = "0.8.1"
 marker = "sys_platform == 'linux'"
-wheels = [{ url = "https://pypi.nvidia.com/nvidia-cusparselt-cu13/nvidia_cusparselt_cu13-0.8.0-py3-none-manylinux2014_x86_64.whl", hashes = { sha256 = "25e30a8a7323935d4ad0340b95a0b69926eee755767e8e0b1cf8dd85b197d3fd" } }]
+wheels = [{ url = "https://pypi.nvidia.com/nvidia-cusparselt-cu13/nvidia_cusparselt_cu13-0.8.1-py3-none-manylinux2014_x86_64.whl", hashes = { sha256 = "786ce87568c303fadb5afcc7102d454cd3040d75f6f8626f5db460d1871f4dd0" } }]
 
 [[packages]]
 name = "nvidia-nccl-cu13"
-version = "2.28.9"
+version = "2.29.7"
 marker = "sys_platform == 'linux'"
-wheels = [{ url = "https://pypi.nvidia.com/nvidia-nccl-cu13/nvidia_nccl_cu13-2.28.9-py3-none-manylinux_2_18_x86_64.whl", hashes = { sha256 = "e4553a30f34195f3fa1da02a6da3d6337d28f2003943aa0a3d247bbc25fefc42" } }]
+wheels = [{ url = "https://pypi.nvidia.com/nvidia-nccl-cu13/nvidia_nccl_cu13-2.29.7-py3-none-manylinux_2_18_x86_64.whl", hashes = { sha256 = "edd81538446786ec3b73972543e53bb43bcaf0bfc8ef76cb679fcc390ffe136d" } }]
 
 [[packages]]
 name = "nvidia-nvjitlink"
@@ -1328,7 +1334,7 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/a0/60/429e9b1cb3fc651
 [[packages]]
 name = "sageattention"
 version = "2.2.0"
-archive = { url = "https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0+cu130torch210-cp313-cp313-linux_x86_64.whl", hashes = { sha256 = "d2564f6d1f296905f3a7ab0eb3e3436def49beafa87e974d894fc2f7890d9141" } }
+archive = { url = "https://github.com/bigbrozer/vinz-wheels/raw/refs/heads/main/wheels/sageattention-2.2.0+cu130torch212-cp313-cp313-linux_x86_64.whl", hashes = { sha256 = "c821a092a39dc4e1c6ae0126f1fab4a5bfc2cb4f4d9602a574a3fc376d916326" } }
 
 [[packages]]
 name = "sam-2"
@@ -1600,13 +1606,13 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/c7/18/c86eb8e0202e32d
 
 [[packages]]
 name = "torch"
-version = "2.10.0+cu130"
-wheels = [{ url = "https://download-r2.pytorch.org/whl/cu130/torch-2.10.0%2Bcu130-cp313-cp313-manylinux_2_28_x86_64.whl", upload-time = 2026-01-21T19:02:26Z, hashes = { sha256 = "7e0d9922e9e91f780b2761a0c5ebac3c15c9740bab042e1b59149afa6d6474eb" } }]
+version = "2.12.1+cu130"
+wheels = [{ url = "https://download-r2.pytorch.org/whl/cu130/torch-2.12.1%2Bcu130-cp313-cp313-manylinux_2_28_x86_64.whl", upload-time = 2026-06-18T02:41:44Z, hashes = { sha256 = "d5e1840442d2182957b3d2f778cc325c90fa5cb42aa8b1ac949f029e9bdd7f06" } }]
 
 [[packages]]
 name = "torchaudio"
-version = "2.10.0+cu130"
-wheels = [{ url = "https://download-r2.pytorch.org/whl/cu130/torchaudio-2.10.0%2Bcu130-cp313-cp313-manylinux_2_28_x86_64.whl", upload-time = 2026-01-21T15:05:51Z, hashes = { sha256 = "8b1c31c3cf39750d476752bd6508a6cfb1bfaf1d6f0d885ed7de4a967ed52eeb" } }]
+version = "2.11.0+cu130"
+wheels = [{ url = "https://download-r2.pytorch.org/whl/cu130/torchaudio-2.11.0%2Bcu130-cp313-cp313-manylinux_2_28_x86_64.whl", upload-time = 2026-03-23T15:50:26Z, hashes = { sha256 = "e9c07cfdab691454092ff12d21dd1407a4bb8ad081d38f222cf6fcf6abcc18c8" } }]
 
 [[packages]]
 name = "torchsde"
@@ -1616,8 +1622,8 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/dd/1f/b67ebd7e19ffe25
 
 [[packages]]
 name = "torchvision"
-version = "0.25.0+cu130"
-wheels = [{ url = "https://download-r2.pytorch.org/whl/cu130/torchvision-0.25.0%2Bcu130-cp313-cp313-manylinux_2_28_x86_64.whl", upload-time = 2026-01-21T22:34:47Z, hashes = { sha256 = "e85337d59bdbf7006cd0c76012da3663ded5606dadc68f72280d9f2ab1e9191a" } }]
+version = "0.27.1+cu130"
+wheels = [{ url = "https://download-r2.pytorch.org/whl/cu130/torchvision-0.27.1%2Bcu130-cp313-cp313-manylinux_2_28_x86_64.whl", upload-time = 2026-06-17T15:44:44Z, hashes = { sha256 = "f9f008d4b1b2f013eaf7bec1a9ff221263581d77668d4e1e0e9c3ed351d56465" } }]
 
 [[packages]]
 name = "tqdm"
@@ -1650,9 +1656,9 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/05/98/716a473cfb24750
 
 [[packages]]
 name = "triton"
-version = "3.6.0"
+version = "3.7.1"
 marker = "sys_platform == 'linux'"
-wheels = [{ url = "https://download-r2.pytorch.org/whl/triton-3.6.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2026-01-22T23:14:00Z, hashes = { sha256 = "0075039ff27765480083b1a109999bf27110f3542f1f9fad95f0f9065a36da79" } }]
+wheels = [{ url = "https://download-r2.pytorch.org/whl/triton-3.7.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2026-06-17T16:39:32Z, hashes = { sha256 = "59688b9b924f887316dcd0fae9e8cbe697ee1d1f6ab386723982cc9ecdebee01" } }]
 
 [[packages]]
 name = "typer"
