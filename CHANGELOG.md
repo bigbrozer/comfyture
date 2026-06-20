@@ -4,6 +4,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.29.0 - 2026-06-20
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.25.1
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.25.1>
+* **comfy**: Bump to v0.25.0
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.25.0>
+* **deps**: Bump `uv` to 0.11.23
+* **docker**: Bump cuda to 13.0.3
+* **python**: Bump to 3.13.14
+* **sage-attention**: Recompile for torch 2.12
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **docs**: Set correct defaults for PUID / PGID environment variables
+
 ## 0.28.0 - 2026-06-04
 
 ### <!-- 0 -->🚀 Features
