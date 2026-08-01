@@ -115,7 +115,9 @@ Here is the list of pre-installed extensions:
 | [kijai/ComfyUI-WanVideoWrapper](https://github.com/kijai/ComfyUI-WanVideoWrapper)                     | Nodes for wrapping and processing video in ComfyUI.                                                            |
 | [Kosinkadink/ComfyUI-Advanced-ControlNet](https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet) | Advanced ControlNet nodes for ComfyUI.                                                                         |
 | [Kosinkadink/ComfyUI-VideoHelperSuite](https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite)       | A suite of nodes for video processing in ComfyUI.                                                              |
+| [lbouaraba/comfyui-krea2edit](https://github.com/lbouaraba/comfyui-krea2edit)                         | Instruction-based, identity-preserving image editing using Krea 2 with a specialized LoRA.                     |
 | [Lightricks/ComfyUI-LTXVideo](https://github.com/Lightricks/ComfyUI-LTXVideo)                         | A collection of powerful custom nodes that extend ComfyUI's capabilities for the LTX-2 video generation model. |
+| [lquesada/ComfyUI-Inpaint-CropAndStitch](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch)   | Crop before sampling and stitch back after sampling to speed up inpainting.                                    |
 | [ltdrdata/ComfyUI-Impact-Pack](https://github.com/ltdrdata/ComfyUI-Impact-Pack)                       | A comprehensive pack of nodes for ComfyUI.                                                                     |
 | [ltdrdata/ComfyUI-Impact-Subpack](https://github.com/ltdrdata/ComfyUI-Impact-Subpack)                 | A smaller subset of nodes from the Impact pack for ComfyUI.                                                    |
 | [numz/ComfyUI-SeedVR2_VideoUpscaler](https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler)           | Official SeedVR2 diffusion-based video and image upscaler for ComfyUI.                                         |
@@ -126,6 +128,8 @@ Here is the list of pre-installed extensions:
 | [ssitu/ComfyUI_UltimateSDUpscale](https://github.com/ssitu/ComfyUI_UltimateSDUpscale)                 | Advanced upscaling nodes for Stable Diffusion in ComfyUI.                                                      |
 | [stavsap/comfyui-ollama](https://github.com/stavsap/comfyui-ollama)                                   | Ollama integration for ComfyUI.                                                                                |
 | [storyicon/comfyui_segment_anything](https://github.com/storyicon/comfyui_segment_anything)           | Segment Anything model integration for ComfyUI.                                                                |
+| [willmiao/ComfyUI-Lora-Manager](https://github.com/willmiao/ComfyUI-Lora-Manager)                     | Organize, preview, and integrate LoRA models with metadata and workflow support.                               |
+| [yolain/ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use)                                 | Optimizations and integrations of commonly used nodes to make ComfyUI easier to use.                           |
 
 ## Configuration
 

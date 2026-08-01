@@ -56,6 +56,10 @@ matrix-nio # Needed for sharing features
 # https://github.com/Jonseed/ComfyUI-Detail-Daemon
 -r "https://raw.githubusercontent.com/Jonseed/ComfyUI-Detail-Daemon/refs/heads/main/requirements.txt"
 
+# comfyui-easy-use
+# https://github.com/yolain/ComfyUI-Easy-Use
+-r "https://raw.githubusercontent.com/yolain/ComfyUI-Easy-Use/refs/heads/main/requirements.txt"
+
 # comfyui-essentials
 # https://github.com/cubiq/ComfyUI_essentials
 -r "https://raw.githubusercontent.com/cubiq/ComfyUI_essentials/refs/heads/main/requirements.txt"
@@ -80,6 +84,10 @@ matrix-nio # Needed for sharing features
 # https://github.com/ltdrdata/ComfyUI-Impact-Subpack
 -r "https://raw.githubusercontent.com/ltdrdata/ComfyUI-Impact-Subpack/refs/heads/main/requirements.txt"
 
+# comfyui-inpaint-cropandstitch
+# https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch
+#-r ""
+
 # comfyui-inpaint-nodes
 # https://github.com/Acly/comfyui-inpaint-nodes
 #-r ""
@@ -94,6 +102,10 @@ onnxruntime-gpu
 # https://github.com/kijai/ComfyUI-KJNodes
 -r "https://raw.githubusercontent.com/kijai/ComfyUI-KJNodes/refs/heads/main/requirements.txt"
 
+# comfyui-krea2edit
+# https://github.com/lbouaraba/comfyui-krea2edit
+#-r ""
+
 # comfyui-lanpaint
 # https://github.com/scraed/LanPaint
 #-r ""
@@ -102,6 +114,10 @@ onnxruntime-gpu
 # https://github.com/Firetheft/ComfyUI_Local_Media_Manager
 -r "https://raw.githubusercontent.com/Firetheft/ComfyUI_Local_Media_Manager/refs/heads/main/requirements.txt"
 moviepy
+
+# comfyui-lora-manager
+# https://github.com/willmiao/ComfyUI-Lora-Manager
+-r "https://raw.githubusercontent.com/willmiao/ComfyUI-Lora-Manager/refs/heads/main/requirements.txt"
 
 # comfyui-ltxvideo
 # https://github.com/Lightricks/ComfyUI-LTXVideo
