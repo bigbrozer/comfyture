@@ -65,6 +65,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/61/62/06741b57915636024
 wheels = [{ url = "https://files.pythonhosted.org/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl", upload-time = 2025-07-03T22:54:42Z, size = 7490, hashes = { sha256 = "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e" } }]
 
 [[packages]]
+name = "aiosqlite"
+version = "0.22.1"
+sdist = { url = "https://files.pythonhosted.org/packages/4e/8a/64761f4005f17809769d23e518d915db74e6310474e733e3593cfc854ef1/aiosqlite-0.22.1.tar.gz", upload-time = 2025-12-23T19:25:43Z, size = 14821, hashes = { sha256 = "043e0bd78d32888c0a9ca90fc788b38796843360c855a7262a532813133a0650" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/00/b7/e3bf5133d697a08128598c8d0abc5e16377b51465a33756de24fa7dee953/aiosqlite-0.22.1-py3-none-any.whl", upload-time = 2025-12-23T19:25:42Z, size = 17405, hashes = { sha256 = "21c002eb13823fad740196c5a2e9d8e62f6243bd9e7e4a1f87fb5e44ecb4fceb" } }]
+
+[[packages]]
 name = "albucore"
 version = "0.0.24"
 sdist = { url = "https://files.pythonhosted.org/packages/13/69/d4cbcf2a5768bf91cd14ffef783520458431e5d2b22fbc08418d3ba09a88/albucore-0.0.24.tar.gz", upload-time = 2025-03-09T18:46:51Z, size = 16981, hashes = { sha256 = "f2cab5431fadf94abf87fd0c89d9f59046e49fe5de34afea8f89bc8390253746" } }
@@ -154,6 +160,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/d0/d0/d8cc8c9a4488a787e
 wheels = [{ url = "https://files.pythonhosted.org/packages/bf/51/472e7b36a6bedb5242a9757e7486f702c3619eff76e256735d0c8b1679c6/blis-1.3.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", upload-time = 2025-11-17T12:28:04Z, size = 11359008, hashes = { sha256 = "e9f5c53b277f6ac5b3ca30bc12ebab7ea16c8f8c36b14428abb56924213dc127" } }]
 
 [[packages]]
+name = "brotli"
+version = "1.2.0"
+sdist = { url = "https://files.pythonhosted.org/packages/f7/16/c92ca344d646e71a43b8bb353f0a6490d7f6e06210f8554c8f874e454285/brotli-1.2.0.tar.gz", upload-time = 2025-11-05T18:39:42Z, size = 7388632, hashes = { sha256 = "e310f77e41941c13340a95976fe66a8a95b01e783d430eeaf7a2f87e0a57dd0a" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/5f/16/a1b22cbea436642e071adcaf8d4b350a2ad02f5e0ad0da879a1be16188a0/brotli-1.2.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", upload-time = 2025-11-05T18:38:38Z, size = 1419737, hashes = { sha256 = "67a91c5187e1eec76a61625c77a6c8c785650f5b576ca732bd33ef58b0dff49c" } }]
+
+[[packages]]
 name = "catalogue"
 version = "2.0.10"
 sdist = { url = "https://files.pythonhosted.org/packages/38/b4/244d58127e1cdf04cf2dc7d9566f0d24ef01d5ce21811bab088ecc62b5ea/catalogue-2.0.10.tar.gz", upload-time = 2023-09-25T06:29:24Z, size = 19561, hashes = { sha256 = "4f56daa940913d3f09d589c191c74e5a6d51762b3a9e37dd53b7437afd6cda15" } }
@@ -197,6 +209,12 @@ name = "click"
 version = "8.3.1"
 sdist = { url = "https://files.pythonhosted.org/packages/3d/fa/656b739db8587d7b5dfa22e22ed02566950fbfbcdc20311993483657a5c0/click-8.3.1.tar.gz", upload-time = 2025-11-15T20:45:42Z, size = 295065, hashes = { sha256 = "12ff4785d337a1bb490bb7e9c2b1ee5da3112e94a8622f26a6c77f5d2fc6842a" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/98/78/01c019cdb5d6498122777c1a43056ebb3ebfeef2076d9d026bfe15583b2b/click-8.3.1-py3-none-any.whl", upload-time = 2025-11-15T20:45:41Z, size = 108274, hashes = { sha256 = "981153a64e25f12d547d3426c367a4857371575ee7ad18df2a6183ab0545b2a6" } }]
+
+[[packages]]
+name = "clip-interrogator"
+version = "0.6.0"
+sdist = { url = "https://files.pythonhosted.org/packages/23/d1/2f0f61c5cbaea3d1480f2eb2709f89d64d62976e9634e7eeaac2e2c03ba2/clip-interrogator-0.6.0.tar.gz", upload-time = 2023-03-20T03:47:53Z, size = 788919, hashes = { sha256 = "e7942372fe9b96181881f7083e3179de746e59b0e3c4199fb3e3e19bef421693" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/30/79/a75e9129809368b3e3d9b9bc803230ac1cba7d690338f7b0c3ad46107fa3/clip_interrogator-0.6.0-py3-none-any.whl", upload-time = 2023-03-20T03:47:51Z, size = 787802, hashes = { sha256 = "cd7c6bf9db170f005b4179e943fc1658aa0f8eebcc75ab3428b0a992aaeabd1c" } }]
 
 [[packages]]
 name = "cloudpathlib"
@@ -700,6 +718,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/ab/17/8b3518ece01512a57
 wheels = [{ url = "https://files.pythonhosted.org/packages/25/16/ec8dc3ce1d79660ddd6a186a77037e0c3bf61648e6c72250280b648fb291/kornia_rs-0.1.10-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", upload-time = 2025-11-08T11:29:52Z, size = 3042272, hashes = { sha256 = "fa3464de8f9920d87415721c36840ceea23e054dcb54dd9f69189ba9eabce0c7" } }]
 
 [[packages]]
+name = "lark"
+version = "1.3.1"
+sdist = { url = "https://files.pythonhosted.org/packages/da/34/28fff3ab31ccff1fd4f6c7c7b0ceb2b6968d8ea4950663eadcb5720591a0/lark-1.3.1.tar.gz", upload-time = 2025-10-27T18:25:56Z, size = 382732, hashes = { sha256 = "b426a7a6d6d53189d318f2b6236ab5d6429eaf09259f1ca33eb716eed10d2905" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/82/3d/14ce75ef66813643812f3093ab17e46d3a206942ce7376d31ec2d36229e7/lark-1.3.1-py3-none-any.whl", upload-time = 2025-10-27T18:25:54Z, size = 113151, hashes = { sha256 = "c629b661023a014c37da873b4ff58a817398d12635d3bbb2c5a03be7fe5d1e12" } }]
+
+[[packages]]
 name = "lazy-loader"
 version = "0.5"
 sdist = { url = "https://files.pythonhosted.org/packages/49/ac/21a1f8aa3777f5658576777ea76bfb124b702c520bbe90edf4ae9915eafa/lazy_loader-0.5.tar.gz", upload-time = 2026-03-06T15:45:09Z, size = 15294, hashes = { sha256 = "717f9179a0dbed357012ddad50a5ad3d5e4d9a0b8712680d4e687f5e6e6ed9b3" } }
@@ -838,6 +862,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/23/2e/88c147931ea9725d6
 wheels = [{ url = "https://files.pythonhosted.org/packages/e2/63/58e2de2b5232cd294c64092688c422196e74f9fa8b3958bdf02d33df24b9/murmurhash-1.0.15-cp313-cp313-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl", upload-time = 2025-11-14T09:50:26Z, size = 133080, hashes = { sha256 = "b3ba6d05de2613535b5a9227d4ad8ef40a540465f64660d4a8800634ae10e04f" } }]
 
 [[packages]]
+name = "natsort"
+version = "8.4.0"
+sdist = { url = "https://files.pythonhosted.org/packages/e2/a9/a0c57aee75f77794adaf35322f8b6404cbd0f89ad45c87197a937764b7d0/natsort-8.4.0.tar.gz", upload-time = 2023-06-20T04:17:19Z, size = 76575, hashes = { sha256 = "45312c4a0e5507593da193dedd04abb1469253b601ecaf63445ad80f0a1ea581" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/ef/82/7a9d0550484a62c6da82858ee9419f3dd1ccc9aa1c26a1e43da3ecd20b0d/natsort-8.4.0-py3-none-any.whl", upload-time = 2023-06-20T04:17:17Z, size = 38268, hashes = { sha256 = "4732914fb471f56b5cce04d7bae6f164a592c7712e1c85f9ef585e197299521c" } }]
+
+[[packages]]
 name = "networkx"
 version = "3.6.1"
 sdist = { url = "https://files.pythonhosted.org/packages/6a/51/63fe664f3908c97be9d2e4f1158eb633317598cfa6e1fc14af5383f17512/networkx-3.6.1.tar.gz", hashes = { sha256 = "26b7c357accc0c8cde558ad486283728b65b6a95d85ee1cd66bafab4c8168509" } }
@@ -964,6 +994,12 @@ marker = "sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-nvtx/nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl", hashes = { sha256 = "4936d1d6780fbe68db454f5e72a42ff64d1fd6397df9f363ae786930fd5c1cd4" } }]
 
 [[packages]]
+name = "olefile"
+version = "0.47"
+sdist = { url = "https://files.pythonhosted.org/packages/69/1b/077b508e3e500e1629d366249c3ccb32f95e50258b231705c09e3c7a4366/olefile-0.47.zip", upload-time = 2023-12-01T16:22:53Z, size = 112240, hashes = { sha256 = "599383381a0bf3dfbd932ca0ca6515acd174ed48870cbf7fee123d698c192c1c" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/17/d3/b64c356a907242d719fc668b71befd73324e47ab46c8ebbbede252c154b2/olefile-0.47-py2.py3-none-any.whl", upload-time = 2023-12-01T16:22:51Z, size = 114565, hashes = { sha256 = "543c7da2a7adadf21214938bb79c83ea12b473a4b6ee4ad4bf854e7715e13d1f" } }]
+
+[[packages]]
 name = "ollama"
 version = "0.6.0"
 sdist = { url = "https://files.pythonhosted.org/packages/d6/47/f9ee32467fe92744474a8c72e138113f3b529fc266eea76abfdec9a33f3b/ollama-0.6.0.tar.gz", upload-time = 2025-09-24T22:46:02Z, size = 50811, hashes = { sha256 = "da2b2d846b5944cfbcee1ca1e6ee0585f6c9d45a2fe9467cbcd096a37383da2f" } }
@@ -990,6 +1026,12 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/3d/26/4d09ddc755a84fc
 name = "onnxruntime-gpu"
 version = "1.26.0"
 wheels = [{ url = "https://files.pythonhosted.org/packages/dd/97/fe8979f44b9275654b42f7bb556e30789b71a1b22998c83b540df2b1b774/onnxruntime_gpu-1.26.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2026-05-08T19:15:58Z, size = 276974871, hashes = { sha256 = "cfda2fad535595bfc3e570eb588092717711dcb2957656d814695e0c9ceb1508" } }]
+
+[[packages]]
+name = "open-clip-torch"
+version = "3.3.0"
+sdist = { url = "https://files.pythonhosted.org/packages/4a/1f/2bc9795047fa2c1ad2567ef78ce6dfc9a7b763fa534acee09a94da2a5b8f/open_clip_torch-3.3.0.tar.gz", upload-time = 2026-02-27T00:32:46Z, size = 1503380, hashes = { sha256 = "904b1a9f909df8281bb3de60ab95491cd2994a509177ea4f9d6292a84fe24d6d" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/37/b5/41c315ccd94ca332ead3e832e83eee343ab245005c3e43d9d3e75eae34eb/open_clip_torch-3.3.0-py3-none-any.whl", upload-time = 2026-02-27T00:32:44Z, size = 1547268, hashes = { sha256 = "c549ad5ed6bfc119cc11105033c0a2b9d7a2a4afeb40a58a09aab3da1a0043ce" } }]
 
 [[packages]]
 name = "opencv-contrib-python"
