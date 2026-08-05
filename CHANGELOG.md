@@ -4,6 +4,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.32.0 - 2026-08-05
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.30.0
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.30.0>
+* **extensions**: Add new custom nodes
+  * Pre-install [lbouaraba/comfyui-krea2edit](https://github.com/lbouaraba/comfyui-krea2edit) -- Instruction-based, identity-preserving image editing using Krea 2.
+  * Pre-install [lquesada/ComfyUI-Inpaint-CropAndStitch](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch) -- Crop before sampling and stitch back after sampling to speed up inpainting.
+  * Pre-install [willmiao/ComfyUI-Lora-Manager](https://github.com/willmiao/ComfyUI-Lora-Manager) -- Organize, preview, and integrate LoRA models with metadata and workflow support.
+  * Pre-install [yolain/ComfyUI-Easy-Use](https://github.com/yolain/ComfyUI-Easy-Use) -- Optimizations and integrations of commonly used nodes to make ComfyUI easier to use.
+
 ## 0.31.0 - 2026-07-01
 
 ### <!-- 0 -->🚀 Features
