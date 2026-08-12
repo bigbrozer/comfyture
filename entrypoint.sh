@@ -37,6 +37,48 @@ function install_extension() {
           && git fetch --prune --prune-tags --recurse-submodules \
           && git reset --hard --recurse-submodules "@{upstream}")
     fi
+
+    # Re-applied on every install/update since a fresh clone or hard reset
+    # always lands on unpatched upstream code.
+    patch_extension "${name}"
+}
+
+# Apply local patches on top of an extension, if any exist.
+#
+# Patches live in "patches/<name>/*.patch" as git-diff files (e.g. generated
+# with `git diff > patches/<name>/001-description.patch` from inside the
+# extension's clone) and are applied in lexical order, so number them
+# (001-, 002-, ...) when an extension needs more than one. Extensions with no
+# patches directory are left untouched.
+function patch_extension() {
+    local name="$1"; shift
+    local patch_dir="${COMFYUI_HOME}/patches/${name}"
+    local ext_dir="${COMFYUI_HOME}/app/custom_nodes/${name}"
+
+    if [[ ! -d "${patch_dir}" ]]; then
+      return 0
+    fi
+
+    if [[ ! -d "${ext_dir}" ]]
+    then
+        log "Cannot patch ${name}: extension is not installed"
+        return 1
+    fi
+
+    local patch_file
+    for patch_file in "${patch_dir}"/*.patch
+    do
+        [[ -e "${patch_file}" ]] || continue
+
+        if (cd "${ext_dir}" && git apply --check --reverse "${patch_file}" 2>/dev/null)
+        then
+            log "Patch $(basename "${patch_file}") already applied to ${name}, skipping..."
+            continue
+        fi
+
+        log "Applying patch $(basename "${patch_file}") to ${name}..."
+        (cd "${ext_dir}" && git apply "${patch_file}")
+    done
 }
 
 function remove_extension() {
