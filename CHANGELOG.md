@@ -4,6 +4,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.33.0 - 2026-08-25
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.33.1
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.33.1>
+* **core**: Add a patch support for extensions (#37)
+  * Introduces a new feature that allows users to [apply patches to extensions](patches/README.md) in the ComfyUI project. The patch support enables users to modify and enhance the functionality of extensions without directly altering the original source code.
+  * Thanks @algonixdev for the patch support implementation.
+* **deps**: Bump pytorch to 2.13.0
+
 ## 0.32.0 - 2026-08-05
 
 ### <!-- 0 -->🚀 Features
