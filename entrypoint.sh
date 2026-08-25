@@ -4,10 +4,18 @@
 
 set -eu
 
+# Important locations
 COMFYUI_HOME="${COMFYUI_HOME:-/opt/comfyui}"
+COMFYUI_CUSTOM_NODES_DIR="${COMFYUI_HOME}/app/custom_nodes"
+COMFYUI_MODELS_DIR="${COMFYUI_HOME}/app/models"
+COMFYUI_PATCHES_DIR="${COMFYUI_HOME}/patches"
+COMFYUI_PROFILE_DIR="${COMFYUI_HOME}/app/user"
+
+# Run as
 PUID=${PUID:-1000}
 PGID=${PGID:-1000}
 
+# Uv settings
 export UV_CACHE_DIR="${COMFYUI_HOME}/python/cache"
 export UV_HTTP_TIMEOUT="60"
 export VIRTUAL_ENV="${COMFYUI_HOME}/python/venv"
@@ -27,25 +35,62 @@ function install_extension() {
     local name="$1"; shift
     local url="$1"; shift
 
-    if [[ ! -d "${COMFYUI_HOME}/app/custom_nodes/${name}" ]]
+    if [[ ! -d "${COMFYUI_CUSTOM_NODES_DIR}/${name}" ]]
     then
         log "Installing ${name}..."
-        git clone "${url}" "${COMFYUI_HOME}/app/custom_nodes/${name}" --recurse-submodules
+        git clone "${url}" "${COMFYUI_CUSTOM_NODES_DIR}/${name}" --recurse-submodules
     else
         log "Updating ${name}..."
-        (cd "${COMFYUI_HOME}/app/custom_nodes/${name}" \
+        (cd "${COMFYUI_CUSTOM_NODES_DIR}/${name}" \
           && git fetch --prune --prune-tags --recurse-submodules \
           && git reset --hard --recurse-submodules "@{upstream}")
     fi
+
+    # Re-applied patches since a fresh clone or hard reset
+    # always lands on unpatched upstream code.
+    patch_extension "${name}"
+}
+
+# Apply local patches on top of an extension, if any exist.
+# See patches/README.md for more information.
+function patch_extension() {
+    local name="$1"; shift
+    local patch_dir="${COMFYUI_PATCHES_DIR}/${name}"
+    local ext_dir="${COMFYUI_CUSTOM_NODES_DIR}/${name}"
+
+    if [[ ! -d "${patch_dir}" ]]; then
+      return 0
+    fi
+
+    if [[ ! -d "${ext_dir}" ]]
+    then
+        log "Cannot patch ${name}: extension is not installed"
+        return 1
+    fi
+
+    local patch_file
+    for patch_file in "${patch_dir}"/*.patch
+    do
+        [[ -e "${patch_file}" ]] || continue
+
+        if (cd "${ext_dir}" && git apply --check --reverse "${patch_file}" 2>/dev/null)
+        then
+            log "Patch $(basename "${patch_file}") already applied to ${name}, skipping..."
+            continue
+        fi
+
+        log "Applying patch $(basename "${patch_file}") to ${name}..."
+        (cd "${ext_dir}" && git apply "${patch_file}")
+    done
 }
 
 function remove_extension() {
     local name="$1"; shift
 
-    if [[ -d "${COMFYUI_HOME}/app/custom_nodes/${name}" ]]
+    if [[ -d "${COMFYUI_CUSTOM_NODES_DIR}/${name}" ]]
     then
         log "Removing extension ${name}..."
-        rm -rf "${COMFYUI_HOME}/app/custom_nodes/${name}"
+        rm -rf "${COMFYUI_CUSTOM_NODES_DIR:?}/${name}"
     fi
 }
 
@@ -89,7 +134,7 @@ function setup_dirs() {
 
     for model_dir in "${model_dirs[@]}"
     do
-      local model_path="${COMFYUI_HOME}/app/models/${model_dir}"
+      local model_path="${COMFYUI_MODELS_DIR}/${model_dir}"
       if [ ! -d "${model_path}" ]
       then
         log "Creating directory \"${model_path}\"..."
@@ -122,8 +167,7 @@ function fix_perms() {
 
 function init_manager() {
   # Init the manager config
-  local profile_dir="${COMFYUI_HOME}/app/user"
-  local manager_profile_dir="${profile_dir}/__manager"
+  local manager_profile_dir="${COMFYUI_PROFILE_DIR}/__manager"
   local manager_config_file="${manager_profile_dir}/config.ini"
 
   if [ ! -e "${manager_profile_dir}" ]

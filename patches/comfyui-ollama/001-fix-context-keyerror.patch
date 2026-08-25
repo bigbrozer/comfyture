@@ -1,0 +1,13 @@
+diff --git a/CompfyuiOllama.py b/CompfyuiOllama.py
+index baa8025..ac4a2d5 100644
+--- a/CompfyuiOllama.py
++++ b/CompfyuiOllama.py
+@@ -385,7 +385,7 @@ format: {format}
+             if debug_print:
+                 print("saving context to node memory.")
+ 
+-        return ollama_response_text, ollama_response_thinking, response['context'], meta,
++        return ollama_response_text, ollama_response_thinking, response.get('context', []), meta,
+ 
+ 
+ class OllamaChat:

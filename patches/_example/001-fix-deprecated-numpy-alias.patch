@@ -1,0 +1,11 @@
+diff --git a/nodes.py b/nodes.py
+index 543ed3f..e07a297 100644
+--- a/nodes.py
++++ b/nodes.py
+@@ -7,5 +7,5 @@ class ExampleUpscaleNode:
+ 
+     def process(self, image, scale):
+         array = image.cpu().numpy()
+-        array = array.astype(np.float)
++        array = array.astype(np.float32)
+         return (torch.from_numpy(array * scale),)
