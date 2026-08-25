@@ -31,6 +31,7 @@ Contents:
 * [New Manager](https://blog.comfy.org/p/meet-the-new-comfyui-manager) enabled by default.
 * Do not run as root, UID/GID are configurables.
 * A set of [pre-installed extensions](#pre-installed-extensions).
+* Custom patch extensions support (see [`patches/README.md`](patches/README.md)).
 
 > [!WARNING]
 > This project does not provide models, you must download those manually and put them in `./data/models`.

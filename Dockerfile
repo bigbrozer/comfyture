@@ -47,10 +47,12 @@ RUN set -ex \
   "app/models" \
   "app/output" \
   "app/user" \
+  "patches" \
   && chown -R comfyui:comfyui .
 
 COPY --chown=comfyui --chmod=0755 ./entrypoint.sh .
 COPY --chown=comfyui --chmod=0644 ./extensions.sh .
+COPY --chown=comfyui --chmod=0755 ./patches ./patches
 
 EXPOSE 8188
 ENTRYPOINT ["/opt/comfyui/entrypoint.sh"]

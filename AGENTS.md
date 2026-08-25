@@ -41,6 +41,16 @@ Align the columns to match the surrounding rows (use spaces to pad to the same c
 
 ---
 
+## Patching an extension
+
+When an extension needs a local fix that isn't upstream yet, don't fork it — add a patch under `patches/<slug>/` instead. See `patches/README.md` for the format. It's applied automatically by `patch_extension` (called from `install_extension` in `entrypoint.sh`) on every install/update, so no wiring is needed elsewhere.
+
+```sh
+git diff > patches/<slug>/001-short-description.patch
+```
+
+---
+
 ### Checklist
 
 - [ ] `extensions.sh` — `install_extension` line added in alphabetical order
