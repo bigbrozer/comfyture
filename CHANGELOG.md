@@ -4,6 +4,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.37.0 - 2026-09-22
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.37.0
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0>
+* **extensions**: Add RES4LYF extension
+  * Adds [ClownsharkBatwing/RES4LYF](https://github.com/ClownsharkBatwing/RES4LYF), an advanced sampling node pack with 69+ selectable samplers, regional/temporal conditioning, and style transfer support.
+
 ## 0.36.0 - 2026-09-18
 
 ### <!-- 0 -->🚀 Features
