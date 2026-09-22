@@ -1321,6 +1321,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/6c/07/cfdd6a846ac859e51
 wheels = [{ url = "https://files.pythonhosted.org/packages/13/10/e2b575faa32d1d32e5e6041fc64794fa9f09526852a06b25353b66f52cae/python_socks-2.8.0-py3-none-any.whl", upload-time = 2025-12-09T12:17:03Z, size = 55075, hashes = { sha256 = "57c24b416569ccea493a101d38b0c82ed54be603aa50b6afbe64c46e4a4e4315" } }]
 
 [[packages]]
+name = "pywavelets"
+version = "1.10.0"
+sdist = { url = "https://files.pythonhosted.org/packages/25/84/a9e80e33eb114e78bd2f1829a90d72d8d4d660109c721a8aa2f0d58d7592/pywavelets-1.10.0.tar.gz", upload-time = 2026-09-07T17:15:15Z, size = 3948163, hashes = { sha256 = "f3cb8640225a8f3fdcbc3f6f3bd112c78927c9407cbfa65a5ff303990a6a3e32" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/57/b7/4b0bec531c157f5c933df20964a95a793fbd8c933fcc5eddaa0ae9ad35ce/pywavelets-1.10.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2026-09-07T17:14:01Z, size = 4463469, hashes = { sha256 = "d27de9fd9d76d2dcd2debd12f8ac236697cec82345dbada5a0646821cae8ea85" } }]
+
+[[packages]]
 name = "pyyaml"
 version = "6.0.3"
 sdist = { url = "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz", upload-time = 2025-09-25T21:33:16Z, size = 130960, hashes = { sha256 = "d76623373421df22fb4cf8817020cbb7ef15c725b9d5e45f17e189bfc384190f" } }

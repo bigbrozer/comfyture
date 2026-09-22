@@ -29,6 +29,7 @@ install_extension comfyui-lora-manager https://github.com/willmiao/ComfyUI-Lora-
 install_extension comfyui-ltxvideo https://github.com/Lightricks/ComfyUI-LTXVideo.git
 install_extension comfyui-ollama https://github.com/stavsap/comfyui-ollama.git
 install_extension comfyui-qwenvl https://github.com/1038lab/ComfyUI-QwenVL.git
+install_extension res4lyf https://github.com/ClownsharkBatwing/RES4LYF.git
 install_extension rgthree-comfy https://github.com/rgthree/rgthree-comfy.git
 install_extension comfyui-rmbg https://github.com/1038lab/ComfyUI-RMBG.git
 install_extension comfyui-seedvr2-videoupscaler https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler.git
