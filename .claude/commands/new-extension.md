@@ -1,10 +1,12 @@
 ---
 name: new-extension
-agent: Plan
 description: Add a new pre-installed ComfyUI extension to the project
+argument-hint: [github-url]
 ---
 
-Add a new ComfyUI extension to this project. If the user provided a GitHub URL, derive `<owner>`, `<repo>`, and `<slug>` from it. Otherwise ask for the GitHub URL before proceeding.
+# Adding new extensions
+
+Add a new ComfyUI extension to this project. If a GitHub URL was provided as an argument ($ARGUMENTS), derive `<owner>`, `<repo>`, and `<slug>` from it. Otherwise ask the user for the GitHub URL before proceeding.
 
 The slug is lowercase and hyphen-separated (e.g. `comfyui-seedvr2-videoupscaler`).
 
