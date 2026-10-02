@@ -59,6 +59,18 @@ tasks:
       - scripts/tag.sh
       - echo "Now, push commit with tags (git push origin --tags) to create the release."
 
+  update:check:
+    desc: "Check if ComfyUI is up-to-date"
+    dotenv: ["metadata.env"]
+    vars:
+      LATEST_TAG:
+        sh: "curl -s https://api.github.com/repos/Comfy-Org/ComfyUI/releases/latest | jq -r '.tag_name' | sed 's/^v//'"
+    preconditions:
+      - sh: '[ "{{.LATEST_TAG}}" != "${COMFYUI_VERSION}" ]'
+        msg: "Already up-to-date (v{{.LATEST_TAG}})."
+    cmds:
+      - 'echo "Update available! Current version: v${COMFYUI_VERSION}, Latest version: v{{.LATEST_TAG}}."'
+
   update:
     desc: "Update everything to latest versions"
     vars:
@@ -84,8 +96,8 @@ tasks:
       vars:
         - LATEST_TAG
     preconditions:
-      - sh: "[ '{{.LATEST_TAG}}' != '${COMFYUI_VERSION}' ]"
-        msg: "Already up-to-date (v${COMFYUI_VERSION})."
+      - sh: '[ "{{.LATEST_TAG}}" != "${COMFYUI_VERSION}" ]'
+        msg: "Already up-to-date (v{{.LATEST_TAG}})."
     cmds:
       - echo "Updating ComfyUI from v${COMFYUI_VERSION} to v{{.LATEST_TAG}}..."
       - sed -i 's/^COMFYUI_VERSION=.*/COMFYUI_VERSION={{.LATEST_TAG}}/' metadata.env
