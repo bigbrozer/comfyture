@@ -20,6 +20,9 @@ export UV_CACHE_DIR="${COMFYUI_HOME}/python/cache"
 export UV_HTTP_TIMEOUT="60"
 export VIRTUAL_ENV="${COMFYUI_HOME}/python/venv"
 
+# Extensions settings
+export LORA_MANAGER_SETTINGS_DIR="${LORA_MANAGER_SETTINGS_DIR:-${COMFYUI_PROFILE_DIR}/__lora_manager}"
+
 _is_sourced() {
 	# https://unix.stackexchange.com/a/215279
 	[ "${#FUNCNAME[@]}" -ge 2 ] \
