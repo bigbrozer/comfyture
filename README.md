@@ -177,11 +177,12 @@ If you do not like the default arguments, switch them off by setting `COMFYUI_NO
 
 You can use these variables in `compose.yaml`.
 
-| Variable            | Default | Description                                                                                                |
-|---------------------|---------|------------------------------------------------------------------------------------------------------------|
-| PUID                | `1000`  | Set the User ID for files.                                                                                 |
-| PGID                | `1000`  | Set the Group ID for files.                                                                                |
-| COMFYUI_NO_DEFAULTS | `false` | If `true`, disable default arguments, see how to pass [your own arguments to ComfyUI](#comfyui-arguments). |
+| Variable                  | Default                                | Description                                                                                                    |
+|---------------------------|----------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| PUID                      | `1000`                                 | Set the User ID for files.                                                                                     |
+| PGID                      | `1000`                                 | Set the Group ID for files.                                                                                    |
+| COMFYUI_NO_DEFAULTS       | `false`                                | If `true`, disable default arguments, see how to pass [your own arguments to ComfyUI](#comfyui-arguments).     |
+| LORA_MANAGER_SETTINGS_DIR | `/opt/comfyui/app/user/__lora_manager` | Where [ComfyUI-Lora-Manager](https://github.com/willmiao/ComfyUI-Lora-Manager) stores its settings and caches. |
 
 ### Data storage
 
