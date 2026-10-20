@@ -164,10 +164,6 @@ transformers>=4.57.0
 # https://github.com/ssitu/ComfyUI_UltimateSDUpscale
 #-r ""
 
-# comfyui-vibevoice
-# https://github.com/Enemyx-net/VibeVoice-ComfyUI
--r "https://raw.githubusercontent.com/Enemyx-net/VibeVoice-ComfyUI/refs/heads/main/requirements.txt"
-
 # comfyui-videohelpersuite
 # https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
 -r "https://raw.githubusercontent.com/Kosinkadink/ComfyUI-VideoHelperSuite/refs/heads/main/requirements.txt"

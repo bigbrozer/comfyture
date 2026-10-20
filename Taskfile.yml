@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 silent: true
 
@@ -36,6 +36,8 @@ tasks:
   lock:
     desc: "Lock requirements"
     dotenv: ["metadata.env"]
+    vars:
+      LOCK_FORMAT: "pylock.toml"
     cmds:
       - echo "Installing python..."
       - uv python install {{.PYTHON_VERSION}}
@@ -44,8 +46,8 @@ tasks:
         uv pip compile \
           --python {{.PYTHON_VERSION}} \
           --index-strategy "unsafe-best-match" \
-          --format "pylock.toml" \
-          --output-file "pylock.toml" requirements.in
+          --format "{{.LOCK_FORMAT}}" \
+          --output-file "{{.LOCK_FORMAT}}" requirements.in
 
   preview-changelog:
     desc: "Preview next changelog"
