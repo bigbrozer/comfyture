@@ -4,6 +4,8 @@
 #
 # Rename extension folder
 remove_extension comfyui-rgthree
+# Not compatible with transformer 5+
+remove_extension comfyui-vibevoice
 
 # Install some cool extensions
 install_extension comfyui-advanced-controlnet https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet.git
@@ -37,6 +39,5 @@ install_extension comfyui-segment-anything https://github.com/storyicon/comfyui_
 install_extension comfyui-segment-anything-2 https://github.com/kijai/ComfyUI-segment-anything-2.git
 install_extension comfyui-tooling-nodes https://github.com/Acly/comfyui-tooling-nodes.git
 install_extension comfyui-ultimatesdupscale https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
-install_extension comfyui-vibevoice https://github.com/Enemyx-net/VibeVoice-ComfyUI.git
 install_extension comfyui-videohelpersuite https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
 install_extension comfyui-wanvideowrapper https://github.com/kijai/ComfyUI-WanVideoWrapper.git
