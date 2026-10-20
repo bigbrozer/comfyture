@@ -26,7 +26,7 @@ Contents:
 * Easy to run ComfyUI from Docker.
 * GPU-accelerated (Nvidia CUDA only).
 * Flash Attention support (v2 / v3).
-* Sage Attention support (v2).
+* ~~Sage Attention support (v2)~~ -- **REMOVED, need refactoring**.
 * Triton support.
 * [New Manager](https://blog.comfy.org/p/meet-the-new-comfyui-manager) enabled by default.
 * Do not run as root, UID/GID are configurables.
@@ -150,13 +150,6 @@ A default set of arguments are passed to ComfyUI by default:
 You can add [extra arguments](https://docs.comfy.org/interface/settings/server-config) to ComfyUI. Creates `extra.yaml`:
 
 ```yaml
-# Example to enable sage attention
-services:
-  comfyui:
-    command:
-      - "--enable-sage-attention"
-
-# Or...
 # Example to enable flash attention
 services:
   comfyui:
