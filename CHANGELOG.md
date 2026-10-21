@@ -4,6 +4,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.40.0 - 2026-10-21
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.42.1
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1>
+* **extensions**: Remove `comfyui-vibevoice` as it is not compatible with transformer>=5
+* **sageattention**: Uninstall, need to rework the prebuilt wheels
+* **torch**: Bump to v2.14.1
+
+### <!-- 1 -->🐛 Bug Fixes
+
+* **lora-manager**: Persist settings
+  * Until now, the lora-manager extension had his settings being deleted on container restart.
+  * The settings are located in the system user `__lora_manager` in the profiles folder.
+
 ## 0.39.0 - 2026-10-11
 
 ### <!-- 0 -->🚀 Features
