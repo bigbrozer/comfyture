@@ -4,6 +4,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 26.11.0 - 2026-11-08
+
+### ⚠️ BREAKING CHANGES
+
+New versions are now using CalVer, update the image tag accordingly in your compose file !
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.44.0
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0>
+* **release**: Show breaking change notes in changelog
+* **release**: Move to CalVer versioning (vYY.M.MICRO)
+
 ## 0.41.0 - 2026-10-27
 
 ### <!-- 0 -->🚀 Features
