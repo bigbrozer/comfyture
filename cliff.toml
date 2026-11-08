@@ -16,7 +16,15 @@ body = """
 {% else %}\
     ## Unreleased
 {% endif %}\
-{% for group, commits in commits | group_by(attribute="group") %}
+{% set breaking = commits | filter(attribute="breaking", value=true) %}\
+{% if breaking | length > 0 %}
+    ### ⚠️ BREAKING CHANGES
+    {% for commit in breaking %}
+        {{ commit.breaking_description }}
+    {% endfor %}\
+{% endif %}\
+{% for group, commits in commits | group_by(attribute="group") %}\
+{% if group != "chore" %}
     ### {{ group | upper_first }}
     {% for group, commits in commits | group_by(attribute="scope") %}\
         {% for commit in commits %}
@@ -26,6 +34,7 @@ body = """
             {% endif %}\
         {% endfor %}\
     {% endfor %}
+{% endif %}\
 {% endfor %}
 """
 # Remove leading and trailing whitespaces from the changelog's body.
@@ -34,8 +43,8 @@ trim = true
 render_always = true
 # An array of regex based postprocessors to modify the changelog.
 postprocessors = [
-    # Replace the placeholder <REPO> with a URL.
-    #{ pattern = '<REPO>', replace = "https://github.com/orhun/git-cliff" },
+  # Replace the placeholder <REPO> with a URL.
+  #{ pattern = '<REPO>', replace = "https://github.com/orhun/git-cliff" },
 ]
 # render body even when there are no releases to process
 # render_always = true
@@ -55,29 +64,30 @@ require_conventional = true
 split_commits = false
 # An array of regex based parsers to modify commit messages prior to further processing.
 commit_preprocessors = [
-    # Replace issue numbers with link templates to be updated in `changelog.postprocessors`.
-    #{ pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](<REPO>/issues/${2}))"},
-    # Check spelling of the commit message using https://github.com/crate-ci/typos.
-    # If the spelling is incorrect, it will be fixed automatically.
-    #{ pattern = '.*', replace_command = 'typos --write-changes -' },
+  # Replace issue numbers with link templates to be updated in `changelog.postprocessors`.
+  #{ pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](<REPO>/issues/${2}))"},
+  # Check spelling of the commit message using https://github.com/crate-ci/typos.
+  # If the spelling is incorrect, it will be fixed automatically.
+  #{ pattern = '.*', replace_command = 'typos --write-changes -' },
 ]
 # Prevent commits that are breaking from being excluded by commit parsers.
-protect_breaking_commits = false
+# Breaking `chore` commits are then only shown in the breaking changes section.
+protect_breaking_commits = true
 # An array of regex based parsers for extracting data from the commit message.
 # Assigns commits to groups.
 # Optionally sets the commit's scope and can decide to exclude commits from further processing.
 commit_parsers = [
-    { message = "^feat", group = "<!-- 0 -->🚀 Features" },
-    { message = "^fix", group = "<!-- 1 -->🐛 Bug Fixes" },
-    { message = "^doc", group = "<!-- 3 -->📚 Documentation" },
-    { message = "^perf", group = "<!-- 4 -->⚡ Performance" },
-    { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
-    { message = "^style", group = "<!-- 5 -->🎨 Styling" },
-    { message = "^test", group = "<!-- 6 -->🧪 Testing" },
-    { message = "^chore", skip = true },
-    { body = ".*security", group = "<!-- 8 -->🛡️ Security" },
-    { message = "^revert", group = "<!-- 9 -->◀️ Revert" },
-    { message = "^Merge pull request", skip = true },
+  { message = "^feat", group = "<!-- 0 -->🚀 Features" },
+  { message = "^fix", group = "<!-- 1 -->🐛 Bug Fixes" },
+  { message = "^doc", group = "<!-- 3 -->📚 Documentation" },
+  { message = "^perf", group = "<!-- 4 -->⚡ Performance" },
+  { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
+  { message = "^style", group = "<!-- 5 -->🎨 Styling" },
+  { message = "^test", group = "<!-- 6 -->🧪 Testing" },
+  { message = "^chore", skip = true },
+  { body = ".*security", group = "<!-- 8 -->🛡️ Security" },
+  { message = "^revert", group = "<!-- 9 -->◀️ Revert" },
+  { message = "^Merge pull request", skip = true },
 ]
 # Exclude commits that are not matched by any commit parser.
 filter_commits = false
