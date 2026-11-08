@@ -2,7 +2,9 @@
 
 set -eu
 
-next_version="$(git cliff --bumped-version)"
+# shellcheck disable=SC1091
+source metadata.env
+next_version="v${COMFYTURE_VERSION}"
 
 # Checks
 if [[ -n $(git status --porcelain) ]]
@@ -11,4 +13,10 @@ then
   exit 1
 fi
 
-git cliff --bump --unreleased --strip header | git tag --cleanup=verbatim -a "${next_version}" -F -
+if git rev-parse -q --verify "refs/tags/${next_version}" >/dev/null
+then
+  echo "Tag ${next_version} already exists. Run 'task bump' first !"
+  exit 1
+fi
+
+git cliff --unreleased --tag "${next_version}" --strip header | git tag --cleanup=verbatim -a "${next_version}" -F -

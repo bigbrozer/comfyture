@@ -3,7 +3,7 @@
 set -eu
 
 _metadata="metadata.env"
-next_version="$(git cliff --bumped-version)"
+next_version="$(scripts/next-version.sh)"
 
 # Checks
 if [[ -n $(git status --porcelain) ]]
@@ -16,6 +16,6 @@ fi
 sed -r -i "s/COMFYTURE_VERSION=.+/COMFYTURE_VERSION=${next_version:1}/" "${_metadata}"
 
 # Prepare new changelog
-git cliff --bump --output CHANGELOG.md
+git cliff --tag "${next_version}" --output CHANGELOG.md
 git add -A
 git commit -m "chore(release): prepare for ${next_version}"
