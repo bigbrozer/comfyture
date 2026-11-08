@@ -189,6 +189,16 @@ By default, the local `./data` directory will contain everything for ComfyUI. Yo
 | `./data/output`       | `/opt/comfyui/app/output`       | Persist output images                        |
 | `./data/profiles`     | `/opt/comfyui/app/user`         | Persist user profiles                        |
 
+## Versioning
+
+Releases follow [CalVer](https://calver.org/) using the `YY.M.MICRO` scheme (e.g. `26.11.0`, `26.11.1`, `26.12.0`), where `MICRO` is reset every month. Each release is published on Docker Hub with the following tags:
+
+* `YY.M.MICRO`: the exact release (e.g. `26.11.1`).
+* `YY.M`: the latest release of that month (e.g. `26.11`).
+* `latest`: the latest release.
+
+> ℹ️ *Note: releases up to `0.42.0` used [SemVer](https://semver.org/).*
+
 ## License
 
 This project is licensed under the MIT License ([LICENSE](LICENSE)).

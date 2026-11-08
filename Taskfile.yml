@@ -52,7 +52,7 @@ tasks:
   preview-changelog:
     desc: "Preview next changelog"
     cmds:
-      - git cliff --bump --unreleased
+      - git cliff --unreleased --tag "$(scripts/next-version.sh)"
 
   tag:
     desc: "Create a new tag for this release"

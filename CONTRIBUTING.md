@@ -120,6 +120,14 @@ You're ready to continue !
 * **Test Your Changes:** Ensure that your changes do not break existing functionality and that all tests pass.
 * **Respect Others:** Be respectful and considerate of other contributors and author.
 
+## Releasing
+
+Releases use [CalVer](https://calver.org/) `vYY.M.MICRO` (`MICRO` is reset every month), computed by `scripts/next-version.sh`:
+
+1. `task preview-changelog` to preview the next changelog.
+2. `task bump` to update `metadata.env` and `CHANGELOG.md`, and commit them.
+3. `task tag` to create the annotated tag, then `git push origin --tags` to trigger the CD workflow.
+
 ## License
 
 By contributing to this project, you agree to the terms of the [MIT License](https://github.com/bigbrozer/comfyture/blob/main/LICENSE).
