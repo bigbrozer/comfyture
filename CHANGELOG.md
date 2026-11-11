@@ -4,6 +4,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 26.11.1 - 2026-11-11
+
+### <!-- 0 -->🚀 Features
+
+* **comfy**: Bump to v0.45.0
+  * <https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0>
+
 ## 26.11.0 - 2026-11-08
 
 ### ⚠️ BREAKING CHANGES
