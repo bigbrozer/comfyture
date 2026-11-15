@@ -148,6 +148,10 @@ transformers>=4.57.0
 # https://github.com/kijai/ComfyUI-segment-anything-2
 #-r ""
 
+# comfyui-smart-guides
+# https://github.com/nomadoor/ComfyUI-Smart-Guides
+#-r ""
+
 # comfyui-tooling-nodes
 # https://github.com/Acly/comfyui-tooling-nodes
 -r "https://raw.githubusercontent.com/Acly/comfyui-tooling-nodes/refs/heads/main/requirements.txt"
