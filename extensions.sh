@@ -37,6 +37,7 @@ install_extension comfyui-rmbg https://github.com/1038lab/ComfyUI-RMBG.git
 install_extension comfyui-seedvr2-videoupscaler https://github.com/numz/ComfyUI-SeedVR2_VideoUpscaler.git
 install_extension comfyui-segment-anything https://github.com/storyicon/comfyui_segment_anything.git
 install_extension comfyui-segment-anything-2 https://github.com/kijai/ComfyUI-segment-anything-2.git
+install_extension comfyui-smart-guides https://github.com/nomadoor/ComfyUI-Smart-Guides.git
 install_extension comfyui-tooling-nodes https://github.com/Acly/comfyui-tooling-nodes.git
 install_extension comfyui-ultimatesdupscale https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git
 install_extension comfyui-videohelpersuite https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
