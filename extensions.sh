@@ -25,6 +25,7 @@ install_extension comfyui-inpaint-nodes https://github.com/Acly/comfyui-inpaint-
 install_extension comfyui-ipadapter-plus https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
 install_extension comfyui-kjnodes https://github.com/kijai/ComfyUI-KJNodes.git
 install_extension comfyui-krea2edit https://github.com/lbouaraba/comfyui-krea2edit.git
+install_extension comfyui-krea2textencoder https://github.com/ethanfel/ComfyUI-Krea2TextEncoder.git
 install_extension comfyui-lanpaint https://github.com/scraed/LanPaint.git
 install_extension comfyui-local-image-gallery https://github.com/Firetheft/ComfyUI_Local_Image_Gallery.git
 install_extension comfyui-lora-manager https://github.com/willmiao/ComfyUI-Lora-Manager.git

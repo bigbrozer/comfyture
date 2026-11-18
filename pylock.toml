@@ -652,12 +652,6 @@ version = "0.1.10"
 sdist = { url = "https://files.pythonhosted.org/packages/72/73/b3d451dfc523756cf177d3ebb0af76dc7751b341c60e2a21871be400ae29/iopath-0.1.10.tar.gz", upload-time = 2022-07-09T19:00:50Z, size = 42226, hashes = { sha256 = "3311c16a4d9137223e20f141655759933e1eda24f8bff166af834af3c645ef01" } }
 
 [[packages]]
-name = "jaxtyping"
-version = "0.3.11"
-sdist = { url = "https://files.pythonhosted.org/packages/91/c1/091b8852bd7cbf50bd655543c8506033cf4029300c67f8c176c1286879a9/jaxtyping-0.3.11.tar.gz", upload-time = 2026-06-13T18:35:23Z, size = 46489, hashes = { sha256 = "b09c14acf6686feb9e0df5b0d8c6e7c5b6f8d36bf059ee54cd522a186c2ef050" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/8b/38/c66bbdc5047f4776c2bd3e47e5295a350e3fa44d5b8942105e71c2a876a0/jaxtyping-0.3.11-py3-none-any.whl", upload-time = 2026-06-13T18:35:22Z, size = 56593, hashes = { sha256 = "8a4bedc4e3f963fa82df41bd13c7ebc2bad925601eb48614c65798f21329d4e3" } }]
-
-[[packages]]
 name = "jinja2"
 version = "3.1.6"
 wheels = [{ url = "https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl", upload-time = 2025-10-14T18:38:59Z, hashes = { sha256 = "85ece4451f492d0c13c5dd7c13a64681a86afae63a5f347908daf103ce6d2f67" } }]
@@ -882,7 +876,7 @@ wheels = [{ url = "https://pypi.nvidia.com/nvidia-cublas/nvidia_cublas-13.1.1.3-
 [[packages]]
 name = "nvidia-cuda-cupti"
 version = "13.0.85"
-marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')"
+marker = "(platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-cuda-cupti/nvidia_cuda_cupti-13.0.85-py3-none-manylinux_2_25_x86_64.whl", hashes = { sha256 = "4eb01c08e859bf924d222250d2e8f8b8ff6d3db4721288cf35d14252a4d933c8" } }]
 
 [[packages]]
@@ -894,7 +888,7 @@ wheels = [{ url = "https://pypi.nvidia.com/nvidia-cuda-nvrtc/nvidia_cuda_nvrtc-1
 [[packages]]
 name = "nvidia-cuda-runtime"
 version = "13.0.96"
-marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')"
+marker = "(platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-cuda-runtime/nvidia_cuda_runtime-13.0.96-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = { sha256 = "7f82250d7782aa23b6cfe765ecc7db554bd3c2870c43f3d1821f1d18aebf0548" } }]
 
 [[packages]]
@@ -906,31 +900,31 @@ wheels = [{ url = "https://pypi.nvidia.com/nvidia-cudnn-cu13/nvidia_cudnn_cu13-9
 [[packages]]
 name = "nvidia-cufft"
 version = "12.0.0.61"
-marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')"
+marker = "(platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-cufft/nvidia_cufft-12.0.0.61-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = { sha256 = "6c44f692dce8fd5ffd3e3df134b6cdb9c2f72d99cf40b62c32dde45eea9ddad3" } }]
 
 [[packages]]
 name = "nvidia-cufile"
 version = "1.15.1.6"
-marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')"
+marker = "(platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-cufile/nvidia_cufile-1.15.1.6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = { sha256 = "08a3ecefae5a01c7f5117351c64f17c7c62efa5fffdbe24fc7d298da19cd0b44" } }]
 
 [[packages]]
 name = "nvidia-curand"
 version = "10.4.0.35"
-marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')"
+marker = "(platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-curand/nvidia_curand-10.4.0.35-py3-none-manylinux_2_27_x86_64.whl", hashes = { sha256 = "1aee33a5da6e1db083fe2b90082def8915f30f3248d5896bcec36a579d941bfc" } }]
 
 [[packages]]
 name = "nvidia-cusolver"
 version = "12.0.4.66"
-marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')"
+marker = "(platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-cusolver/nvidia_cusolver-12.0.4.66-py3-none-manylinux_2_27_x86_64.whl", hashes = { sha256 = "0a759da5dea5c0ea10fd307de75cdeb59e7ea4fcb8add0924859b944babf1112" } }]
 
 [[packages]]
 name = "nvidia-cusparse"
 version = "12.6.3.3"
-marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')"
+marker = "(platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-cusparse/nvidia_cusparse-12.6.3.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hashes = { sha256 = "2b3c89c88d01ee0e477cb7f82ef60a11a4bcd57b6b87c33f789350b59759360b" } }]
 
 [[packages]]
@@ -948,7 +942,7 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/3f/34/c500f90c7ae641b
 [[packages]]
 name = "nvidia-nvjitlink"
 version = "13.0.88"
-marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')"
+marker = "(platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-nvjitlink/nvidia_nvjitlink-13.0.88-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl", hashes = { sha256 = "13a74f429e23b921c1109976abefacc69835f2f433ebd323d3946e11d804e47b" } }]
 
 [[packages]]
@@ -960,7 +954,7 @@ wheels = [{ url = "https://pypi.nvidia.com/nvidia-nvshmem-cu13/nvidia_nvshmem_cu
 [[packages]]
 name = "nvidia-nvtx"
 version = "13.0.85"
-marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')"
+marker = "(platform_machine == 'aarch64' or platform_machine == 'x86_64') and sys_platform == 'linux'"
 wheels = [{ url = "https://pypi.nvidia.com/nvidia-nvtx/nvidia_nvtx-13.0.85-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.whl", hashes = { sha256 = "4936d1d6780fbe68db454f5e72a42ff64d1fd6397df9f363ae786930fd5c1cd4" } }]
 
 [[packages]]
@@ -1285,12 +1279,6 @@ name = "referencing"
 version = "0.37.0"
 sdist = { url = "https://files.pythonhosted.org/packages/22/f5/df4e9027acead3ecc63e50fe1e36aca1523e1719559c499951bb4b53188f/referencing-0.37.0.tar.gz", upload-time = 2025-10-13T15:30:48Z, size = 78036, hashes = { sha256 = "44aefc3142c5b842538163acb373e24cce6632bd54bdb01b21ad5863489f50d8" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/2c/58/ca301544e1fa93ed4f80d724bf5b194f6e4b945841c5bfd555878eea9fcb/referencing-0.37.0-py3-none-any.whl", upload-time = 2025-10-13T15:30:47Z, size = 26766, hashes = { sha256 = "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231" } }]
-
-[[packages]]
-name = "refiners"
-version = "0.4.0"
-sdist = { url = "https://files.pythonhosted.org/packages/48/dc/127a2be981c8eebcde883ffcbd5c6e3e3dfb95ca0d8e510802312e237d94/refiners-0.4.0.tar.gz", upload-time = 2024-02-26T14:07:07Z, size = 61439867, hashes = { sha256 = "7ee0b611cf0a367d3179ce87e95cfffc6ed5d946f96d23cdf5905325e67ae103" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/e4/ba/c0993b2499592dc7fd2011451346321aee8d8ddb12c7330f34a8be134625/refiners-0.4.0-py3-none-any.whl", upload-time = 2024-02-26T14:07:03Z, size = 1512291, hashes = { sha256 = "ddf438e5cfb414e4f804a13f7626794ad2666f20be9d45d3ad498444e27509ff" } }]
 
 [[packages]]
 name = "regex"
@@ -1664,12 +1652,6 @@ name = "virtualenv"
 version = "20.36.1"
 sdist = { url = "https://files.pythonhosted.org/packages/aa/a3/4d310fa5f00863544e1d0f4de93bddec248499ccf97d4791bc3122c9d4f3/virtualenv-20.36.1.tar.gz", upload-time = 2026-01-09T18:21:01Z, size = 6032239, hashes = { sha256 = "8befb5c81842c641f8ee658481e42641c68b5eab3521d8e092d18320902466ba" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/6a/2a/dc2228b2888f51192c7dc766106cd475f1b768c10caaf9727659726f7391/virtualenv-20.36.1-py3-none-any.whl", upload-time = 2026-01-09T18:20:59Z, size = 6008258, hashes = { sha256 = "575a8d6b124ef88f6f51d56d656132389f961062a9177016a50e4f507bbcc19f" } }]
-
-[[packages]]
-name = "wadler-lindig"
-version = "0.1.7"
-sdist = { url = "https://files.pythonhosted.org/packages/1e/67/cbae4bf7683a64755c2c1778c418fea96d00e34395bb91743f08bd951571/wadler_lindig-0.1.7.tar.gz", upload-time = 2025-06-18T07:00:42Z, size = 15842, hashes = { sha256 = "81d14d3fe77d441acf3ebd7f4aefac20c74128bf460e84b512806dccf7b2cd55" } }
-wheels = [{ url = "https://files.pythonhosted.org/packages/8d/96/04e7b441807b26b794da5b11e59ed7f83b2cf8af202bd7eba8ad2fa6046e/wadler_lindig-0.1.7-py3-none-any.whl", upload-time = 2025-06-18T07:00:41Z, size = 20516, hashes = { sha256 = "e3ec83835570fd0a9509f969162aeb9c65618f998b1f42918cfc8d45122fe953" } }]
 
 [[packages]]
 name = "wasabi"

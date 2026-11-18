@@ -98,6 +98,10 @@ onnxruntime-gpu
 # https://github.com/lbouaraba/comfyui-krea2edit
 #-r ""
 
+# comfyui-krea2textencoder
+# https://github.com/ethanfel/ComfyUI-Krea2TextEncoder
+#-r ""
+
 # comfyui-lanpaint
 # https://github.com/scraed/LanPaint
 #-r ""
