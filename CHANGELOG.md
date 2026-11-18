@@ -4,6 +4,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## 26.11.2 - 2026-11-18
+
+### <!-- 0 -->🚀 Features
+
+* **extensions**: Add `comfyui-krea2textencoder` extension
+  * <https://github.com/ethanfel/ComfyUI-Krea2TextEncoder>
+* **extensions**: Add `comfyui-smart-guides` extension
+  * <https://github.com/nomadoor/ComfyUI-Smart-Guides>
+
 ## 26.11.1 - 2026-11-11
 
 ### <!-- 0 -->🚀 Features
